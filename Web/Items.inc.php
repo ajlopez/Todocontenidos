@@ -1,13 +1,9 @@
 <?
-if (__Items_inc == 1)
-	return;
-define ('__Items_inc', 1);
-
 	define('ITEMS_ESTADO_NORMAL',0);
 	define('ITEMS_ESTADO_PENDIENTE',1);
 
-	include('Usuarios.inc.php');
-	include('Conexion.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Conexion.inc.php');
 
 function ItemVisita($Id) {
 	Conectar();

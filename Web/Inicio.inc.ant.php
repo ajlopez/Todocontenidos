@@ -1,7 +1,7 @@
 <?
-	include("Usuarios.inc.php");
-	include("Paginas.inc.php");
-	include('Cache.inc.php');
+	include_once("Usuarios.inc.php");
+	include_once("Paginas.inc.php");
+	include_once('Cache.inc.php');
 ?>
 
 <html>

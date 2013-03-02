@@ -1,6 +1,6 @@
 <?
-	include($PaginaPrefijo.'Paginas.inc.php');
-	include($PaginaPrefijo.'Usuarios.inc.php');
+	include_once($PaginaPrefijo.'Paginas.inc.php');
+	include_once($PaginaPrefijo.'Usuarios.inc.php');
 ?>
 <p>&nbsp;</p>
 

@@ -1,7 +1,7 @@
 <?
-	include($PaginaPrefijo.'Usuarios.inc.php');
-	include($PaginaPrefijo.'Paginas.inc.php');
-	include($PaginaPrefijo.'Cache.inc.php');
+	include_once($PaginaPrefijo.'Usuarios.inc.php');
+	include_once($PaginaPrefijo.'Paginas.inc.php');
+	include_once($PaginaPrefijo.'Cache.inc.php');
 	include_once($PaginaPrefijo.'Google.inc.php');
 ?>
 

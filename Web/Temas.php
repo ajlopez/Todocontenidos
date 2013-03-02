@@ -1,7 +1,7 @@
 <?
-	include($PaginaPrefijo.'Usuarios.inc.php');
-	include($PaginaPrefijo.'Paginas.inc.php');
-	include($PaginaPrefijo.'Eventos.inc.php');
+	include_once($PaginaPrefijo.'Usuarios.inc.php');
+	include_once($PaginaPrefijo.'Paginas.inc.php');
+	include_once($PaginaPrefijo.'Eventos.inc.php');
 
 	Conectar();
 
@@ -94,6 +94,6 @@ function MuestraVacio($x,$y)
 
 <?
 	Desconectar();
-	include($PaginaPrefijo.'Final.inc.php');
+	include_once($PaginaPrefijo.'Final.inc.php');
 ?>
 
