@@ -1,8 +1,4 @@
 <?
-	if (__Puntos_inc == 1)
-		return;
-	define ('__Puntos_inc', 1);
-
 	define ('PUNTOS_TIPO_INSCRIPCION',1);	// Inscripcion de Usuario
 	define ('PUNTOS_TIPO_SITIO',2);		// Aceptacion de Sitio
 	define ('PUNTOS_TIPO_ARTICULO',3);	// Aceptacion de Articulo
@@ -34,9 +30,9 @@
 		PUNTOS_TIPO_REFERIDOGANA => "Puntos ganados por Referido",
 		PUNTOS_TIPO_CURSO => "Puntos aplicados a Curso");
 
-	include($PaginaPrefijo.'Conexion.inc.php');
-	include($PaginaPrefijo.'Usuarios.inc.php');
-	include($PaginaPrefijo.'Paginas.inc.php');
+	include_once($PaginaPrefijo.'Conexion.inc.php');
+	include_once($PaginaPrefijo.'Usuarios.inc.php');
+	include_once($PaginaPrefijo.'Paginas.inc.php');
 
 function PuntosReferidoGana($IdReferente,$Puntos,$PuntosNuevos,$Divisor=10)
 {

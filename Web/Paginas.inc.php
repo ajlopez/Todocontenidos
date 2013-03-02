@@ -1,10 +1,5 @@
 <?
-if (__Paginas_inc == 1)
-	return;
-
-define ('__Paginas_inc', 1);
-
-	include($PaginaPrefijo.'Azar.inc.php');
+include_once($PaginaPrefijo.'Azar.inc.php');
 
 function PaginaActual() {
 	global $SCRIPT_NAME;

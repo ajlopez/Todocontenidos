@@ -1,8 +1,4 @@
 <?
-if (__Validaciones_inc == 1)
-	return;
-define ('__Validaciones_inc', 1);
-
 function FechaValida($anio,$mes,$dia) {
 	if (!$anio || !$mes || !$dia)
 		return false;

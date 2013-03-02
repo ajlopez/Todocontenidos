@@ -1,12 +1,8 @@
 <?
-if (__Usuarios_inc == 1)
-	return;
-define ('__Usuarios_inc', 1);
-
-include($PaginaPrefijo.'Paginas.inc.php');
-include($PaginaPrefijo.'Sesion.inc.php');
-include($PaginaPrefijo.'Eventos.inc.php');
-include($PaginaPrefijo.'Puntos.inc.php');
+include_once($PaginaPrefijo.'Paginas.inc.php');
+include_once($PaginaPrefijo.'Sesion.inc.php');
+include_once($PaginaPrefijo.'Eventos.inc.php');
+include_once($PaginaPrefijo.'Puntos.inc.php');
 
 function UsuarioControla($enlace='') {
 	global $PHP_SELF;

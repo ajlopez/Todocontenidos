@@ -1,15 +1,11 @@
 <?
-if (__Categorias_inc == 1)
-	return;
-define ('__Categorias_inc', 1);
-
 	define('CATEGORIAS_ESTADO_NORMAL',0);
 	define('CATEGORIAS_ESTADO_DESHABILITADA',1);
 
 	$CategoriasEstado = array(CATEGORIAS_ESTADO_NORMAL => 'Normal',
 		CATEGORIAS_ESTADO_DESHABILITADA => 'Deshabilitada');
 
-	include($PaginaPrefijo.'Conexion.inc.php');
+	include_once($PaginaPrefijo.'Conexion.inc.php');
 
 function CategoriaTraduce($Id, &$Descripcion, &$IdPadre)
 {

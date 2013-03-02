@@ -1,10 +1,6 @@
 <?
-if (__Articulos_inc == 1)
-	return;
-define ('__Articulos_inc', 1);
-
-	include('Usuarios.inc.php');
-	include('Conexion.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Conexion.inc.php');
 
 function ArticuloVisita($Id) {
 	Conectar();

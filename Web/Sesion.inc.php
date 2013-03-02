@@ -1,11 +1,7 @@
 <?
-	if (__Sesion_inc == 1)
-		return;
-	define ('__Sesion_inc', 1);
-
-	include($PaginaPrefijo.'Conexion.inc.php');
-	include($PaginaPrefijo.'Azar.inc.php');
-	include($PaginaPrefijo.'Errores.inc.php');
+	include_once($PaginaPrefijo.'Conexion.inc.php');
+	include_once($PaginaPrefijo.'Azar.inc.php');
+	include_once($PaginaPrefijo.'Errores.inc.php');
 
 	$SesionTiempo = 86400;
 

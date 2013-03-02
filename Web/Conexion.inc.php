@@ -1,9 +1,5 @@
 <?
-if (__Conexion_inc == 1)
-	return;
-define ('__Conexion_inc', 1);
-
-	include($PaginaPrefijo.'Configuracion.inc.php');
+	include_once($PaginaPrefijo.'Configuracion.inc.php');
 
 	$Conectado = 0;
 

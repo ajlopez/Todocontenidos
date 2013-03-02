@@ -1,11 +1,7 @@
 <?
-	if (__Eventos_inc == 1)
-		return;
-	define ('__Eventos_inc', 1);
-
-	include($PaginaPrefijo.'Conexion.inc.php');
-	include($PaginaPrefijo.'Usuarios.inc.php');
-	include($PaginaPrefijo.'Paginas.inc.php');
+	include_once($PaginaPrefijo.'Conexion.inc.php');
+	include_once($PaginaPrefijo.'Usuarios.inc.php');
+	include_once($PaginaPrefijo.'Paginas.inc.php');
 
 function EventoGraba($parametro,$tipo='PG',$idpar=0) {
 	global $REMOTE_ADDR;
