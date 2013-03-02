@@ -1,0 +1,95 @@
+.h
+Crear Directorios
+
+Aunque no lo hemos explicado, ya tenemos el concepto de {{directorio}}: un lugar donde podemos tener
+archivos, nuestros o del sistema.
+
+Cada directorio se identifica con un nombre. El directorio principal del sistema es el directorio {{/}}
+que se identifica con una barra. Habíamos conseguido su contenido con {{ls /}}.
+
+En un directorio puede haber otros directorios. Probemos de crear alguno. En nuestra sesión
+de la cuenta {{alumno}}, con el comando {{cd}}:
+
+.code
+[alumno /]$ cd
+.
+
+volvemos a nustro directorio de origen. Comprobamos con el comando {{pwd}}:
+
+.code
+[alumno alumno]$ pwd
+/home/alumno
+.
+
+Ahora, con el nuevo comando:
+
+.code
+[alumno alumno]$ mkdir prueba
+.
+
+podemos crear sobre el directorio de origen, el directorio {{prueba}}. Comprobamos el resultado con:
+
+.code
+[alumno alumno]$ ls -l
+total 1
+drwxrwxr-x   5 alumno   alumno       1024 Feb  1 10:56 prueba
+.
+
+Vemos que se ha creado un directorio {{prueba}} dentro de nuestro directorio {{/home/alumno}}. Notemos la letra {{d}}
+en la primera posición de la línea que describe el archivo. Eso indica que no es un archivo normal, sino que es
+un directorio.
+
+Podemos intentar crear un directorio adentro de otro:
+
+.code
+[alumno alumno]$ mkdir prueba/ejercicios/linux
+mkdir: cannot make directory `prueba/ejercicios/linux': No such file or directory
+.
+
+Los nombres de directorio se separan con {{/}} barras. El ejemplo de arriba falló, porque queremos crear un
+directorio {{linux}} dentro del directorio {{/home/alumno/prueba/ejercicios}}, pero éste no existe (sólo existe
+{{prueba}}). Para crear el directorio {{linux}}, y su padre {{ejercicios}} en un solo comando, podemos usar
+el parámetro {{-p}}:
+
+.code
+[alumno alumno]$ mkdir -p prueba/ejercicios/linux
+.
+
+Veamos el contenido del directorio {{prueba}}, subdirectorio del actual:
+
+.code
+[alumno alumno]$ ls -l prueba
+total 1
+drwxrwxr-x   3 alumno   alumno       1024 Feb  1 11:04 ejercicios
+.
+
+Para ver todos los archivos, teníamos el parámetro {{-a}}:
+
+.code
+[alumno alumno]$ ls -la prueba
+total 3
+drwxrwxr-x   3 alumno   alumno       1024 Feb  1 11:04 .
+drwx------   5 alumno   alumno       1024 Feb  1 10:56 ..
+drwxrwxr-x   3 alumno   alumno       1024 Feb  1 11:04 ejercicios         
+.
+
+Notemos la aparición de dos directorios {{.}} (punto) y {{..}} (punto punto). El primero, es un directorio que apunta
+al mismo directorio que estamos viendo, al {{/home/alumno/prueba}}. Este {{.}} siempre existe en todo directorio.
+
+El {{..}} es un directorio que apunta al padre de {{prueba}}.
+
+Podemos cambiar a un directorio con el comando {{cd}}. Veamos:
+
+.code
+[alumno alumno]$ cd prueba
+[alumno prueba]$ pwd
+/home/alumno/prueba
+[alumno prueba]$ cd ..
+[alumno alumno]$ pwd
+/home/alumno
+.
+
+En el primer comando {{cd prueba}} entramos al directorio prueba. Luego, con {{pwd}} comprobamos donde estamos. Observemos
+el uso del {{..}} en el siguiente comando {{cd}}. Este comando hace que volvamos al directorio padre de {{prueba}}, como
+se confirma con el último {{pwd}}.
+

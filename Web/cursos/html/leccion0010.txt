@@ -1,0 +1,65 @@
+.h
+Más formato de texto
+
+Conozcamos nuevos "tags". Así como teníamos una marca para iniciar un párrafo, y así cambiar
+de línea dejando un espaciado, hay un "tag" <br> (que no se cierra), que permite cambiar simplemente
+de línea, sin abandonar el párrafo. Un ejemplo:
+
+.html
+Este es un texto<br>
+que aparece en<br>
+cuatro líneas en el navegador<br>
+porque usa la marca de "break"<br>
+.
+
+La sigla "br" significa "break" en inglés, corte, cambio de línea.
+
+.h
+Cambiando la apariencia
+
+Hasta ahora, el texto de un párrafo aparecía del mismo tamaño y forma. Con algunos "tags" más podemos
+lograr otros efectos, como:
+
+.html
+<p>
+En este párrafo tenemos caracteres en <b>negrita</b>
+y en <i>cursiva</i>
+</p>
+.
+
+Si lo prueba en su navegador, notará cómo la marca <b> hasta </b> consigue que el texto aparezca en
+negrita ("bold" en inglés), y cómo con la marca <i> hasta </i> se obtiene una letra cursive ("italic"
+en inglés).
+
+Otra etiqueta interesante es <pre>..</pre>. Pruebe:
+
+.html
+<pre>
+Contenido que aparece
+tal cual lo ingresamos
+y hasta con letra no proporcional
+encolumnando los resultados
+</pre>
+.
+
+Ahora, se respetan los espacios, y los cambios de línea. La letra es de tamaño fijo, de forma que cada
+letra tiene el mismo ancho que cualquier otra.
+
+Si necesita usar subíndices o supraíndices en su contenido, pruebe:
+
+.html
+<p>
+m al cuadrado es m<sup>2</sup><br>
+v sub x es v<sub>x</sub>
+</p>
+.
+
+Incluso puede combinar "tags", mientras estén correctamente anidados:
+
+.html
+<p>
+m al cuadrado es <b>m<sup>2</sup></b><br>
+v sub x es <i>v<sub>x</sub></i>
+</p>
+.
+

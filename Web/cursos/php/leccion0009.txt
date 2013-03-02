@@ -1,0 +1,129 @@
+.h
+Saludando en PHP
+
+Sigamos con una nueva página, que, como es tradición en programación, siga saludando con un "Hola" o algo similar. Pero
+aprendamos algo nuevo en el proceso.
+
+Creamos una página hola.php en nuestro directorio de trabajo, con el contenido:
+
+.html
+<html>
+<head>
+<title>Saludando en PHP</title>
+</head>
+<body>
+<h1>Saludando en PHP</h1>
+</body>
+</html>
+.
+
+y la probamos en el navegador. Hasta ahora, no hay nada nuevo. Pero veamos que podemos incorporar más programación y
+comandos:
+
+.html
+<html>
+<head>
+<title>Saludando en PHP</title>
+</head>
+<body>
+<h1>Saludando en PHP</h1>
+<?
+	// comando for
+	for ($k=1; $k&lt;=6; $k++) {
+?>
+Hola, te saludo <? echo $k; ?><br>
+<?
+	} 	// acá termina el ciclo for
+?>
+</body>
+</html>
+.
+
+Al probar esta nueva versión, aparecerá un "Hola, te saludo..." 6 veces. Esto se debe a que usamos un comando de PHP,
+el comando for ("para" tales valores hacer esto..). La estructura del comando for puede parecer extraña al principio 
+(o conocida para los programadores de lenguaje C/C++).
+
+El comando for encierra entre paréntesis, tres partes, separadas entre sí por ; (punto y coma):
+
+.code
+$k=1
+.
+
+Esta es la parte que se ejecuta al comienzo del ciclo for, una vez.
+
+.code
+$k<=6
+.
+
+En esta sentencia, se evalúa si $k es menor o igual que el número entero 6. Es la condición que, si es verdadera,
+ejecuta el proximo ciclo del for.
+
+.code
+$k++
+.
+
+Algo más extraña, esta expresión (la tercera del for) es la que se evalúa al final de cada ciclo. En este caso, aparece
+un operador ++ de incrementación. Este operador añade el valor 1 al valor de la variable $k, la incrementa. Es equivalente
+a:
+
+.code
+$k = $k + 1
+.
+
+Al poner
+
+.code
+for ($k=1; $k<=6; $k++) {
+.
+
+vamos a ejecutar el código que sigue, encerrado entre { y }, varias veces, variando el valor de k desde 1 a 6. El código a ejecutar termina con
+la llave que cierra.
+
+Notemos que el código incluído dentro del ciclo for, no es solo código PHP. En el medio del ciclo for, podemos pasar a HTML, volver a PHP,
+pasar de nuevo a HTML y así. No es necesario que todo lo abarcado desde el comienzo del for a su final sea puro PHP. El ?> luego
+del "for" indica que pasamos a HTML. El 
+
+.html
+<? echo $k; ?>
+.
+
+indica que pasamos a PHP un momento, evaluamos $k, y emitimos su valor, volviendo luego a HTML.
+
+En otra página, hola2.php, veamos de ingresar el código:
+
+.html
+<html>
+<head>
+<title>Saludando en PHP</title>
+</head>
+<body>
+<h1>Saludando en PHP</h1>
+<?
+	// comando for
+	for ($k=1; $k&lt;=6; $k++) {
+?>
+<h<? echo $k; ?>>Hola, te saludo varias veces</h<? echo $k; ?>>
+<?
+	} 	// acá termina el ciclo for
+?>
+</body>
+</html>
+.
+
+Probemos su resultado en el navegador.
+
+Hemos pasado a usar <h<? echo $k; ?>> y </h<? echo $k; ?>> que parece más complejo. Pero si analizamos la salida que llega
+a nuestro explorador, descubriremos que ese ciclo está generando la salida:
+
+.html
+<h1>Hola, te saludo varias veces</h1>
+<h2>Hola, te saludo varias veces</h2>
+<h3>Hola, te saludo varias veces</h3>
+<h4>Hola, te saludo varias veces</h4>
+<h5>Hola, te saludo varias veces</h5>
+<h6>Hola, te saludo varias veces</h6>
+.
+
+Recuerdan? Los <h1>, <h2>, .... en HTML indicaban "headers", títulos, de distinto nivel. En la página de arriba,
+el valor del nivel (1,2,3..) se extrae del valor de la variable $k, durante la evaluación del ciclo.
+

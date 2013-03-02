@@ -1,0 +1,31 @@
+.h
+Operadores de string
+
+Hay dos operadores de {{string}}, alguno ya nos lo encontramos. El operador {{.}} (punto) concatena {{strings}}.
+
+.code
+$nombre = 'Pepe';
+$mensaje = 'Hola ' . $nombre;
+echo $mensaje;	// produce 'Hola Pepe'
+.
+
+Si alguna de los dos operandos (izquierdo o derecho) no es {{string}} se convierte automáticamente.
+
+El otro operador es el {{.=}} y concatena a la variable de la izquierda, la expresión de la derecha. Es como una
+asignación, pero concatenando en vez de reemplazando:
+
+.code
+$nombre = 'Pepe';
+$mensaje = 'Hola ';
+$mensaje .= $nombre;
+echo $mensaje;	// produce 'Hola Pepe'
+.
+
+Aunque no es un operador, hay una sintaxis que permite acceder a un caracter del {{string}}:
+
+.code
+$nombre = 'Pepe';
+echo 'El primer caracter del nombre es ' . $nombre{0};
+echo 'El segundo caracter del nombre es ' . $nombre{1};
+.
+

@@ -1,0 +1,17 @@
+.h
+Introducción
+
+Bienvenido al Curso de Java. Tenemos un largo camino por delante. Java es un lenguaje
+totalmente basado en objetos, con una sintaxis limpia y sencilla. Pero además es una
+tecnología, con un gran cantidad de clases asociadas, que hacen que su estudio
+sea por lo menos largo.
+
+Para aprovechar el curso, se recomienda tener instalado el JDK (Java Development Kit),
+por ejemplo, la versión 1.3, que puede encontrar en:
+
+.ax
+http://java.sun.com/j2se/1.3/
+http://java.sun.com/j2se/1.3/
+
+para plataformas Windows, Linux sobre Intel, o Solaris.
+

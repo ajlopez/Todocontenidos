@@ -1,0 +1,22 @@
+.h
+El compilador
+
+El lenguaje C (así como el lenguaje C++) son lenguajes compilados, es decir, se transforman
+en código ejecutable para un procesador y plataforma en particular, usando un programa que
+se llama genéricamente Compilador.
+
+Al comienzo de su historia, el único compilador disponible era el de las primeras versiones
+del UNIX. Con el tiempo, aparecieron compiladores en distintos sistemas y plataformas, y hasta
+empresas que se dedican a crear compiladores C. Hoy hay multitud de compiladores de C/C++,
+unos gratuitos y otros comerciales. Algunos gratuitos son superiores a muchos comerciales.
+
+Curiosamente, al nacer el lenguaje C++, no se construyó un compilador, sino un programa llamado
+cfront que traducía el código C++ a simple código C. Con eso se logró portar rápidamente el
+lenguaje a todas las plataformas donde ya había un compilador C.
+
+Durante el curso, necesitaremos usar un compilador. A continuación, sigue una reseña de algunos
+compiladores, algunos gratuitos, para varias plataformas.
+
+Prácticamente todos los ejemplos del curso, serán ejecutables en Windows, Unix o Linux, salvo
+aclaración explícita.
+

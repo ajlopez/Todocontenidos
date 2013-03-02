@@ -1,0 +1,29 @@
+.h
+Grabando el Proyecto
+
+Hasta el momento, sólo nos hemos encontrado con un proyecto, y dentro de él, con un
+formulario. Pasemos a grabar este proyecto, que todavía solamente existe en memoria.
+
+Como en otros utilitarios, el entorno Visual Basic tiene un menú en la parte superior:
+
+.im
+cursos/prog/vbmenu.gif
+
+Probemos de grabar nuestro proyecto, eligiendo la opción Archivo / Grabar Proyecto. El sistema
+nos va a pedir con que nombre grabamos el formulario:
+
+.im
+cursos/prog/vbguardarformulario.gif
+
+Cada elemento del proyecto se graba en un archivo aparte. Los datos de un formulario, se graban
+en un archivo .frm. Los datos de un proyecto Visual Basic, en un archivo .vbp. Ahora nos está
+pidiendo en cual archivo grabamos el único formulario del proyecto. Pues bien, podemos crear
+un directorio, digamos Prueba, y grabarlo como Form1.frm.
+
+Luego nos pide en que archivo guardamos los datos del proyecto:
+
+.im
+cursos/prog/vbguardarproyecto.gif
+
+Podemos grabarlo en ese directorio Pueba, como Proyect1.vbp.
+

@@ -1,0 +1,4 @@
+En VBScript, dentro de ASP, no hace falta declarar las variables.
+
+Directamente podemos usar una variable sin declararla.
+

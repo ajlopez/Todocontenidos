@@ -1,0 +1,34 @@
+.h
+Componentes de la red
+
+Si al fin Internet es una red de redes, nadie sabe con exactitud cuántas redes
+y computadores están conectados.
+
+.im
+cursos/internet/int005.jpeg
+
+Lo que asombra, es que nadie está a cargo de Internet. Hay organizaciones que
+desarrollan los aspectos técnicos y pone estandards para crear aplicaciones 
+en Internet, pero ningún gobierno o empresa tiene el control. El "backbone"
+de Internet, a través del cual el tráfico fluye, pertenece a compañías privadas,
+que se encargan de su mantenimiento.
+
+Todas las computadoras de Internet se comunican entre sí usando los mismos métodos.
+El protocolo de comunicación se llama TCP/IP (Transmission Control Protocol/Internet
+Protocol) aunque en rigor de verdad, es un conjunto de normas, un paquete de
+protocolos.
+
+Estos métodos de comunicación tampoco pertenecen a una compañía, ni son propiedad
+de nadie. Por eso, han podido ser implementados por distintas empresas de software
+y hardware, haciendo de ellos la norma universal de Internet.
+
+Los computadores de Internet, usan lo que se llama una arquitectura cliente/servidor.
+Cuando Ud. usa un navegador en su PC, está usando un componente cliente, que se
+comunica con un servidor web. Por eso, un navegador o aplicación Internet, necesita
+estar conectada a la misma: funciona con otras computadoras.
+
+Un usuario de Internet, tiene acceso distintas aplicaciones, como correo electrónico,
+transferencia de archivos, acceso a recursos de información, mensajería instantánea,
+reproducción de archivos multimedia, noticias actualizadas, y todo lo que los
+desarrolladores de Internet han puesto a nuestra disposición.
+

@@ -1,0 +1,119 @@
+.h
+Saludando en ASP
+
+Sigamos con una nueva página, que, como es tradición en programación, siga saludando con un "Hola" o algo similar. Pero
+aprendamos algo nuevo en el proceso.
+
+Creamos una página Hola2.asp en nuestro directorio de trabajo, con el contenido:
+
+.html
+<%
+	option explicit
+
+	dim k
+%>
+<html>
+<head>
+<title>Saludando en ASP</title>
+</head>
+<body>
+<h1>Saludando en ASP</h1>
+</body>
+</html>
+.
+
+y la probamos en el navegador. Hasta ahora, no hay nada nuevo. Pero veamos que podemos incorporar más programación y
+comandos:
+
+.html
+<%
+	option explicit
+
+	dim k
+%>
+<html>
+<head>
+<title>Saludando en ASP</title>
+</head>
+<body>
+<h1>Saludando en ASP</h1>
+<%
+	' comando for
+	for k=1 to 6
+%>
+Hola, te saludo <%=k%><br>
+<%
+	next ' acá termina el ciclo for
+%>
+</body>
+</html>
+.
+
+Al probar esta nueva versión, aparecerá un "Hola, te saludo..." 6 veces. Esto se debe a que usamos un comando de VBScript,
+el comando for ("para" tales valores hacer esto..)
+
+Al poner
+
+.code
+for k=1 to 6
+.
+
+vamos a ejecutar el código que sigue, varias veces, variando el valor de k desde 1 a 6. El código a ejecutar termina con
+la instrucción:
+
+.code
+next
+.
+
+Notemos que el código incluído, no es solo código VBScript. En el medio del ciclo for, podemos pasar a HTML, volver a ASP,
+pasar de nuevo a HTML y así. No es necesario que todo lo abarcado desde "for" hasta "next" sea puro VBScript. El %> luego
+del "for" indica que pasamos a HTML. El 
+
+.code
+<%=k%>
+.
+
+indica que pasamos a VBScript un momento, evaluamos k, y emitimos su valor, volviendo luego a HTML.
+
+En otra página, Hola3.asp, veamos de ingresar el código:
+
+.html
+<%
+	option explicit
+
+	dim k
+%>
+<html>
+<head>
+<title>Saludando en ASP</title>
+</head>
+<body>
+<h1>Saludando en ASP</h1>
+<%
+	' comando for
+	for k=1 to 6
+%>
+<h<%=k%>>Hola, te saludo varias veces</h<%k%>>
+<%
+	next ' acá termina el ciclo for
+%>
+</body>
+</html>
+.
+
+Probemos su resultado en el navegador.
+
+Hemos pasado a usar <h<%=k%>> y </h<%=k%>> que parece más complejo. Pero si analizamos la salida que llega
+a nuestro explorador, descubriremos que ese ciclo está generando la salida:
+
+.html
+<h1>Hola, te saludo varias veces</h1>
+<h2>Hola, te saludo varias veces</h2>
+<h3>Hola, te saludo varias veces</h3>
+<h4>Hola, te saludo varias veces</h4>
+<h5>Hola, te saludo varias veces</h5>
+<h6>Hola, te saludo varias veces</h6>
+.
+
+Recuerda? Los <h1>, <h2>, .... en HTML indicaban "headers", títulos, de distinto nivel. En la página de arriba,
+el valor del nivel (1,2,3..) se extrae del valor de la variable k, durante la evaluación del ciclo.

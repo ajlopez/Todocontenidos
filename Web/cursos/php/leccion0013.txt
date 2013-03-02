@@ -1,0 +1,77 @@
+.h
+El tipo boolean
+
+Este tipo ha sido introducido desde PHP 4. Tiene dos valores
+
+.code
+true
+.
+
+o
+
+.code
+false
+.
+
+que se pueden escribir con distinto tipos de letras:
+
+.code
+TRUE
+True
+FALSE
+False
+.
+
+y demás combinaciones. El valor "true" indica verdad,  "false" indica falso.
+
+Se puede asignar el valor a una variable:
+
+.code
+$bandera = false;
+.
+
+Es importante comprender que en las condiciones, PHP convierte una expresión
+cualquiera a verdadero o falso. Vemos:
+
+.html
+<?
+	if ($k)
+		echo '$k es verdad';
+	else
+		echo '$k es falso';
+?>
+.
+
+Esta es la sentencia if (el condicional "si ... entonces.... sino ..."). No lo
+hemos estudiado como estructura, pero seguramente resulta familiar. 
+
+En el ejemplo, $k es la condición, que se evalúa entre paréntesis, para decidir
+sobre el "if". Si la variable $k tiene un valor booleano, se toma ese valor
+como verdadero o falso.
+
+Pero qué sucede si $k tiene, digamos, un número o un "string"?
+
+En ese caso, se convierte a verdadero o falso, tomando en cuenta que los siguientes
+valores son tomados como falso:
+
+- El propio valor false
+.br
+- El valor 0
+.br
+- El real 0.0
+.br
+- El texto vacío ""
+.br
+- El texto "0" (con un cero)
+.br
+- Un arreglo sin elementos
+.br
+- Un objeto sin elementos
+.br
+- El valor NULL
+.br
+- Una variable sin valor asignado
+
+Todo esto es tomado como falso. Cualquier otro valor, un texto, un numero distinto de
+cero, es automáticamente tomado por PHP como un valor verdadero, a los efectos de una
+condición, como la del if de arriba.

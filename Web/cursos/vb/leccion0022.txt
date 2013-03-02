@@ -1,0 +1,92 @@
+.h
+Ciclos do
+
+Hay otras sentencias que permiten ejecutar ciclos. Por ejemplo:
+
+.code
+Dim k as Integer
+
+k=1
+
+do while k<10
+	Print k
+	k = k + 1
+loop
+.
+
+El comando {{do while}} (hacer mientras) permite ejecutar una serie de comandos, hasta la sentencia {{loop}}, mientras
+se cumpla una condición. En el ejemplo anterior, fue importante colocar la sentencia que incrementa
+a {{k}}:
+
+.code
+	k = k + 1
+.
+
+porque a diferencia del {{for}}, el ciclo {{do}} no hace ningún cambio en una variable, a no ser que lo
+pongamos nosotros explícitamente. De habernos olvidado el incrementar la variable, caeríamos en un
+ciclo infinito, porque {{k}} valdría siempre 1, y nunca se llegaría al valor 10.
+
+Otra variante es el {{do until}} (hacer hasta):
+
+.code
+Dim k as Integer
+
+k=1
+
+do until k>=10
+	Print k
+	k = k + 1
+loop
+.
+
+Ahora se ejecuta el ciclo, hasta que {{k}} llegue a valer 10 o más.
+
+Bien podría ser que no se ejecute ningún ciclo, como en el caso:
+
+.code
+Dim k as Integer
+
+k=1
+
+do while k<1
+	Print k
+	k = k + 1
+loop
+.
+
+La condición que dice {{k}} debe ser menor que 1, no se cumple nunca, así que el ciclo no se ejecuta ni una
+sola vez.
+
+Hay otras variantes del ciclo {{do}} que permiten poner el testeo de la condición al final de cada ciclo, al contrario
+de los ejemplos anteriores que prueban la condición antes de cada ciclo:
+
+.code
+Dim k as Integer
+
+k=1
+
+do
+	Print k
+	k = k + 1
+loop while k<10
+.
+
+o también:
+
+.code
+Dim k as Integer
+
+k=1
+
+do
+	Print k
+	k = k + 1
+loop until k>=10
+.
+
+Ahora, en estos ejemplos, el ciclo se ejecuta por lo menos una vez, porque la condición se puso al final de cada
+ciclo.
+
+Podemos probar los ejemplos anteriores, poniéndolos como código dentro de un botón de "Procesar", como hicimos en
+otros proyectos.
+

@@ -1,0 +1,36 @@
+.h
+Puntos de Partida
+
+Comenzar con una nueva tecnología siempre es más fácil, si Ud. tiene experiencia en alguna
+similar. Pero no toda la gente tiene el mismo conocimiento de partida. En el caso de ASP,
+Ud. puede estar en una de las siguientes posiciones:
+
+.b
+Desarrollador HTML:
+Ya conoce de armado de páginas, con HTML, y ha creado algunas y hasta
+algún sitio completo.
+
+.b
+Programador:
+ Ud. tiene conocimientos de programación, y quiere comenzar a programar en la
+web.
+
+.b
+Programador Web:
+Ya tiene experiencia programando para la web, por ejemplo, con PHP o Perl,
+y quiere conocer qué es esto de ASP.
+
+.b
+Novato:
+Ud. es completamente nuevo a esta tecnología.
+
+Excepto en el último punto, este curso pretende ayudarlo a conocer esta tecnología. En los
+requisitos del curso se pide algo de conocimiento de HTML o de programación. Pero una
+vez dominados una serie de conceptos básicos, podemos avanzar a otros más avanzados.
+
+Pero deberíamos ir practicando lo básico de HTML, y programación. Si Ud. necesita reforzar
+o conocer alguno de esos temas, le recomendamos que tome uno de nuestros cursos gratuitos
+de HTML o Introducción a la Programación.
+
+Una vez familiarizado con esos conocimientos, Ud. está preparado para comenzar el estudio
+de ASP. En la próxima lección veremos que necesitamos para aprovechar el curso.

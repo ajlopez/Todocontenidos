@@ -1,0 +1,56 @@
+.h
+Agregar usuarios
+
+Ya estamos estamos adentro del sistema, como usuario root, el famoso superusuario. Como habíamos
+ya advertido, tenemos que actuar con cuidado, porque siendo root, siendo superusuario, podemos
+ejecutar cualquier comando, incluso alguno que dañe el sistema. Habíamos mencionado entonces
+que es conveniente practicar siendo otro usuario. Pero si recién acabamos de instalar Linux,
+el único usuario disponible es root. Cómo podemos crear otro usuario? Afortunadamente, root
+tiene la capacidad de crear otro usuario. Veamos cómo.
+
+Ingresemos desde el "prompt", el comando adduser con el parámetro de código de usuario a crear,
+así:
+
+.code
+[root /root]# adduser alumno
+.
+
+El comando es "adduser" y el parámetro es "alumno". Este parámetro indica el nombre de la cuenta
+de usuario, que queremos crear. Si todo anda bien, deberá aparecernos nuevamente el "prompt":
+
+.code
+[root /root]# _
+.
+
+con el cursor pidiendo el próximo comando. Pero qué pasó? Qué efecto ha tenido la ejecución de
+este comando? Pues bien, este comando nos ha agregado la cuenta "alumno" como nuevo usuario
+del sistema. Seguimos siendo "root", pero tenemos un nuevo usuario creado. Cuando se
+crea un nuevo usuario, el sistema Linux realiza varias tareas: anota el nuevo código de
+usuario en su lista interna de usuarios permitidos, y crea un directorio, un lugar, para los
+archivos del usuario.
+
+Sabemos que toda cuenta tiene una contraseña, pero entonces, cuál es la contreseña de la cuenta
+"alumno"?
+
+No existe todavía. Debemos especificarla con el comando:
+
+.code
+[root /root]# passwd alumno
+.
+
+En este comando "passwd" especificamos como parámetro la cuenta a la que queremos cambiar
+la contraseña. Como somos superusuarios, podemos hacerlo.
+
+A continuación, el diálogo puede ser:
+
+.code
+New login password:
+Retype new login password:
+passwd: all authentication tokens updated successfully
+.
+
+En la primera línea, el sistema nos pide la nueva contraseña. En la segunda línea, nos pide
+confirmar y reingresar esa contraseña. Finalmente, si la contraseña es válida, se actualizan
+los datos de la cuenta. Una contraseña puede ser inválida, según las políticas de seguridad
+del sistema. Por ejemplo, un sistema puede no permitir una contraseña que sea igual al
+código de cuenta.

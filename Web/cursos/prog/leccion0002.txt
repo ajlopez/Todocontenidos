@@ -1,0 +1,148 @@
+.h
+Lista de Correo
+
+Para que los alumnos puedan preguntar y consultar entre ellos, se ha habilitado una lista de correo privada,
+para su uso exclusivo.
+
+.text
+<TABLE CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD COLSPAN=2 VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#0030A0>
+  <B>Direcciones Web:&nbsp;</B>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Página principal:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A target="_blank" href="http://www.elistas.net/lista/tccursoprog"><U>http://www.eListas.net/lista/tccursoprog</U></A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para&nbsp;consultar&nbsp;mensajes&nbsp;atrasados:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A target="_blank" href="http://www.elistas.net/lista/tccursoprog/archivo"><U>http://www.eListas.net/lista/tccursoprog/archivo</U></A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para&nbsp;enviar&nbsp;un&nbsp;mensaje:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A target="_blank" href="http://www.elistas.net/lista/tccursoprog/enviar"><U>http://www.eListas.net/lista/tccursoprog/enviar</U></A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para suscribirte:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A target="_blank" href="http://www.elistas.net/lista/tccursoprog/alta"><U>http://www.eListas.net/lista/tccursoprog/alta</U></A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para cancelar tu suscripción:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A target="_blank" href="http://www.elistas.net/lista/tccursoprog/baja"><U>http://www.eListas.net/lista/tccursoprog/baja</U></A>
+  </FONT>
+</TD>
+</TR>
+<P>
+<TR>
+<TD COLSPAN=2 VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#0030A0>
+  &nbsp;<BR>
+  <B>Direcciones de correo (lista):&nbsp;</B>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para enviar mensajes:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A HREF="mailto:tccursoprog@eListas.net">tccursoprog@eListas.net</A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para suscribirte:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A HREF="mailto:tccursoprog-alta@eListas.net">tccursoprog-alta@eListas.net</A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para cancelar tu suscripción:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A HREF="mailto:tccursoprog-baja@eListas.net">tccursoprog-baja@eListas.net</A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Para obtener más ayuda:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A HREF="mailto:tccursoprog-ayuda@eListas.net">tccursoprog-ayuda@eListas.net</A>
+  </FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=RIGHT>
+  <FONT FACE="helvetica,arial" SIZE=2 COLOR=#603080>
+  <B>Dirección del administrador:&nbsp;</B>
+  </FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=LEFT>
+  <FONT FACE="arial,helvetica" SIZE=2>
+  <A HREF="mailto:tccursoprog-admin@eListas.net">tccursoprog-admin@eListas.net</A>
+  </FONT>
+</TD>
+</TR>
+<P>
+</TABLE>
+.
+

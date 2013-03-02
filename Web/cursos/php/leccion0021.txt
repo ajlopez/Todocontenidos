@@ -1,0 +1,22 @@
+.h
+Conversiones de string
+
+Cuando un {{string}} se evalúa en un entorno numérico, por ejemplo, contra un operador suma {{+}}, se trata
+de convertir a número.
+
+Si es posible, se convierte a real, a un {{float}}. En caso contrario, se convierte a un entero, {{integer}}. Si no
+se puede convertir, se evalúa a 0 (cero).
+
+Algún ejemplo aclaratorio:
+
+.code
+$doce = '12 monos';
+$veinticuatro = $doce * 2;	// aca '12 monos' se evalúa como entero 12
+echo $veinticuatro;		// produce 24
+$pepe = 1 + "10.5";             // $pepe es flotante (11.5)
+$pepe = 1 + "soy Pepe";         // $pepe es entero (1)
+$pepe = 1 + "13";		// $pepe es entero (14)
+.
+
+Vemos que expresiones como {{'14'}} o {{"13"}} son {{strings}}. Hasta que no son utilizados en una expresión
+aritmética, son {{string}}.

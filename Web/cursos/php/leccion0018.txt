@@ -1,0 +1,98 @@
+.h
+Valores String con comillas dobles
+
+Acá pasa algo muy PHP: los textos encerrados entre dobles comillas se tratan de una forma especial. Hay
+caracteres precedidos por {{\}} que se toman como especiales. Y más importante: lo precedido por {{$}} (el signo
+pesos) se toma como el nombre de una variable, cuyo valor se inserta en ese lugar del {{string}}.
+
+.text
+<center>
+<table>
+
+<tr>
+<th>Secuencia</th>
+<th>Significado</th>
+</tr>
+
+<tr>
+<td>\n</td>
+<td>Cambio de línea (linefeed) (LF o 0x0A en ASCII)</td>
+</tr>
+
+<tr>
+<td>\r</td>
+<td>Retorno de carro (carriage return) (CR o 0x0D en ASCII)</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td>Tabulador horizontal (horizontal tab) (HT o 0x09 en ASCII)</td>
+</tr>
+
+<tr>
+<td>\\</td>
+<td>Barra invertida</td>
+</tr>
+
+<tr>
+<td>\$</td>
+<td>Signo Pesos</td>
+</tr>
+
+<tr>
+<td>\"</td>
+<td>Doble comilla</td>
+</tr>
+
+<tr>
+<td>\0ooo</td>
+<td>Expresión octal (o son dígitos octales)</td>
+</tr>
+
+<tr>
+<td>\xhh</td>
+<td>Expresión hexadecimal (h son dígitos octales)</td>
+</tr>
+
+</table>
+</center>
+.
+
+Cualquier otro caracter luego de la {{\}} produce una barra invertida y el caracter mismo.
+
+Cuando se encuentra un caracter {{$}}, el intérprete PHP examina lo que sigue a ese caracter, y hasta donde puede, lo
+toma como el nombre de una variable. Cuando encuentra un caracter que ya no puede ser parte del nombre, se detiene ahí.
+
+Una vez determinado el nombre de la variable, reemplaza {{$}} y el nombre por el valor de la variable. A esto se le
+llama "expansión de variables". Algunos ejemplos:
+
+.code
+$nombre = 'Pepe';
+echo "Mi nombre es $nombre<br>"; // produce "Mi nombre es Pepe<br>"
+echo "Tengo $edad años"; // Produce "Tengo  años" porque $edad no está definida
+echo "Soy uno de los ${nombre}s";  // produce "Soy uno de los Pepes"
+.
+
+Note en el último comando el uso de llaves para delimitar el nombre, y no tomar como parte del mismo a la {{s}} final.
+
+Aún no vimos arreglos y objetos, pero éstos se expanden de la misma forma. Los subíndices {{string}} de un arreglo,
+se colocan entre {{[}} y {{]}} pero sin comillas:
+
+.code
+$paises[0]='Argentina';
+$paises[1]='Chile';
+echo "Resido en $paises[0]"; // produce "Resido en Argentina"
+$cliente->nombre = 'IBM';
+echo "El cliente es $cliente->nombre"; // produce "El cliente es IBM"
+$formula['agua']='H2O';
+echo "La fórmula es $formula[agua]";	// produce "La fórmula es H2O"
+.
+
+A partir de PHP 4 aparece una versión más de expansión, que usa llaves, pero con el {{$}} adentro de las llaves. Esto
+permite expresiones más complejas, que no se podían obtener con la anterior notación. Por ejemplo:
+
+.code
+echo "Mi nombre es {$nombre}";
+echo "La fórmula es {$formula['agua']}";
+echo "Expresiones más complejas como {$matriz[10][20]}";
+.

@@ -1,0 +1,101 @@
+.h
+El concepto de URL
+
+Hemos visto que en los enlaces {{<a>}} especificamos la dirección de un documento. En realidad, especificamos
+lo que se llama una URL (Uniform Resource Locator), una expresión que indica cómo ubicar un recurso en Internet.
+
+El Localizador Uniforme de Recursos, o URL, es la clave para la localización e interpretación de información
+en la World Wide Web. Los URL describen la ubicación de un recurso Web y su forma de objenerlo. Los URL en
+los documentos HTML nos ayudan a alcanzar recursos Web, sin importar si está en nuestra computadora local, o
+en un servidor lejano.
+
+Una URL se compone de:
+
+- {{protocolo}} que se usa para recuperar el recursos
+.br
+- {{host}} máquina servidora donde está el recurso
+.br
+- {{recurso}} que queremos alcanzar
+
+En la URL {{http://www.todocontenidos.com/default.php}} estamos especificando:
+
+- {{http://}} como protocolo
+.br
+- {{www.todocontenidos.com}} como máquina anfitriona
+.br
+- {{/default.php}} como el recurso dentro de esa máquina que queremos alcanzar
+
+En algunas ocasiones, además de la máquina destino, se coloca un número, que es el {{puerto}}, como en
+{{http://www.servidor.com:8080/index.html}}
+
+Los servicios de Internet utilizan cables imaginarios para conectar servicios entre los enchufes (puertos) de
+dos computadoras. Estas conexiones virtuales son manejadas por el software de red.
+
+Al crear una URL, entonces, hay que conocer el servicio que se va a usar. El más conocido es el {{http://}} que corresponde
+a un servidor Web. La sigla {{HTTP}} es {{HyperText Transfer Protocol}}, el protocolo de transferencia de hipertexto, y ha
+sido la base de toda la Web. Sin embargo, cuando se planeó la WWW se le dió la capacidad de aceptar otros protocolos, que
+la han ido extendiendo con el tiempo.
+
+.h2
+El URL HTTP
+
+El URL {{http}} representa un documento disponible desde un servidor World Wide Web. Ejemplo:
+
+.ax
+http://www.w3.org/
+http://www.w3.org/
+
+Puede encontrar este tipo de expresiones, en el campo {{Dirección}} de su navegador.
+
+En ocasiones, en lugar de {{http}}, encontraremos {{https}} que se refiere a HTTP seguro. Es un protocolo que permite
+enviar y recibir la misma información que {{HTTP}}, pero la información entre el servidor y el cliente, viaja encriptada
+todo el tiempo, para evitar que alguien en el medio de la comunicación pueda interceptar algún dato intelegible, como
+contraseñas o datos personales.
+
+.h2
+El URL FTP
+
+El URL {{ftp}} se refiere al {{File Transfer Protocol}}, el protocolo de transferencias de archivos. Le permite
+transferir archivos entre computadoras. Se comunica con un servidor FTP. Un ejemplo:
+
+.ax
+ftp://ftp.microsoft.com/pub/
+ftp://ftp.microsoft.com/pub/
+
+En este caso, hemos especificado un directorio {{/pub}} dentro de un servidor FTP {{ftp.microsoft.com}}
+
+.h2
+El URL de noticias
+
+El URL de noticias representa el servicoi de noticias {{Usenet}}, también conocido como {{netnews}}. Existía antes
+que la web y se incluyo en ella. Un ejemplo sería:
+
+.ax
+news:news.microsoft.com
+news:news.microsoft.com
+
+.h2
+El URL para correo
+
+Es común encontrarlo en las páginas Web. Un ejemplo:
+
+.ax
+mailto:webmaster@todocontenidos.com
+mailto:webmaster@todocontenidos.com
+
+Luego de {{mailto}} colocamos la dirección de correo a la que queremos enviar un email. Si el usuario que visita
+la página elige este enlace, se le abrirá su programa de correo habitual, listo para enviar un correo electrónico
+a la dirección especificada. Hasta se puede agregar datos adicionales, como en el ejemplo:
+
+.html
+<A HREF="mailto:webmaster@todocontenidos.com?subject=Subcribir al boletin&body=Quiero suscribirme">
+Link text
+</A> 
+.
+
+.h2
+Otros tipos de URL
+
+Hay varios tipos más de URL, prácticamente en desuso, como {{wais}} (Wide Area Index Server, servidores de Información
+de Area Ampliada), o {{gopher}} que se comunicaba con servidores de documentos, anteriores a la Web.
+

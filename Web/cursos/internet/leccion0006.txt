@@ -1,0 +1,55 @@
+.h
+La World Wide Web
+
+Es de lejos la más conocida aplicación de Internet, y para muchos de nosotros, es
+"la Internet" (podría ser la segunda aplicación más usada, porque el primer puesto
+le pertenece al correo electrónico).
+
+.im
+cursos/internet/int004.jpeg
+
+La World Wide Web (abreviada WWW), es un sistema de servidores Internet, que publican
+documentos, con hipertexto (enlaces entre ellos), que pueden ser accedidos desde
+programas cliente, llamados "browsers", navegadores o exploradores, mediante un
+protocolo, una forma de comunicación, llamada HTTP (HyperText Transfer Protocol, protocolo
+de transferencia de hipertexto).
+
+Con el tiempo, otros protocolos han sido montandos sobre la Web, como el email, el
+FTP (transferencia de archivos). Además, la Web se ha adaptado a manejar no sólo
+documentos de texto, con enlaces entre ellos (así funcionaba en su origen), sino que
+se adaptó rápidamente a contenidos más ricos, como imágenes, sonidos, multimedia. Ha
+sido diseñada para extenderse fácilmente. Por ejemplo, el soporte de MP3, nació
+naturalemte en la Web, aunque cuando ésta fue diseñada el formato de música no
+existía.
+
+La operación de la Web descansa igualmente, en hipertexto, documentos conteniendo
+palabras y frases, que funcionan como enlaces a otros documentos. Tanto puede ser
+una frase como una imagen lo que sirva como enlace a otro elemento de la web. En
+conjunto, la Web es un repositorio de contenidos de distinto tipo.
+
+Para crear esos documentos, se utiliza un lenguaje llamado HyperText Markup Language,
+el HTML. Con HTML, hay marcas que indican que parte del texto del documento es 
+un título, un enlace o una imagen. HTML es un lenguaje que sigue evolucionando,
+incorporando formularios, applets, programas Flash, y más.
+
+Puede apreder HTML en nuestro curso gratuito:
+
+.ax
+http://www.todocontenidos.com/CursoMuestra.php?Id=17
+Curso de HTML en todocontenidos
+
+Puede ver un documento HTML, simplemente presionando el botón derecho del ratón
+sobre este documento, eligiendo la opción del menú "Ver Código Fuente".
+
+Como HTML sigue evolucionado, el World Wide Web Consortium, liderado por
+Tim Berners-Lee, coordina los esfuerzos de estandarización de este lenguaje, y
+de otras tecnologías, como XML.
+
+Puede visitarlos en:
+
+.ax
+http://www.w3.org/
+http://www.w3.org/
+
+La Web entonces, no es una entidad fija, sino una en constante estado de cambio.
+

@@ -1,0 +1,32 @@
+.h
+Moviendo archivos
+
+Al hacer una copia, duplicamos los datos. Tal vez queremos moverlos, no copiarlos. Cambiar el nombre de un archivo,
+es de alguna forma moverlo a otro lado. También podemos mover el archivo a otro directorio. Para todo esto, se
+utiliza el comando {{mv}}:
+
+.code
+[alumno alumno]$ mkdir prueba2
+[alumno alumno]$ mv prueba/passwd prueba2
+.
+
+Como con el comando {{cp}}, el {{mv}} espera origen y destino. Como aquél, tiene los parámetros:
+
+{{-f}} fuerza la sobreescritura de un archivo destino, si éste ya existe
+.br
+{{-i}} pregunta antes de sobreescribir un archivo destino, si éste ya existe
+.br
+{{-u}} sólo mueve si el origen es más nuevo que el destino
+
+No hace falta la opción {{-r}} para procesar recursivamente directorios. El {{mv}} puede mover un directorio y todos
+sus subdirectorios, automáticamente.
+
+Podemos cambiar el nombre de un directorio. Por ejemplo:
+
+.code
+[alumno alumno]$ mv prueba2 pruebacopia
+.
+
+Esto cambia el nombre de nuestro subdirectorio {{prueba2}} a {{pruebacopia}}. Si el subdirectorio tenía a su
+vez otros subdirectorios, estos se mueven al nuevo destino.
+

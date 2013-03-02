@@ -1,0 +1,56 @@
+.h
+Qué es Linux?
+
+Para explicar mejor qué es Linux, debemos entender su historia, sus raíces.
+
+De alguna forma, Linux es parte de un sistema operativo, el conjunto de programas que permiten
+que una computadora funcione. Por otro lado, para ser más estrictos, Linux es sólo el
+núcleo del sistema operativo. Nació como copia de otro sistema operativo, comercial,
+propietario, llamado Unix. De ahí, que muchos de los conceptos que aprenderemos en el curso
+son válidos en otros sistemas Unix, como los implementados en máquinas Sun o HP. Si bien nació
+entonces como un clon del Unix, con el tiempo, Linux ha ido evolucionando, y ya no es más
+el sistema operativo para gurúes de la informática, sino que ha quedado al alcance de gran
+cantidad de personas interesadas en tener un sistema de bajo costo, y eficiente.
+
+Como Unix, Linux tiene una serie de características positivas, como estabilidad, flexibilidad,
+herramientas de desarrollo, y escalibidad. Y le gana a Unix en un precio sin competencia.
+
+Linux es un sistema operativo creado por Linus Torvalds cuando era un estudiante en la
+Universidad de Helsinski. Seguramente, muchos de Uds. ya conocían el dato, pero lo incluímos
+para explicar los orígenes, que tanto han influído en el estado actual y la popularidad de este
+sistema operativo.
+
+Pero antes que Torvalds se encargara de crear este magnífico programa, ya existía una cultura de
+generar código y sistemas, en base a la colaboración de varias personas. La filosofía de
+preguntar a los usuarios y escuchar sus comentarios y sugerencias para mejorar un programa,
+ya existía. Richard Stallman, que trabajaba en el Instituto de Tecnología de Massachusetts,
+(el conocido MIT), habia estado defendiendo tal forma de desarrollo, desde 1970. Fue el
+pionero en el concepto de "free software" (software libre), destacando que "free" se refiere
+a "freedom" (libertad) más que a gratis o costo cero. Como encontró que su trabajo en el MIT
+chocaba con esta actitud, lo abandonó en 1984 y fundó GNU (una sigla autorreferente, que significa
+"GNU's Not Unix", GNU no es Unix). Puede encontrar mayor información en:
+
+.ax
+http://www.gnu.org/
+http://www.gnu.org/
+
+El objetivo de GNU fue producir software que fuera libre para usar, distribuir y modificar.
+El objetivo de Linux Torvalds, 6 años más tarde, fue básicamente el mismo: producir un sistema
+operativo que tomara en cuenta los comentarios de los usuarios.
+
+Cuando Linus Torvalds estaba estudiando en la Universidad de Helsinki, usaba una versión del
+Unix llamada Minix. Era el fruto del trabajo de Andrew Tanenbaum, científico de la computación y 
+autor prolífico, que había generado el código del Minix para un libro suyo sobre sistemas
+operativos. Linus y otros le habían pedido a Tanenbaum modificaciones y mejoras a la versión
+de Minux de aquellos años, pero éste no las había considerado necesarios. Fue entonces cuando
+Linus decide crear su propio sistema operativo, que tomara en cuenta la sugerencias de los
+usuarios, y que fuera de código abierto a todos.
+
+A principios de los 90, Torvalds consigue armar lo que se llama el núcleo de un sistema
+operativo, que comienza a conocerse como Linux. Invita a otros a participar del desarrollo,
+usando Internet para comunicarse. Le comienza a agregar utilitarios GNU, que hacen que el
+sistema no sea solamente un núcleo, sino que toma forma de un sistema operativo completo
+que no tiene que envidiarle nada a otros más grandes o desarrollados. Por la diferencia
+entre núcleo y sistema operativo, la gente del GNU prefiere denominar a Linux, con la sigla
+GNU/Linux, debido a que mucho de lo montado sobre el núcleo de Torvalds y cía. ha sido
+producido por la organización GNU.

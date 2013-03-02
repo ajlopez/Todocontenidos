@@ -1,0 +1,67 @@
+.h
+Trabajando como otro usuario
+
+Salimos de la cuenta root, con:
+
+.code
+[root /root]# exit
+.
+
+Nuevamente, aparece el programa de login, y podemos ingresar como el usuario que acabamos
+de crear:
+
+.code
+login: alumno
+Password:
+Last login: Sun Jan 20 07:55:34 from www.todocontenidos.com
+*****************************************************************
+*                                                               *
+* Type 'pine' or 'mail' to read your email                      *
+*                                                               *
+* Type 'cd' to return to your home directory                    *
+*                                                               *
+* Type 'exit' to end this session                               *
+*                                                               *
+*****************************************************************
+[alumno alumno]$
+.
+
+De nuevo, la salida puede ser distinta en su sistema. Ahora el "prompt" es distinto, ya no
+estamos como superusuario, sino como un usuario común.
+
+Ingresemos un comando sencillo, "pwd":
+
+.code
+[alumno alumno]$ pwd
+/home/alumno
+.
+
+Qué significa? "pwd" es la sigla de "print working directory" (imprimir el directorio de
+trabajo). El próximo gran tema a investigar son los conceptos de directorios, y archivos.
+Con "pwd" nos muestra el directorio donde estamos trabajando. El concepto de directorio se
+puede asimilar a un lugar donde hay archivos. Por ahora, sabemos que hay un directorio
+"/home/alumno". Cada usuario tiene un directorio inicial de trabajo, y en general corresponde
+a "/home/<cuentadelusuario>".
+
+Con el comando "ls":
+
+.code
+[alumno alumno]$ ls
+group  user
+.
+
+podemos ver el contenido del directorio actual.
+
+Probemos de ver el directorio "/", llamado directorio raíz, el padre de todos los directorios:
+
+.code
+[alumno alumno]$ ls /
+bin   etc   lost+found  opt   sbin     usr
+boot  home  mnt         proc  service  var
+dev   lib   nsr         root  tmp      
+.
+
+Como siempre, la salida debe ser distinta en su sistema.
+
+Antes de entrar a explicar más en profundidad el concepto de archivos y directorios, aprendamos
+a apagar el sistema.

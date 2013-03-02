@@ -1,0 +1,16 @@
+.h
+Ejercicios
+
+- Ingrese y pruebe los ejemplos de las lecciones
+
+- Haga una página de preguntas frecuentes, donde al comienzo haya enlaces internos a las respuestas dentro de la
+página
+
+- Arme una lista de enlaces favoritos, usando listas
+
+- Arma un índice de un supuesto manual, con enlaces a sus capítulos, usando listas
+
+- En su ejercicio anterior de armar una noticia, comienze a utilizar distintos tipos de letras
+
+- En el ejemplo de una noticia, agregue imágenes
+

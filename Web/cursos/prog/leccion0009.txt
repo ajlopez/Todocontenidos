@@ -1,0 +1,124 @@
+.h
+Programando en nuestro proyecto
+
+Para agregarle conducta, instrucciones a nuestra simple aplicación, procedemos:
+
+- Cambiar la propiedad Autoredraw del formulario:
+
+.im
+cursos/prog/vbautoredraw.gif
+
+Esto es marginalmente necesario para el ejemplo que vamos a ejecutar.
+
+- Hacemos "doble click" con el botón izquierdo del mouse, sobre la ventana titulada Form1 (el
+único formulario de nuestro proyecto
+
+Aparece la ventana de programación:
+
+.im
+cursos/prog/vbcodigo.gif
+
+Qué sucedió? Aparece una nueva ventana, asociada al formulario. Es la ventana de código del
+formulario. En ellas daremos los primeros pasos de programación.
+
+Hay un texto:
+
+.code
+Private Sub Form_Load()
+
+End Sub
+.
+
+Este es el primer código de programación que vemos. Cuando escribimos los comandos Visual Basic,
+lo haremos en una ventana como ésta. Lo que vemos es código Visual Basic. Modifiquémolos para que
+aparezca:
+
+.code
+Private Sub Form_Load()
+	Print "Hola, mundo"
+End Sub
+.
+
+Y ejecutemos el programa. Vemos que aparece un formulario, ahora con un mensaje en su contenido:
+
+.im
+cursos/prog/vbformulariohola.gif
+
+Cerramos la ventana, y volvemos a nuestro entorno de desarrollo.
+
+Analicemos qué pasó. Ha sido nuestra primera instrucción de programación. Pero no la pusimos en
+cuaquier lado. La escribimos dentro de lo que se llama una rutina o subrutina (de ahí la palabra
+"Sub" en el código). La rutina que usamos (Form_Load) es la que se ejecuta en el momento de
+cargar el formulario. Al ejecutar el programa, el formulario se activa, y la primera rutina que se
+ejecuta es su Form_Load.
+
+Nuestros primeros ejemplos, se concentrarán en escribir código para el Form_Load de nuestro
+único formulario.
+
+La instrucción que agregamos:
+
+.code
+Print "Hola, mundo"
+.
+
+es un comando Visual Basic. Como otros comandos, ocupa una línea. Tiene un verbo (Print), y
+un parámetro ("Hola, Mundo"). Vemos que los textos constantes se escriben entre dobles comillas.
+También podríamos haber escrito el comando así:
+
+.code
+print "Hola, mundo"
+.
+
+o así
+
+.code
+PRINT "Hola, mundo"
+.
+
+Visual Basic no distingue entre letras mayúsculas o minúsculas para sus sentencias. Ahora, sí importan
+en los textos:
+
+.code
+Print "HOLA, MUNDO"
+.
+
+genera otra salida
+
+Durante nuestro desarrollo de un programa, podemos querer agregar texto aclaratorio, comentarios
+a lo que estamos escribiendo. Podemos agregar comentarios:
+
+.code
+Private Sub Form_Load()
+	' Ahora vamos a imprimir una leyenda
+	Print "Hola, mundo"	' Este es un comando Print
+End Sub
+.
+
+Colocando una comilla simple, de ahí hasta el fin de la línea se toma como un texto aclaratorio
+sin función en nuestro programa.
+
+Podemos seguir colocando salida a nuestro programa:
+
+.code
+Private Sub Form_Load()
+	Print "Hola, mundo"
+	Print "Hola, de nuevo"
+	Print
+	Print "Chau"
+End Sub
+.
+
+Vemos que podemos poner Print sin parámetros, lo que produce una línea en blanco.
+
+Hasta podemos poner varias sentencias en una sola línea, separadas por dos puntos:
+
+.code
+Private Sub Form_Load()
+	Print "Hola, mundo"
+	Print "Hola, de nuevo": Print: Print "Chau"
+End Sub
+.
+
+Observe que si ingresa mal un comando, por ejemplo, si se olvida de cerrar con doble comilla
+un texto, el sistema le advierte del error.
+

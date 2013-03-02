@@ -1,0 +1,60 @@
+.h
+Nuestro primer programa
+
+Todo programa C/C++ es un archivo de texto. Creemos en un archivo hola.c nuestro primer
+programa, que siguiendo la tradición, será el conocido "Hola, mundo":
+
+.code
+#include <stdio.h>
+
+int main()
+{
+	puts("Hola, mundo");
+	return 0;
+}
+.
+
+En un momento explicaremos las partes de este programa, y la sintaxis que usa. Pero primero
+aprendamos a compilarlo. Las instrucciones de compilación variarán de compilador a compilador
+que use. Comentemos dos compiladores muy usados: el GCC y el Visual C++.
+
+.h2
+Compilando con el gcc
+
+Ya hemos presentado al compilador gcc. Si Ud. trabaja en Linux, muy probablemente lo tenga
+instalado.
+
+Lo que se necesita para compilar el ejemplo de arriba con el gcc, es simplemente ingresar:
+
+.code
+gcc hola.c
+.
+
+en nuestra línea de comando. La única pega de esto, es que genera un archivo marcado como
+ejecutable con el nombre a.out
+
+Si queremos ponerle otro nombre a la salida, podemos ingresar:
+
+.code
+gcc -o hola hola.c
+.
+
+La nueva opción "-o" es seguida del nombre del ejecutable a generar. Ahora, el archivo ejecutable
+queda en "hola".
+
+.h2
+Compilando con Visual C++
+
+Compilar con el producto de Microsoft es similar, si usamos la línea de comando. Recordemos,
+para que este comando funcione, debemos haber ejecutado el archivo vcvars32.bat del directorio
+bin del directorio del VC.
+
+Para compilar el ejemplo anterior, basta estar en el directorio del archivo, y ejecutar:
+
+.code
+cl hola.c
+.
+
+Así de simple. El compilador genera un archivo ejecutable hola.exe, que al ejecutarlo, produce
+el conocido saludo "Hola, mundo" en la consola.
+

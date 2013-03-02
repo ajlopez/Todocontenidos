@@ -1,0 +1,63 @@
+.h
+Qué necesitamos?
+
+Para ejecutar páginas ASP, Ud. necesita algo para procesar el código, y alguna herramienta
+para escribirlo.
+
+En principio, para correr páginas ASP, necesitamos trabajar en una máquina con Windows. Si bien hay
+iniciativas de ASP multiplataforma, la mayor parte de las veces, tendremos ASP sólo sobre Windows.
+En esa máquina de trabajo, necesitamos tener necesitamos un servidor web que soporte este tipo de páginas. Desde su
+introducción en Febrero de 1996, ASP ha sido soportado por los servidor web de Microsoft. Actualmente, puede
+ejecutar en:
+
+- 
+.b
+Internet Information Server 4
+en Windows NT 4.x
+.br
+- 
+.b
+Internet Information Server 5
+en Windows 2000
+.br
+- 
+.b
+Personal Web Server
+en Windows 95/98 y variantes.
+
+Debemos tener entonces instalado uno de estos servidores. Ahora, en un momento,
+aprederemos a saber si está instalado en nuestra máquina. Si tenemos un
+Windows 2000, muy probablemente ya esté instalado. Si no lo estuviera, deberíamos agregarlo desde el menú de
+agregar programas.
+
+Si no está instalado en Windows NT 4, podemos agregarlo corriendo el NT4 Option Pack que puede bajarse de:
+
+.ax
+http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp
+http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/default.asp
+
+Si no está instalado en Windows 95/98, el NT4 Option Pack también lo puede instalar en esos sistemas operativos:
+en este caso instalará el Personal Web Server. También puede buscarlo en el CD de instalación de su Windows 98.
+
+Para saber si está instalado, lo más simple es abrir el Explorador de Internet de Microsoft, u otro navegador, y
+pedir la dirección URL:
+
+.ax
+http://localhost/
+http://localhost/
+
+Si aparece una página web en pantalla, es que nuestro servidor respondió y está funcionando. El nombre "localhost" se usa para referenciar
+a nuestra máquina.
+
+Si no tenemos un servidor de web, podemos instalarlo, o si nos es imposible hacer esto, podemos usar otro servidor de web
+en otra máquina. En este caso, deberíamos poder tener acceso desde nuestra máquina al sistema de archivos de la máquina
+servidora.
+
+Por otro lado, para escribir código ASP, necesita alguna herramienta: la más simple es
+el venerable Notepad o Block de Notas. Veremos que una página ASP no es más que un archivo
+de texto que reside en el servidor. Microsoft ofrece dos herramientas que soportan escribir
+código ASP: el FrontPage, y el Visual Interdev. Ninguno de los dos es necesario en el curso,
+pero puede usarlos.
+
+Con esas dos herramientas: un servidor web, y un editor de texto, estamos preparados para
+crear nuestra primera página ASP.

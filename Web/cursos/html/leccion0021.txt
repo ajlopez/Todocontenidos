@@ -1,0 +1,45 @@
+.h
+Utilizando enlaces
+
+Cuando tenemos que apuntar a un documento que está en el mismo directorio que el actual, basta con poner el nombre:
+
+.html
+<a href="miotrodocumento.html">
+Otro documento
+</a>
+.
+
+Cuando el documento está en otro directorio, podemos poner la ruta relativa o absoluta, para ubicarlo:
+
+.html
+<a href="subdirectorio/otrodocumento.html">
+Otro documento
+</a>
+<a href="/directorio/otrodocumento.html">
+Documento absoluto
+</a>
+.
+
+En este último caso, al poner {{/}} delante de la dirección, estamos partiendo del directorio raíz de nuestro sitio.
+
+Hemos visto que cuando tenemos que hacer referencia a un recurso en otro servidor, ponemos la URL completa:
+
+.html
+<a href="http://www.w3.org/">
+El consorcio www
+</a>
+.
+
+El usuario, al entrar en este enlace, es dirigido a otro sitio. Si no queremos que abandone nuestro sitio,
+podemos agregar el atributo {{target}} a nuestra marca {{<a>}}:
+
+.html
+<a href="http://www.w3.org/" target="_blank">
+El consorcio www
+</a>
+.
+
+Al especificar {{target="_blank"}} le indicamos al navegador, que este enlace se abrirá en una nueva ventana, no en
+la actual. De esta forma, el usuario no abandona nuestro sitio, sino que le aparece una nueva instancia del
+navegador.
+

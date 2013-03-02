@@ -1,0 +1,125 @@
+.h
+Analizando el programa
+
+Analicemos este primer programa nuestro.
+
+.code
+#include <stdio.h>
+
+int main()
+{
+	puts("Hola, mundo");
+	return 0;
+}
+.
+
+Primer observación: en lenguaje C, es importante la distinción entre minúsculas y mayúsculas.
+No es lo mismo escribir "puts" que "Puts" o "PUTS".
+
+Luego, cuando codifiquemos algún comando, éste no puede estar en cualquier lugar, sino que
+debe estar dentro de una rutina o función. En nuestro primer ejemplo, esa función se llama
+"main", y abarca desde { (llave abre) hasta } (llave cierra).
+
+La función que comienza con:
+
+.code
+int main()
+.
+
+es una función especial. La encontraremos en todos los programas en C, por lo menos
+en alguna parte. Es la función de entrada, la primera que se ejecuta en un programa
+C. Un programa puede tener muchas funciones, pero una es la que se ejecuta como primera.
+Por convención, es la llamada "main".
+
+La palabra "int" que la precede, indica que esta función devolverá, al evaluarse,
+un valor entero. "int" es uno de los tipos de valores que maneja C.
+
+Más abajo, aparece un comando en la línea:
+
+.code
+	puts("Hola, mundo");
+.
+
+Esta es una llamada a una función. El comando termina explícitamente en punto y coma.
+La función que se llama es "puts", y recibe un argumento, en este caso, una constante
+de texto, lo que se llama en la jerga, un "string". Vemos que los textos constantes se
+escriben en C entre dobles comillas.
+
+Pero, dónde está esta rutina? Es parte de la llamada librería de C. Cuando invocamos
+al compilador, no solamente compiló nuestro código, sino que además, para generar el
+ejecutable, le adosó rutinas y funciones adicionales, que provienen de la librería
+estandard de C. El lenguaje C está normalizado, y todo compilador o entorno, debe
+proveer una serie de funciones y rutinas que componen la librería estandard de C.
+La rutina "puts" es una de esas rutinas de la librería.
+
+Como ya está en la librería, no tuvimos que escribir esta rutina. Gran parte del
+aprendizaje de C se dedica al estudio de estas funciones de librería. Podemos
+agregar nuestras propias funciones a un programa, o agregar funciones de otras
+librerías, además de la de C normal. Hay multitud de estas librerías adicionales,
+comerciales o no, que permiten extender a C en cualquier forma. Hay librerías
+para acceder a bases de datos, o para manejar gráficos, o comunicaciones entre
+computadores. En ese sentido, el lenguaje C es totalmente extensible.
+
+El comando:
+
+.code
+	return 0;
+.
+
+termina la ejecución de la función, retornando (de ahí el verbo "return") el
+valor 0 (cero).
+
+Esta última línea no es necesaria, pero permite espeficar un valor de retorno de
+la función. Nuestro "main" estaba precedido de "int", que indica que devuelve
+un valor entero. Entonces, es nuestra responsabilidad devolver ese valor. El
+verbo "return" no necesariamente tiene que estar al final. Puede estar en alguna
+instrucción en el medio de la función. En ese caso, al ejecutarse, se suspende
+la función y devuelve el valor.
+
+Nuestra función "main" nunca es llamada por nosotros. No vamos a encontrar en
+nuestro programa una llamada a la función "main", como sí lo hay para la función
+"puts". Esto es porque esta función "main" es nuestro punto de entrada. El que
+realmente la llama, es el entorno del lenguaje C, al ser invocado desde el
+sistema operativo.
+
+Nos salteamos una línea, para explicarla al final de esta lección:
+
+.code
+#include <stdio.h>
+.
+
+Esta es una línea especial. No pertenece en realidad al lenguaje C propiamente
+dicho, sino a lo que se ha dado en llamar "preprocesador". Las líneas que comienzan
+con un # (numeral), indican una instrucción para el preprocesador. Este es un
+programa que se invoca antes que el proceso de compilación, y se encarga de
+preparar el texto, y procesar sus instrucciones #.
+
+El "#include" le indica al preprocesador: "incluir en este momento, el contenido
+del archivo stdio.h, como si el programador lo hubiera cortado y pegado en este
+lugar del programa fuente".
+
+El archivo stdio.h es un clásico de la programación. Toda implementación de compilador
+debe proveer este archivo. Estos archivos .h tienen esa extensión, por ser "headers",
+archivos que de alguna forma se colocan al comienzo de los programas fuentes, porque
+declaran distintas rutinas, funciones y constantes, que necesitamos para nuestras
+aplicaciones.
+
+En el caso de stdio.h, al ponerlo entre < y >, le estamos indicando al preprocesador
+que vaya a buscar este archivo, a los directorios naturales de "includes". Por ejemplo
+en Linux, ese directorio es /usr/includes. Si está operando en Linux o UNIX, pruebe:
+
+.code
+ls -l /usr/includes
+.
+
+y verá la cantidad de archivos de include que tiene.
+
+En Windows, y Visual C, probablemente lo tenga en el directorio:
+
+.code
+c:\Archivos de Programa\Microsoft Visual Studio\vc98\includes
+.
+
+Este archivo stdio.h en particular, define las rutinas de "standard input output", las 
+de entrada y salida normales, entre ellas nuestro "puts".
+

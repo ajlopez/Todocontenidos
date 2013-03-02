@@ -1,0 +1,23 @@
+.h
+Introducción al Visual Basic
+
+Para iniciarnos en la programación, hemos elegido a Visual Basic como lenguaje. Es el
+lenguaje más usado para el desarrollo (hace unos años superó en líneas de código escritas
+a otros como COBOL). También es un lenguaje que expone varias de las características
+comunes a otros. Este no es un curso de Visual Basic (que abarcaría más temas
+que los tratados), pero nos permitirá conocer cómo es programar en ese entorno.
+
+Qué es Visual Basic? Por una lado, la palabra "Basic" remite al lenguaje BASIC (Begginers All-Purpose
+Symbolic Instruction Code), el lenguaje desarrollado en los sesenta, en la Universidad de
+Darthmouth. Ese lenguaje, muy sencillo, se desarrolló para ayudar en el aprendizaje de la
+programación. El adjetivo "Visual", por otra parte, indica que ya no es un simple lenguaje
+de texto, sino que tiene integrados una serie de elementos, como formularios y controles, para
+el desarrollo gráfico Windows. Al ser un derivado del original BASIC, el Visual Basic permite,
+conociendo unas pocas instrucciones, desarrollar una aplicación, notablemente en Windows.
+
+Visual Basic, como producto de Microsoft, va más allá. No solamente existe en el entorno de
+programación que veremos, sino también en otros productos, como todo el Office. Podemos usar
+Visual Basic (con sus variantes), para programar en Access, en Excel, incluso ha sido licenciado
+para el uso en programas no Microsoft. Incluso hay una tecnología, Active Server Pages (ASP) que
+permite generar páginas dinámicas usando Visual Basic como lenguaje de programación.
+

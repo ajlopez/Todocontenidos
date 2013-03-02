@@ -1,0 +1,36 @@
+.h
+Documentos HTML
+
+Escribimos "documento HTML", en vez de "archivo HTML", porque el documento que nosotros podemos
+estar examinando en nuestro navegador, puede o no ser un archivo en el servidor que visitamos.
+Puede ser un documento generado dinámicamente en este momento, o realmente venir de un archivo
+HTML estático.
+
+HTML ha sido diseñado primariamente como lenguaje para crear páginas web. Algunos podrán
+aducir que otros formatos permiten mayor control sobre el documento a crear. Pero ninguno de
+los demás formatos, ha llegado ni remotamente a tener la popularidad y la ubicuidad del HTML.
+
+Para que un documento HTML sea visto por el resto de Internet (o en una "intranet", una red
+interna de una empresa), debe estar alojado en un servidor web. Por suerte, para desarrollar
+nuestras páginas, no necesitaremos eso. Sólo necesitaremos un servidor web, cuando querramos
+que nuestras creaciones sean vistas por el resto del mundo. Veremos más adelante, lugares
+donde podemos alojar nuestras páginas web, muchos de ellos gratuitos y con instrucciones en
+español.
+
+Ahora, qué necesitamos para crear un documento HTML? Pues es simple: podemos usar un simple
+editor de texto. El venerable Block de Notas o NotePad, o el aún más venerable vi (en los ambientes
+Unix, Linux), servirán para que creemos nuestras páginas HTML. Luego, en caso de necesidad, podemos
+apelar a excelentes programas de diseño, como el FrontPage de Microsoft, o el DreamWeaver de
+Macromedia. El curso, sin embargo, se decanta por el estudio de HTML en su formato puro, que
+será de gran utilidad, use o no los programas avanzados de diseño. El conocer HTML en su
+forma básica, ayudará al novato y al avezado, a entender realmente qué es cada elemento de la
+página web que tenga entre manos.
+
+Y finalmente, qué necesitamos para ver un documento HTML? Algo que seguramente Ud. ya tiene:
+un navegador o "browser", un programa cliente web, el que ahora está usando para ver esta
+página.
+
+Una vez creada nuestra página HTML, podremos abrirla y verla en nuestro "browser", sin necesitar
+otra herramienta.
+
+Bien, basta de tanta cháchara, y vayamos por nuestras primeras páginas HTML.

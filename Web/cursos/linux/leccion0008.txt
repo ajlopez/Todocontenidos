@@ -1,0 +1,71 @@
+.h
+Ingresando al sistema
+
+Al comienzo, en nuestra consola de texto, nos aparecerá una serie de líneas, como (puede
+variar de sistema a sistema):
+
+.code
+RedHat Linux release 6.2
+Kernel 2.2.14C11 on an i586
+login:
+.
+
+En nuestro caso, las dos primeras líneas indican la distribución RedHat y su versión, y la
+versión del "kernel" o núcleo del sistema. Luego, "login:" nos está pidiendo que ingresemos
+un código de usuario.
+
+Ya estamos listos para comenzar nuestra primera sesión en Linux. Todas las sesiones comienzan
+igual: debemos proceder con el registro de entrada, el llamado "logging in", donde el usuario
+se identifica con su código, nombre de cuenta, y su contraseña, para comprobar que es quien
+dice ser.
+
+Al terminar de instalar Linux, el sistema estará sin usuarios, a excepción de un usuario, el ya
+mencionado superusuario, cuya cuenta es root. Ingresamos "root" como código, y al pedir
+la contraseña, la ingresamos, o si al momento de instalación no quedo definida, seguramente
+habra quedado en blanco, y nos bastará con ingresar "return", la tecla de ingreso. Tras esto,
+estaremos dentro del sistema:
+
+.code
+login: root
+Password:
+Last login: Fri Jan  4 04:29:29 from alumno.net
+*****************************************************************
+*                                                               *
+* Type 'pine' or 'mail' to read your email                      *
+*                                                               *
+* Type 'cd' to return to your home directory                    *
+*                                                               *
+* Type 'exit' to end this session                               *
+*                                                               *
+*****************************************************************
+*****************************************************************
+*                                                               *
+* NOTICE TO ROOT USER: Changes to system files may affect       *
+* your warranty. Please consult your warranty card for details. *
+*                                                               *
+*****************************************************************
+[root /root]# 
+.
+
+Ahora estamos listos para trabajar con Linux. Estamos conversando, no con el núcleo,
+sino con un programa en particular, denominado "shell", que es el procesador de
+comandos del sistema. Este programa nos pone un "prompt", una leyenda como:
+
+.code
+[root /root]# 
+.
+
+pidiendo que ingresemos un comando. En este caso, en el "prompt" aparece el nombre de la
+cuenta, "root", y el directorio actual. Todavía no tratamos el tema de directorios y
+archivos, en breve lo haremos. El "prompt" termina en el ejemplo de arriba, en el caracter #
+(numeral), que indica que no es un "prompt" cualquiera, sino el de la sesión de superusuario.
+Muestra un cursor parpandeando, que indica que está esperando un comando de nuestra parte. La
+apariencia de esta salida, depende del sistema, distribución y hasta de la configuración
+que haya realizado el usuario.
+
+Todas las sesiones comienzan igual: primero se teclea el nombre de la cuenta, y luego, la
+contraseña correspondiente. Habrá notado que lo que digita como contraseña no se muestra
+en pantalla, eso es para asegurar que nadie pueda ver lo que está ingresando. Si alguno
+de estos datos está mal, el sistema generará algún mensaje, como "Login incorrect", y los
+pedirá nuevamente.
+

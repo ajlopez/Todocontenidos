@@ -1,0 +1,74 @@
+.h
+Lenguajes de Programación
+
+Las primeras computadoras que podemos llamar así, aparecieron a fines de la segunda guerra
+mudial. Como habrá leído, ocupaban un piso completo, y tenían elementos eléctricos, como relés,
+que consumían una gran cantidad de energía. Comparadas con los modelos actuales, eran terriblemente
+primitivas.
+
+Sin embargo, tanto esas computadores como las actuales, comparten una arquitectura: tienen un
+programa o varios, que las hacen funcionar. Ese programa debe tener las instrucciones para que
+que el computador funcione. En su PC, Ud. está ahora ejecutando varios programas: el sistema
+operativo y sus distintas partes, el navegador de Internet, un programa de correo, y algún
+utilitario como el Office. Todos esos programas han sido escritos en algún lenguaje de 
+programación. Hay centenares de lenguajes de programación, muchos ya obsoletos, pero los
+más conocidos son Visual Basic, C, C++, Java, Delphi, COBOL, dBase, Clipper, Fox, y otros más de culto, como Smalltalk,
+Perl, y hasta desaparecidos como APL y Prolog.
+
+Sin embargo, los programas que la computadora ejecuta, no están escritos en Visual Basic, sino
+que están escritos en el lenguaje binario que entiende el procesador de esa computadora. Si Ud.
+está trabajando ahora en una PC, lo más probable es que sus programas estén ejecutándose sobre
+un procesador Intel o de una marca clon.
+
+El lenguaje que entiende, por ejemplo, un Pentium, es el denominado lenguaje de máquina. Son código
+bastante crípticos, sólo digeribles por el procesador. Como programar directamente en ese lenguaje
+es tarea insalubre, se han inventado los lenguajes de programación.
+
+Los lenguajes de programación usan (o tratan de usar) una sintaxis entendible por un ser humano, en
+general, basado en texto. Luego, ese texto que el programador ingresa en algún archivo o entorno de
+desarrollo, es convertido de alguna forma en lenguaje de máquina. El programa que efectúa esa
+transformación, se llama de forma genérica, "compilador".
+
+También puede suceder que en vez de transformar el texto de un programa escrito en un lenguaje, a
+código de máquina, sea "interpretado" paso a paso por un proceso denominado "intérprete", que
+se encarga de obedecer y ejecutar los compandos que componen el programa.
+
+Mientras las instrucciones de un lenguaje de programación, no están orientadas a un procesador
+en particular, hay una clase de lenguajes, los lenguajes de ensamblador, que se basan en
+instrucciones para un procesador. Son más cercanos al lenguaje de máquina del procesador
+destino. Así, si bien un programa escrito en COBOL es relativamente independiente del procesador
+donde se va a ejecutar, un programa escrito en lenguaje ensamblador de un procesador Motorola,
+solo va a ser soportado en ese tipo de procesadores. El proceso que se encarga de traducir
+un programa escrito en lenguaje ensamblador, a lenguaje de máquina, se llama, justamente,
+"ensamblador".
+
+Así, tenemos:
+
+- Lenguaje de máquina: instrucciones binarias directamente a ser ejecutadas por el procesador
+.br
+- Lenguaje de programación: instrucciones escritas en un lenguaje de mayor nivel, más
+independiente, que escribe un programador.
+.br
+- Compiladores: prograamas que lee el código de programación en un lenguaje, y lo transforma
+en un código de lenguaje de máquina.
+.br
+- Intérpretes: programas especiales que toman el código de programación, y lo va interpretando,
+ejecutando paso a paso.
+.br
+- Ensambladores: programas que se encargan de analizar y transforma a código de máquina, los
+programas escritos en lenguaje ensamblador.
+.br
+
+En el curso usaremos como lenguaje Visual Basic, y utilizaremos un entorno de desarrollo, el
+llamado entorno Visual Basic, provisto por Microsoft. Es importante que cuente con ese entorno,
+para entonces aprovechar el curso.
+
+El Visual Basic tanto interpreta como compila nuestro programa. Esto posibilita que mientras
+estamos escribiendo el programa, el entorno se encarga de probarlo interpretándolo, y luego, cuando
+lo creamos conveniente, recién en ese momento compilarlo y crear un archivo ejecutable.
+
+El texto del programa en lenguaje de programación, suele denominarse el "código fuente". Se
+dice "fuente" por ser el "origen" del programa. Tenemos que aprender en el curos, qué cosas
+podemos incluir en nuestro código fuente: variables, funciones, rutinas, comandos, y 
+observar qué produce como resultado nuestro programa.
+

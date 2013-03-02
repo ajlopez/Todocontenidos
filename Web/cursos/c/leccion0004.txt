@@ -1,0 +1,24 @@
+.h
+Los lenguajes C y C++
+
+Qué tipos de programa podemos producir con C? Prácticamente todos. El lenguaje C, con más de
+30 años de existencia, es uno de los lenguajes más versátiles. Ha nacido prácticamente
+con Unix: las primeras implementaciones de este sistema operativo, se han escrito en C. Pero
+luego ha sido portado a otras plataformas, desde micro computadores hasta "mainframes". Todo
+Unix, Linux, y la base de Windows, ha sido programada en C. Hasta los programas de Internet,
+nacidos principalmente en ambientes Unix, han sido programados en C. Los utilitarios más
+conocidos, como el Office de Microsoft, han sido generados usando este lenguaje, y su primo,
+el lenguaje C++.
+
+Como uno de los primeros lenguajes de programación de sistemas, le brinda al programador
+una libertad tremenda. Esto hace al lenguaje poderoso, pero también peligroso. El programador
+puede con C, acceder a recursos del sistema, y en caso de mala programación, producir
+aplicaciones con numerosos errores.
+
+Programando en C, el programador es el que está a cargo.
+
+Con el tiempo, la tecnología de objetos llegó al lenguaje, y se creó el lenguaje C++, que
+puede resumirse en su nombre original: "C con clases". Se puede seguir programando en C,
+con la misma sintaxis, pero con agregados, como el concepto de clases y objetos. Al finalizar
+de estudiar lenguaje C, tendremos que estudiar este lenguaje derivado.
+

@@ -1,0 +1,21 @@
+.h
+Ejercicios
+
+- Cree un directorio {{prueba}} dentro de su directorio hogar
+
+- Copie archivos de /etc a el subdirectorio {{prueba}} de su directorio hogar
+
+- Cree subdirectorios dentro de su directorio {{prueba}}
+
+- Copie el directorio {{prueba}} a otro directorio suyo, digamos {{prueba2}}
+
+- Cambie el nombre de un archivo de su directorio {{prueba}}
+
+- Cambie el nombre del directorio {{prueba2}} a {{pruebados}}
+
+- Remueva completamente el directorio {{pruebados}}
+
+- Estudie la página del manual de comando {{ls}}. Qué opciones nuevas ve?
+
+- Estudie la página del manual de cada comando que hemos estudiado
+

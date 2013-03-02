@@ -1,0 +1,90 @@
+.h
+La consola
+
+Llamaremos consola al conjunto formado por el teclado y el monitor, que están
+conectados en forma directa al computador, donde está instalado Linux.
+
+En una consola se puede mantener una sesión de trabajo. En el principio, se
+podía mantener una sola. En UNIX, el sistema multiusuario, para que varios
+usuarios se pudieran conectar a la máquina, se usaban terminales, conjuntos
+adicionales de monitor y teclado, que se conectaban a la computadora, usando
+un cable local y un puerto serie, o una conexión via modem. Si bien esto sigue siendo posible
+en Linux, lo que existe es el concepto de consola virtual: desde la consola
+podemos tener varias sesiones de trabajo.
+
+.h2
+Consolas virtuales
+
+Linux está preparado para soportar varias sesiones de trabajo, simultáneamente
+activas, sin necesidad de tener conectados distintos terminales. Estas sesiones
+se llevan a cabo en consolas emuladas denominadas consolas virtuales, y comparten
+el mismo teclado y monitor. Una sesión en una consola virtual, no detiene
+a las demás, que pueden estar realizando largas tareas que no necesitan
+interactuar con usuario.
+
+Tener varias consolas virtuales, puede compararse a tener diferentes computadoras
+conectadas compartiendo los mismos recursos, pero con la facilidad de cambiara
+de una consola a otra, con una combinación de teclas. Hasta un programa de
+una sesión puede usar varias consolas virtuales para su salida, aunque esto
+es menos común.
+
+Hasta ahora, hemos trabajado en la consola virtual número uno, pero en cualquier
+momento podemos pasar a otra. En las instalaciones normales de Linux hay
+seis consolas virtuales. Probemos de cambiar de una a otra, pulsando la
+combinación de teclas
+.b
+<Alt>
+más una tecla de función. Por ejemplo para ir a la consola virtual número
+dos, presionamos
+.b
+<Alt-F2>
+Se puede llegar a tener 63 consolas virtuales aunque por defecto, sólo están
+disponibles unas cuantas para iniciar sesiones.
+
+En general, la combinación
+.b
+<Alt-F7>
+nos lleva a la consola gráfica, si es que tenemos instalada las facilidades de
+X-Windows.
+
+Con la tecla {{<Alt>}} únicamente podemos cambiar de la consola uno a la
+doce. Si queremos acceder a consolas virtuales de orden superior se utiliza
+otra tecla para realizar la combinación, por ejemplo, {{<AltGr>}}. Existen
+otras teclas que permiten pasar de una consola activa a otra, como las
+teclas {{<Alt-Flecha izq.>}} y {{<Alt-Flecha der.>}}. El cambio es cíclico.
+
+.h2
+Ejemplo de uso
+
+Un programa que usa varias consolas virtuales a la vez, es la instalación
+de la distribución Red Hat Linux, que además de emitir por la consola número
+uno, utiliza las consolas virtuales para dar información más detallada.
+
+Así, la consola virtual uno muestra el diálogo con el programa de instalación.
+La número dos, tiene listo un {{prompt}} listo para ejecutar un comando. En
+la número tres, muestra mensajes de instalación. A la número cuatro, la
+aprovecha para mensajes de información del núcleo. La número cinco, se
+usa para mensajes de los programas auxiliares.
+
+Así como un programa puede utilizar más de una consola, un usuario también.
+Por ejemplo, un programador puede usar una consola para ingresar el código
+fuente de un programa, mientras que en otra consola puede compilarlo, y
+en una tercera probarlo.
+
+El uso de múltiples consolas es un ejemplo de la potencia de Linux.
+
+El comando {{w}} muestra información sobre los usuarios actuales del sistema
+y sus procesos.
+
+.code
+[root /root]# w -sf
+USER     TTY         IDLE   WHAT
+root     tty1        0.00s  w -sf
+alumno   tty2        0.00s  make install
+root     tty3        0.00s  man signal
+.
+
+En la primer columna aparece el usuario, en la segunda qué terminal está
+usando, y en la {{WHAT}} se informa el proceso que está ejecutando. Pruebe
+{{w}} sin parámetros: el parámetro usado {{-s}} indica el formato corto.
+

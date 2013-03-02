@@ -1,0 +1,40 @@
+.h
+Historia de PHP
+
+Este texto se adapta del manual en línea de PHP, sobre una versión de 1999. Ver:
+
+.ax
+http://www.php.net/manual/es/intro-history.php
+http://www.php.net/manual/es/intro-history.php
+
+PHP fue concebido en otono de 1994 por Rasmus Lerdorf. Las primeras versiones no distribuidas al público
+fueron usadas en un sus páginas web para mantener un control sobre quien consultaba su currículum.
+La primera versión disponible para el público a principios de 1995 fue conocida como "Herramientas para
+paginas web personales" (Personal Home Page Tools). Consistian en un analizador sintáctico muy simple que 
+solo entendia unas cuantas macros y una serie de utilidades comunes en las páginas web de entonces,
+un libro de visitas, un contador y otras pequenas cosas. El analizador sintactico fue reescrito a
+mediados de 1995 y fue nombrado PHP/FI version 2. FI viene de otro programa que Rasmus habia escrito
+y que procesaba los datos de formularios. Asi que combinó las "Herramientas para paginas web personales",
+el "intérprete de formularios", anadio soporte para mSQL y PHP/FI vio la luz. PHP/FI crecio a gran velocidad
+ y la gente empezó a contribuir en el código. 
+
+Es difícil dar estadísticas exactas, pero se estima que a finales de 1996 PHP/FI se estaba usando al 
+menos en 15.000 páginas web alrededor del mundo. A mediados de 1997 este número habia crecido a mas de 50.000.
+A mediados de 1997 el desarrollo del proyecto sufrio un profundo cambio, dejó de ser un proyecto personal de Rasmus, 
+al cual habian ayudado un grupo de usuarios y se convirtio en un proyecto de grupo mucho más organizado. 
+El analizador sintáctico se reescribio desde el principio por Zeev Suraski y Andi Gutmans y este nuevo analizador
+establecio las bases para PHP versión 3. Gran cantidad de codigo de PHP/FI fue portado a PHP3 y otra gran cantidad 
+fue escrito completamente de nuevo. 
+
+Hacia finales de 1999, tanto PHP/FI como PHP3 se distribuyen en un gran número de productos comerciales 
+tales como el servidor web "C2's StrongHold" y Redhat Linux. Una estimación conservativa basada en estadísticas 
+de NetCraft (ver también Estudio de NetCraft sobre servidores web), es que más de 1.000.000 de servidores 
+alrededor del mundo usan PHP. Para hacernos una idea, este número es mayor que el número de servidores que 
+utilizan el "Netscape's Enterprise server" en Internet. 
+
+El trabajo de desarrollo de la próxima generación de PHP siguió en marcha y ahora contamos con la versión 4. 
+Esta versión utiliza el potente motor de scripts Zend para proporcionar altas prestaciones, así como soporta 
+otros servidores web, además de apache, que corren PHP como módulo nativo. Es la que estudiaremos en el curso.
+
+En los últimos años, el uso de PHP se ha disparado, llegando a 5 millones de sitios.
+

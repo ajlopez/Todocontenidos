@@ -1,0 +1,71 @@
+.h
+Imágenes
+
+En los documentos HTML se utilizan imágenes, que pueden estar en su propio sitio o página, o provenir de otros sitios.
+
+Como estas imágenes deben aparecer en cualquier navegador gráfico, se usan formatos que son soportados en varias
+plataformas (Windows, Linux, Mac). La mayoría de los navegadores, soportan:
+
+- Imágenes {{Graphic Interchange Format}} (el formato {{GIF}})
+
+- El tipo de imágenes {{Joint Photographic Experts Group}} (el format {{JPEG}})
+
+- Algunos otros formatos como el {{XBM}} y el {{XPM}} nacidos en Unix
+
+Los demás formatos gráficos pueden ser soportados por el navegador (por ejemplo, el formato {{BMP}} es soportado en
+las implementaciones Windows), o no, en cuyo caso podrán ser visualizados con alguna aplicación ayudante o {{plug-in}}.
+
+Para insertar una imágen, se recurre al "tag" {{img}}:
+
+.html
+<img src="images/paisaje003.jpg">
+.
+
+En el atributo {{src}} se especifica la URL de la imagen que queremos mostrar, que puede ser relativa a nuestro
+documento. En el ejemplo de arriba, indica una imagen {{JPG}} que está en nuestro subdirectorio {{images}}, dentro
+del directorio de nuestra página, que podrá verse como:
+
+.text
+<center>
+<img src="images/paisaje003.jpg">
+</center>
+.
+
+Otro atributo que puede usarse es el {{alt}}. En él se coloca un texto descriptivo de la imagen. Este texto puede
+aparecer cuando el navegador está configurado a no bajar imágenes, o cuando el usuario pasa el ratón por encima
+de la imagen:
+
+.html
+<img src="images/paisaje003.jpg" alt="Paisaje montañoso">
+.
+
+Normalmente, el navegador, al bajar la imagen, no conoce su tamaño, lo cual puede provocar retrasos en el armado de la
+página: no sabe qué lugar reservarle. Se acostumbra entonces usar los atributos {{width}} (ancho) y {{height}} (alto)
+para darle un tamaño ya determinado:
+
+.html
+<img src="images/paisaje004.jpg" alt="Paisaje desierto" width="500" height="321">
+.
+
+dando:
+
+.text
+<center>
+<img src="images/paisaje004.jpg" alt="Paisaje desierto" width="500" height="321">
+</center>
+.
+
+Hasta podemos poner un tamaño menor o mayor, consiguiendo que la imagen aparezca transformada:
+
+.html
+<img src="images/paisaje004.jpg" alt="Paisaje desierto" width="250" height="160">
+.
+
+con el efecto:
+
+.text
+<center>
+<img src="images/paisaje004.jpg" alt="Paisaje desierto" width="250" height="160">
+</center>
+.
+

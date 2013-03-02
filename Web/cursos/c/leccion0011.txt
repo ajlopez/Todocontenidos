@@ -1,0 +1,12 @@
+.h
+Turbo C
+
+El clásico compilador C de Borland. Actualmente es gratuito, y se puede descargar
+de:
+
+.ax
+http://community.borland.com/museum/borland/software/TC201.zip
+http://community.borland.com/museum/borland/software/TC201.zip
+
+Nos servirá para las lecciones del curso que solamente trante de lenguaje C (y no C++).
+

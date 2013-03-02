@@ -1,0 +1,14 @@
+.h
+Introducción
+
+Bienvenido al curso de HTML: HyperText Markup Language, el lenguaje de armado de páginas web, que ha hecho posible
+la explosión de la WWW, e Internet en general. Es lo que realmente ha popularizado la red de redes, llegando al
+público en general.
+
+Como sabrá, HTML es la base de todas las páginas de todos los sitios del planeta. Es algo que durante décadas se
+había buscado: la diseminación de información, la búsqueda de la misma, en formatos accesibles a todos, independiente
+del lugar o la plataforma de software o hardware que se use.
+
+En el curso vamos a abarcar desde los primeros pasos en HTML, tags, párrafos, títulos, tipos de letra, color,
+imágenes, formularios, marcos, y varios temas más. Todos aprenderemos, alumnos y profesores. Como otros cursos, este
+es un curso gratuito, que espero que podamos aprovechar entre todos.

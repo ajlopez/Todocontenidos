@@ -1,0 +1,145 @@
+.h
+Alcance de las variables
+
+Ya hemos utilizado unas pocas variables. Sabemos que las variables se declaran. Sin embargo, no siempre es
+necesario declararlas para usarlas.
+
+En un proyecto nuevo, en el evento click de un botón, funciona perfectamente el código:
+
+.code
+Private Sub Command1_Click()
+    k = 1	' usamos la variable sin declararla
+    
+    Print k  ' la mostramos
+    
+    k = k + 1  ' la incrementamos
+    
+    Print k   ' la mostramos en el formulario
+End Sub
+.
+
+Sin embargo, cualquier profesional de la programación le va a recomendar que declare las variables: así
+conocemos qué variables usar, y de qué tipo. En Visual Basic, se puede forzar la declaración de las variables
+si agregamos al comienzo del formulario:
+
+.code
+Option Explicit
+
+Private Sub Command1_Click()
+    k = 1	' usamos la variable sin declararla
+    
+    Print k  ' la mostramos
+    
+    k = k + 1  ' la incrementamos
+    
+    Print k   ' la mostramos en el formulario
+End Sub
+.
+
+la sentencia {{Option Explicit}}. Esto le indica a Visual Basic, que todas las variables deben obligatoriamente
+declararse. Si ahora queremos ejecutar nuestro proyecto, aparecerá un error de variable no definida.
+
+Al poner {{Option Explicit}} evitamos el error tan común de usar una variable, digamos {{k}} y luego equivocarnos
+en algún comando y poner otro nombre, digamos {{q}}, por error. Con el {{Option Explicit}} el uso de una
+variable no definida, salta al tratar de ejecutar el proyecto.
+
+Qué formas hay de declarar las variables? Hay varios métodos. Hagamos que nuestro proyecto con un botón tenga el código:
+
+.code
+Option Explicit
+
+Dim edad as Integer
+Public estatura as Integer
+
+Private Sub Command1_Click()
+    Dim k as Integer
+    Static contador as Integer
+
+    contador = contador + 1
+    k = k + 1
+
+    Print "contador es " & contador
+    Print "k es " & k
+End Sub
+.
+
+Como expresión nueva surge:
+
+.code
+"contador es " & contador
+.
+
+Es nuestro primer texto constante {{"contador es"}} y se escribe entre dobles comillas. Y es nuestro primer operador
+{{&}} que consigue que concatenar la expresión que está a su izquierda con la que está a su derecha. Las dos partes
+aparecen ahora como un sólo texto, por ejemplo, {{"contador es 1"}}.
+
+Aparece un concepto nuevo: podemos declarar una variable fuera de una rutina. Las variables {{edad}} y {{estatura}}
+las declaramos en el formulario. Entonces, estas variables nacen con el formulario, y mueren con el formulario.
+
+Vemos que esas dos variables se declaran de distinta forma. En una usamos el conocido {{Dim}}. Es la forma natural
+de definir una variable. La variable {{edad}} será visible, accesible, por todas las rutinas del formulario.
+
+Con {{Public}}, la variable {{estatura}} podrá ser usada por todas las rutinas del formulario, como {{edad}}. Pero
+hay algo más. Una variable declarada con {{Public}} en un formulario (o en un módulo, concepto que no hemos usado),
+es accesible desde todos los formularios y módulos del proyecto. Así, {{edad}} se puede usar en todo el formulario,
+pero {{estatura}} se puede usar en todo el programa.
+
+Cuando una variable se declara dentro de una rutina o función, con {{Dim}}, estamos declarando que la variable
+nace y muere con la llamada a esa rutina o función. En el ejemplo de arriba, es el caso de {{k}}. Esta variable
+nace cada vez que llamamos a {{Command1_Click}}, y nace con el valor 0. Luego la incrementamos y mostramos
+su valor, que será {{1}}. Al finalizar la rutina, esta variable muere. Al hacer de nuevo click sobre el botón,
+el proceso se repite, con una nueva variable {{k}}.
+
+Distinto es el caso de usar {{Static}}, como en la variable {{contador}}. Esta variable, como está declarada
+dentro de una rutina, sólo podrá ser usada desde esta rutina. En cualquier otro lado del programa, la
+variable {{contador}} es invisible. Pero luego de ser usuda en la rutina, permanece activa con su último valor.
+
+Entonces, al ejecutar el programa, y presionar varias veces el botón, aparecerá como salida:
+
+.code
+contador es 1
+k es 1
+contador es 2
+k es 1
+contador es 3
+k es 1
+.
+
+y así. La diferencia de comportamiento entre las dos variables, la produce el uso de {{Static}} en {{contador}}.
+
+Al principio, {{contador}} no tiene valor. Al participar de una operación aritmética como:
+
+.code
+contador = contador + 1
+.
+
+se interpreta su valor inicial como {{0}} (cero), y de ahí en más, perdura de llamada a llamada a la rutina.
+
+Todo esto se llama el {{alcance}} de una variable: qué partes del código son conscientes de la existencia de
+una variable.
+
+Resumiendo lo visto en el ejemplo:
+
+- {{edad}} tiene alcance todo el formulario
+.br
+- {{estatura}} tiene como alcance todo el programa
+.br
+- {{k}} tiene como alcance sólo una llamada a la rutina {{Command1_Click}}
+.br
+- {{contador}} tiene como alcance sólo esa rutina, pero perdura de llamada a llamada.
+
+Alternativamente a
+
+.code
+Dim edad as Integer
+.
+
+se podría haber escrito:
+
+.code
+Private edad as Integer
+.
+
+como indicando explícitamente que la variable {{edad}} es privada del formulario. Es el caso de la rutina
+{{Command1_Click}}.
+

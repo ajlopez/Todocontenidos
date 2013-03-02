@@ -1,0 +1,92 @@
+.h
+Valores enteros
+
+Un entero es un número del conjunto Z = { ...., -2, -1, 0, 1, 2, ... }
+
+Pueden ser especificados en base diez, en hexadecimal (base 16) o en octal (base 8).
+Pueden ser opcionalmente precedidos por los signos + o -.
+
+Para expresar un número en octal, hay que precederlo con un 0 (cero). En hexadecimal,
+tenemos que precederlos de 0x (cero equis). Ejemplos:
+
+.html
+<?
+$entero = 12; 		// ejemplo decimal
+$permisos = 0666;	// ejemplo octal
+$hexa = 0x0d;		// ejemplo hexadecimal
+?>
+.
+
+Si se especifica un número que se escapa del rango que maneja el tipo entero, el
+valor se convierte a "float", número real:
+
+.html
+<?
+$entero_grande =  2147483647;
+var_dump($entero_grande);
+// produce: int(2147483647)
+
+$entero_grande =  2147483648;
+var_dump($entero_grande);
+// produce: float(2147483648)
+
+$millon = 1000000;
+$entero_grande =  50000 * $millon;
+var_dump($entero_grande);
+// produce: float(50000000000)
+?>
+.
+
+En este ejemplo usamos una nueva función, var_dump, que muestra en la salida
+el tipo y contenido de una variable.
+
+En PHP, no hay división entera, así que:
+
+.code
+$pi = 355/113;
+.
+
+da un valor flotante.
+
+Para convertir de un valor a entero, hay que especificarlo explícitamente así:
+
+.code
+$entero = (int) "12";
+$entero2 = (integer) 7/4;
+.
+
+Vemos que un "string" se puede convertir a entero.
+
+Cuando un número real se convierte a entero, se trunca al valor más cercano a 0.
+
+Así:
+
+.code
+(int)  3.1419
+.
+
+produce
+
+.code
+3
+.
+
+mientras que:
+
+.code
+(int) -3.1419
+.
+
+produce
+
+.code
+-3
+.
+
+PHP permite el uso de enteros de precisión arbitraria, pero apelando a librerías.
+Consultar la librería GNU MP, en:
+
+.ax
+http://www.swox.com/gmp/
+http://www.swox.com/gmp/
+

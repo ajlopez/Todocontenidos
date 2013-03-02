@@ -1,0 +1,17 @@
+.h
+Introducción
+
+Bienvenidos al curso de Introducción a Linux. Si para Ud. Linux es nuevo, y quiere conocer
+más sobre este sistema operativo, en este curso lo ayudaremos a tomar los primeros pasos.
+
+Este curso se brinda en línea, y cada semana se entregan nuevas clases. Una vez publicada
+una clase podrá consultarla todas las veces que quiera. Puede practicarlas a su propio ritmo,
+y repasarlas cada vez que lo necesite.
+
+.h2
+Requisitos
+
+Se recomienda tener un sistema Linux ya instalado. Nuestras primeras lecciones ya presuponen
+que el sistema está instalado. Aunque se darán algunas lecciones de instalación, este punto
+es el más difícil de explicar a distancia.
+

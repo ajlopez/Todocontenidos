@@ -1,0 +1,36 @@
+.h
+Aplicando lo aprendido
+
+Conociendo algunas marcas o "tags" y la estructura básica de un documento HTML, podemos
+crear el archivo ejemplo.html con el contenido:
+
+.html
+<html>
+<head>
+<title>Ejemplo del curso de HTML</title>
+</head>
+<body>
+<h1>Ejemplo del curso de HTML</h1>
+<p>
+Este es un ejemplo generado en el curso de HTML. Es una página web, con 
+su estructura correspondiente. Tiene títulos de distintos niveles, y párrafos.
+</p>
+<h2>HTML es un documento SGML</h2>
+<p>
+Aunque no es necesario destacarlo, un documento HTML es en realidad una instancia
+de un documento SGML (Standard Generalized Markup Language), un lenguaje generador
+de documentos, inventado por los 70, en IBM
+</p>
+<h2>Tim Berners-Lee, el inventor del HTML</h2>
+<p>
+Todo lo que hemos visto hasta ahora, nació de la mente de Tim Berners-Lee, 
+cuando trabajaba a principios de los 90, en el CERN, el centro de investigación
+nuclear de la comunidad europea.
+</p>
+</body>
+</html>
+.
+
+Puede cortar y pegar este texto en su archivo, y probarlo desde su navegador. Tiene
+aplicado lo que aprendimos: la estructura de un documento, y los "tags" de encabezamientos
+y párrafos.

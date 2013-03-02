@@ -1,0 +1,39 @@
+.h
+El compilador DJPP
+
+DJGPP es un compilador para DOS C/C++ aunque también es válido para algunos otros lenguajes.
+El código que produce es de 32 bits y permite acceder de forma directa a toda la memoria, 
+no existe el límite de los 640Kb. 
+
+A pesar de ser para DOS también se puede usar bajo windows 95/98/2000, entornos Unix, 
+SO compatibles DOS y emuladores DOS. Los programas escritos con él pueden portarse 
+fácilmente a Unix. 
+
+Dado que es de libre distribución se puede copiar y usar líbremente, además incluye el código fuente.
+En realidad es una versión DOS del compilador GNU GCC (versión 2.95.2). 
+Se acompaña además de otras de las herramientas GNU. 
+
+Es un compilador de línea de comando pero incluye también entornos de desarrollo: Emacs y Rhide
+(Similar al Borlarnd C). También incluye Rsxntdj que permite crear aplicaciones Windows 
+directamente. 
+
+Este compilador está siendo desarrollado por personas a través de Internet, de forma similar al 
+sistema operativo GNU/Linux. No existe un servicio técnico pero existe una FAQ 
+(lista de preguntas frecuentes) (que conviene leerse) y una lista de correo (en inglés) 
+en la que se resuelven dudas (tanto a principiantes como a profesionales)
+y hay mucha gente dispuesta a ayudar. 
+
+Es un sistema ideal para principiantes. Cumple con los estándares y además es gratuito. 
+Dada su alta compatibilidad con entornos UNIX puede permitir un aprendizaje más rápido 
+si se decide pasar a estos. La lista de correo antes mencionada es una fuente de ayuda 
+para el que empieza. Antes de preguntar conviene leerse la lista de preguntas frecuentes.
+
+Para dar una idea de su calidad sólo queda indicar que fue usado pro IDSoftware para crear
+el famoso juego Quake. 
+
+El DJGPP está disponible a través de Intertet. Su web oficial es 
+.ax
+http://www.delorie.com/djgpp
+www.delorie.com/djgpp
+ (está en inglés). 
+

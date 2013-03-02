@@ -1,0 +1,219 @@
+.h
+Listas
+
+Así como HTML tiene marcas para crear párrafos, además hay marcas para generar otro tipo de estructuras, como listas, y
+tablas.
+
+Una lista HTML es justamente una serie de items. Hay tres tipos de listas en HTML: numeradas, sin numerar y de definición.
+Examinemos cómo podemos armar cada uno de estos tipos.
+
+.h2
+Listas sin numerar
+
+Son armadas con la marca {{ul}} (de "unordered list", lista sin ordenar en inglés). Dentro de {{<ul>}} y {{</ul>}} se
+colocan los items a mostrar, dentro de las marcas {{<li>}} y {{</li>}} (de "list item"):
+
+.html
+<h3>Ejemplo de lista no ordenada</h3>
+<ul>
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ul>
+.
+
+con la apariencia:
+
+.text
+<h3>Ejemplo de lista no ordenada</h3>
+<ul>
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ul>
+.
+
+Vemos que cada item está precedido de un señalador, una viñeta. 
+
+Podemos cambiar el tipo de señalador, con el atributo {{type}} que puede tomar los valores {{square}}, {{circle}} o {{disc}}
+(éste es el asumido):
+
+.html
+<h3>Ejemplo de lista no ordenada con otra viñeta</h3>
+<ul type="square">
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ul>
+.
+
+con salida:
+
+.text
+<h3>Ejemplo de lista no ordenada con otra viñeta</h3>
+<ul type="square">
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ul>
+.
+
+.h2
+Listas numeradas
+
+El "tag" a usar es el {{ol}} (de "ordered list"), apareciendo los items numerados:
+
+.html
+<h3>Ejemplo de lista numerada</h3>
+<ol>
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+con la apariencia:
+
+.text
+<h3>Ejemplo de lista numerada</h3>
+<ol>
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+Aparecen los items precedidos de una numeración. Podemos cambiar la apariencia de esta numeración, con el atributo {{type}}
+con valores:
+
+- {{1}}: Números arábigos (lo asumido)
+.br
+- {{a}}: Letras minúsculas
+.br
+- {{A}}: Letras mayúsculas
+.br
+- {{i}}: Números romanos pequeños
+.br
+- {{I}}: Números romanos grandes
+
+Notemos que el valor {{I}} (i mayúscula) es distinto del valor {{i}} (i minúscula). Apliquemos esto al anterior ejemplo:
+
+.html
+<h3>Ejemplo de lista numerada</h3>
+<ol type="a">
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+con salida:
+
+.text
+<h3>Ejemplo de lista numerada</h3>
+<ol type="a">
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+Puede suceder que necesitamos interrumpir una lista, y luego retomarla con otra numeración. Se apela al atributo {{start}}
+para indicar el nuevo valor de comienzo:
+
+.html
+<h3>Continuación de lista numerada</h3>
+<ol start="4">
+<li>Cuarto item</li>
+<li>Quinto item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+con salida:
+
+.text
+<h3>Continuación de lista numerada</h3>
+<ol start="4">
+<li>Cuarto item</li>
+<li>Quinto item</li>
+<li>Ultimo item</li>
+</ol>
+.
+
+.h2
+Listas de definición
+
+Llamadas también de glosario, nos permiten incluir una definición de cada elemento. El "tag" {{dl}} es el que abarca
+la lista, el {{dt}} es el que pone el término a definir, y el {{dd}} determina la definición. Un caso típico es
+la descripción de estos mismos elementos:
+
+.html
+<h3>Definición de listas HTML</h3>
+<dl>
+<dt>Marca UL</dt>
+<dd>Crea una lista desordenada, con viñetas</dd>
+<dt>Marca OL</dt>
+<dd>Crea una lista numerada</dd>
+<dt>Marca DL</dt>
+<dd>Crea una lista de definiciones</dd>
+</dl>
+.
+
+que podrá aparecer como:
+
+.text
+<h3>Definición de listas HTML</h3>
+<dl>
+<dt>Marca UL</dt>
+<dd>Crea una lista desordenada, con viñetas</dd>
+<dt>Marca OL</dt>
+<dd>Crea una lista numerada</dd>
+<dt>Marca DL</dt>
+<dd>Crea una lista de definiciones</dd>
+</dl>
+.
+
+.h2
+Listas anidadas
+
+Dentro de una lista, podemos poner otra lista, incluso de distinto tipo. Cada lista añade un margen izquierdo a sus items,
+una indentación. Podemos lograr una lista de dos niveles, así:
+
+.html
+<h3>Lista de varios niveles</h3>
+<ul>
+<li>Elemento uno</li>
+<li>Elemento dos</li>
+<ol>
+<li>Subelemento uno del elemento dos</li>
+<li>Subelemento dos del elemento dos</li>
+</ol>
+<li>Elemento tres</li>
+<ol>
+<li>Subelemento uno del elemento tres</li>
+<li>Subelemento dos del elemento tres</li>
+<li>Subelemento tres del elemento tres</li>
+</ol>
+</ul>
+.
+
+con apariencia:
+
+.text
+<h3>Lista de varios niveles</h3>
+<ul>
+<li>Elemento uno</li>
+<li>Elemento dos</li>
+<ol>
+<li>Subelemento uno del elemento dos</li>
+<li>Subelemento dos del elemento dos</li>
+</ol>
+<li>Elemento tres</li>
+<ol>
+<li>Subelemento uno del elemento tres</li>
+<li>Subelemento dos del elemento tres</li>
+<li>Subelemento tres del elemento tres</li>
+</ol>
+</ul>
+.

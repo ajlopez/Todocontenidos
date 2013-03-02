@@ -1,0 +1,190 @@
+.h
+Nuestra primera página PHP
+
+Primero, crearemos un directorio de trabajo. Nuestra páginas PHP deben residir dentro de nuestro servidor de
+web, y si éste está instalado localmente, su contenido se encuentra en un directorio en el caso de Windows:
+
+.code
+c:\Inetpub\wwwroot
+.
+
+En el caso Linux, muy probablemente esté en:
+
+.code
+/home/httpd/html
+.
+
+En el directorio de nuestro servidor de web, entonces, creamos un subdirectorio de trabajo, digamos php.
+
+Y en ese directorio, creamos una archivo de texto primer.php con el contenido siguiente:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+</body>
+</html>
+.
+
+Es importante que el nombre del archivo termine en .php. Esta extensión es la que hará posible que este archivo se
+interprete en el servidor, como página PHP. Tanto el Apache como el Internet Information Server, han quedado
+configurados para detectar que las páginas con extensión .php deben ser procesadas de forma especial.
+
+Aparentemente, este archivo no tiene más que HTML. Y es verdad. Pero probemos qué sucede al ejecutarlo desde el
+explorador de Internet. Pidamos en el navegador, la dirección:
+
+.ax
+http://localhost/php/primer.php
+http://localhost/php/primer.php
+
+Observe que todo lo que es http://localhost en general apunta a nuestro directorio del servidor web. Y dentro de este directorio 
+habíamos creado un subdirectorio php. Así que a nuestra página en ese directorio, tuvimos que invocarla como un
+subdirectorio de localhost.
+
+Hasta el momento, nuestro ejemplo solamente tiene código HTML, y eso es lo que envía a nuestro cliente navegador. Pero
+agreguemos algo más:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+<?php
+	$k=1;
+?>
+</body>
+</html>
+.
+
+Notemos las líneas entre <?php y ?> . Estos "tags" (marcas) no son de HTML. Son parte de la sintaxis
+de PHP. Encierran código de programación PHP.
+
+Y acá viene lo primero no trivial: si invocamos de nuevo a la página desde el navegador, la salida
+es la misma que en nuestro primer intento. Pero si pedimos el código que llega a nuestro cliente
+browser (podemos presionar botón derecha del ratón y elegir "Ver código fuente"), notaremos que
+el código entre <?php y ?> NO APARECE en nuestro navegador.
+
+Por qué? Porque es código que se ejecutó desde el servidor. Ese código sólo pone una variable $k en 1, y nada más.
+No produce ninguna salida visible en el cliente.
+
+ATENCION: Recuerde en pedir la página desde el navegador, usando:
+
+.ax
+http://localhost/php/primer.php
+http://localhost/php/primer.php
+
+(usando http) no lo cargue directamente del disco, pues no va a ejecutarse entonces en el servidor.
+
+Notemos alguna cosa más: $k es una variable. Las variables en PHP se distinguen de otros elementos, porque van
+precedidas de un signo $ (pesos). Esta es la forma que tiene PHP de diferenciar una variable, de otros identificadores,
+como verbos, comandos y nombres de funciones.
+
+Otro punto: la variable $k no hizo falta declararla. Contrariamente a otros lenguajes, en PHP no necesitamos
+declarar la variable.
+
+Algo que no se nota en el ejemplo: PHP es un lenguaje que distingue en los nombres de las variables, entre minúsculas
+y mayúsculas. No es lo mismo una variable $k que una variable $K. Son dos variables completamente diferentes.
+
+Más observaciones: el comando termina en ; (punto y coma). En PHP, las sentencias del lenguaje no necesariamente tienen
+que ocupar una sola línea. Pueden ocupar varias. El fin de línea NO es entonces, un fin de comando. El final de comando
+se indica explícitamente con el ; (punto y coma). La asignación de más arriba, podría haberse emitido como:
+
+.html
+<?php
+	k
+	=
+	1
+	;
+?>
+.
+
+y sería perfectamente válido, y con el mismo efecto: asigna a $k el valor 1.
+
+Si bien usamos <?php y ?> para encerrar nuestro código, también podemos usar <? y ?> como en el ejemplo:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+<?
+	$k=1;
+?>
+</body>
+</html>
+.
+
+Esto es el llamado "tag" corto. Veremos que podemos pasar de HTML a código de programación PHP tanto con <?php como con
+<?. La primera forma es la original, y responde a una instrucción de proceso XML (las instrucciones de proceso de XML 
+comienzan con <? y la palabra asociada). En general, en el curso usaremos la forma corta. Otra forma aceptada es:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+<?
+	$k=1;
+?>
+</body>
+</html>
+.
+
+Agreguemos algo para que el programa en el servidor produzca alguna salida:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+<?
+	k=1;
+?>
+<h2>El valor de la variable $k es <? echo $k; ?></h2>
+</body>
+</html>
+.
+
+Esto provoca que el valor de la variable $k aparezca en la salida. Cómo se consiguió esto? Usando nuestro primer verbo
+echo que emite la expresión que le sigue, a la salida del browser.
+
+Como en otros lenguajes, podemos agregar de alguna forma comentarios, como en el ejemplo:
+
+.html
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+<h1>Mi primer PHP</h1>
+<?
+	/*
+		Este es un comentario
+		multilínea
+	*/
+
+	k=1;	// Este es un comentario de una línea
+
+	# También se acepta este tipo de comentario tipo shell de Unix
+?>
+<h2>El valor de la variable $k es <? echo $k; ?></h2>
+<!-- Este es un comentario HTML -->
+</body>
+</html>
+.
+
+Desde /* hasta */ se puede escribir un comentario cualquiera. Notemos que el comienzo y el fin del comentario, pueden estar
+o no en la misma línea. El // (doble barra) indica un comentario hasta el fin de la línea donde se encuentra. De la misma
+forma opera el # (numeral).
+

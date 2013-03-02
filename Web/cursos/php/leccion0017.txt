@@ -1,0 +1,31 @@
+.h
+Valores String con comillas simples
+
+Un {{string}} puede ser escrito:
+
+.code
+'Hola, mundo'
+'Soy un string en PHP'
+.
+
+y es la forma más fácil de escribir un texto. Lo encerrado entre comillas simples, se toma tal cual. Sólo se
+"transforma" dos expresiones: {{\'}} (barra invertida, comilla simple) se toma como comilla simple. Y
+{{\\}} (barra invertida doble) se toma como barra invertida. La primera convención permite poner una comilla
+simple dentro de un texto, como en:
+
+.code
+'O\'brian'
+.
+
+Otros ejemplos:
+
+.code
+echo 'Hola, mundo';	// emite "Hola, mundo"
+echo 'I\'m a programmer';	// produce "I'm a programmer"
+echo 'Copie el contenido de c:\\trabajos';	// produce "Copie el contenido de c:\trabajos"
+echo 'Copie el contenido de c:\trabajos';	// produce "Copie el contenido de c:\trabajos"
+.
+
+Observe que poner {{\}} delante de cualquier otro caracter, como en el último comando del ejemplo, hace que tanto
+la barra como el caracter aparezcan.
+

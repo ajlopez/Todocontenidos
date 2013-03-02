@@ -1,0 +1,51 @@
+.h
+Imagen de fondo
+
+Para finalizar con estos comentarios sobre los atributos de <body> (tiene más, que irán apareciendo
+en el curso), podemos "jugar" con el atributo "background", que permite incluir una imagen de
+fondo.
+
+Guarde la siguientes imagenes fondo1.jpg, fondo2.jpg, en su disco, presionando botón derecha
+sobre una, y guardándola en su directorio de trabajo.
+
+.im
+cursos/html/fondo1.jpg
+
+.im
+cursos/html/fondo2.jpg
+
+Luego, podemos experimentar con un documento:
+
+.html
+<html>
+<head>
+<title>Documento con Fondo</title>
+</head>
+<body background="fondo1.jpg">
+<h1>Documento con Fondo</h1>
+</body>
+</html>
+.
+
+Comienza a ponerse interesante? Sí, con simplemente agregar una referencia al archivo de
+imagen, ésta se repite como fondo en todo el documento.
+
+Probemos:
+
+.html
+<html>
+<head>
+<title>Documento con otro Fondo</title>
+</head>
+<body background="fondo2.jpg">
+<h1>Documento con otro Fondo</h1>
+</body>
+</html>
+.
+
+Los archivos de imágenes más populares en la web, son los tipo .gif y .jpg. Son dos formatos
+que pueden mostrarse en distintas plataformas (Windows, Linux, Unix...) por eso se han
+adoptado como gráficos en las páginas. Ud. puede agregar un archivo .bmp (un formato muy
+usado en Windows), pero eso no asegura que pueda usarse en una página web, o que se visualice
+en todas las plataformas de los visitantes de su sitio.
+

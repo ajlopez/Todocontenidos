@@ -1,0 +1,16 @@
+.h
+Introducción
+
+Bienvenido al curso de Visual Basic. Esperamos que pueda aprovechar
+el curso, en esta nueva modalidad a distancia. A lo largo de curso, iremos aprendiendo
+los conceptos fundamentales de la programación y de Visual Basic.
+
+Visual Basic es un lenguaje y entorno poderosísimo. Nos permite crear
+aplicaciones Windows, con apariencia gráfica, formularios, diálogos. Y
+además nos permite llegar a acceder a bases de datos, con lo que se
+ha convertido en una herramienta de desarrollo de aplicaciones empresariales.
+
+Tenemos un largo camino: estudiar formularios, controles, lógica de
+programación, proyectos, acceso a datos, clases, objetos, y creación
+de componentes COM.
+

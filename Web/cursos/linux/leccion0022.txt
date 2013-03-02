@@ -1,0 +1,43 @@
+.h
+Contenido de archivos
+
+Hemos recorrido directorios. Con el comando {{ls}} podemos ver qué otros directorios hay dentro de alguno. Pero
+nos encontramos también con archivos. Por ejemplo, con:
+
+.code
+[alumno alumno]$ ls /etc
+.
+
+seguramente obtendremos gran cantidad de archivos listados, así como con:
+
+.code
+[alumno alumno]$ ls /bin
+.
+
+Muchos de esos archivos son archivos binarios, cuyo contenido solamente tiene sentido para el sistema. Pero
+muchos otros son archivos con texto, que podemos leer y algo entender. Para ver el contenido de un archivo, se
+pueden usar los comando {{cat}}, {{mode}} y {{less}}. Por ejemplo, con:
+
+.code
+[alumno alumno]$ cat /etc/passwd
+.
+
+obtenemos por pantalla el contenido del archivo {{/etc/passwd}}. Este archivo tiene una lista con datos de los
+usuarios del sistema, uno por línea. Encontrará ahí el código de usuario, y hasta su contraseña (encriptada, lo
+lamento).
+
+El comando {{cat}} muestra el contenido por pantalla sin pausas. Su nombre proviene de {{concatenate}}, concatenar.
+Veremos más adelante que sirve justamente para "pegar" los contenidos de archivos, uno atrás de otro, para formar
+un nuevo contenido.
+
+Si no queremos ese flujo contínuo, podemos usar el comando {{more}} o el {{less}} como:
+
+.code
+[alumno alumno]$ less /etc/termcap
+.
+
+Este comando va mostrando el archivo con pausas, parando cuando se completa una pantalla, y no continúa hasta
+que se presiona una tecla como la barra espaciadora, para pasar a otra pantalla, o enter, para otra línea. Tanto
+{{more}} como {{less}} tienen ese efecto. Pero {{less}} es más moderno, permite el uso de las teclas de cursor,
+y es más eficiente con los archivos grandes.
+

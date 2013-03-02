@@ -1,0 +1,34 @@
+.h
+Archivos ejecutables
+
+La mayor parte de los comandos que ingresamos en el {{shell}} son archivos
+ejecutables. Son archivos que están en algún directorio del disco, y que
+están marcados como ejecutables.
+
+Para que un archivo se pueda ejecutar, debe aparecer {{x}} en su lista de
+permisos (recordemos el comando {{ls -l}} para conseguir los detalles de
+un archivo). Otra forma de distinguir los archivos ejecutables es usando
+{{ls -F}} donde la opción {{-F}} distingue los archivos ejecutables colocando
+un {{*}} detrás de los nombres.
+
+Para ejecutar un archivo ejecutable, es suficiente poner su nombre en la
+línea de comando.
+
+Un problema que el {{shell}} debe resolver, es dónde busca los comandos
+que nosotros le pedimos. Internamente, lleva una lista de directorios
+donde busca cualquier comando que nosotros le pidamos. Eso se llama el
+{{PATH}}, la trayectoria, la lista de directorio donde busca. Esta lista
+se guarda en una llamada variable de entorno, podemos averiguar su
+valor con el comando:
+
+.code
+echo $PATH
+.
+
+Si el archivo a ejecutar no se encuentra en el {{PATH}}, debemos ingresar
+su nombre completo:
+
+.code
+/opt/misejecutables/miprograma
+.
+

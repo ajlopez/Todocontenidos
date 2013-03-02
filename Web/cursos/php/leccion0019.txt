@@ -1,0 +1,28 @@
+.h
+El uso de heredoc
+
+Y finalmente, hay una forma de especificar un texto, heredada de Perl. Es el llamado {{heredoc}}. Un ejemplo
+servirá mejor que una explicación:
+
+.code
+echo <<<MITEXTO
+<h1>Esta es mi página</h1>
+<p>
+Mi nombre es $pepe
+<br>
+Mi email es $email
+<br>
+Mi ICQ es $icq
+</p>
+MITEXTO;
+.
+
+Todo lo que va desde la línea siguiente a {{<<<MITEXTO}} hasta la línea que comienza con {{MITEXTO}} se toma
+como un {{string}} encerrado en dobles comillas, teniendo lugar entonces la expansión de variables.
+
+Hay que destacar que la línea que termina, debe tener el mismo texto que abrió, este texto debe comenzar en la
+primera columna, y apenas puede ser seguido de nada o de un {{;}} (punto y coma).
+
+Esta notación es muy útil cuando uno quiere emitir varias líneas de HTML, pero con expansión automática
+de variables.
+

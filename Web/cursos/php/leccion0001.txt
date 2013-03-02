@@ -1,0 +1,14 @@
+.h
+Introducción
+
+Bienvenido al curso de PHP: la tecnología multiplataforma para generar páginas web
+dinámicamente en el servidor.
+
+En el curso vamos a abarcar desde los primeros pasos en PHP, hasta manejo de formularios, sesión, 
+"cookie", acceso a base de datos, y ejemplos de sitios completos. Es un largo camino a recorrer,
+y espero que todos puedan aprovechar el curso.
+
+Será requisito para cursar, tener conocimientos de HTML y de programación. Es necesario instalar
+PHP (en Windows o en Linux). La ayuda en la instalación será lo más difícil de dar a distancia,
+pero haremos nuestro mayor esfuerzo.
+

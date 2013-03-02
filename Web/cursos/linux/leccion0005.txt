@@ -1,0 +1,74 @@
+.h
+Distribuciones
+
+Otras compañías de software le venden un CD y un manual de instalación, y con esas instrucciones,
+puede instalar un sistema operativo o un nuevo sistema contable, en menos de media hora. Lo único
+que se necesita es leer las instrucciones. Linus Torvalds, al iniciar su trabajo, lo hacía por
+hobbie, y no pensando en la facilidad de instalación. En los primeros tiempos, la instalación de
+un sistema Linux era prácticamente artesanal.
+
+Con el tiempo, compañías como Red Hat o Suse, cumplieron con el objetivo de producir lo que
+se ha denominado "distribuciones", un conjunto de herramientas, provistas en distintos medios,
+por ejemplo, en CDs, para instalar automáticamente un sistema Linux. De alguna forma, Linux
+dejó de ser un sistema para expertos, y llegó al público en general.
+
+Esto ha popularizado a Linux. Hoy, Linux disfruta de una prensa favorable, en su mayor parte. Linux
+ha probado ser tremendamente versátil como sistema operativo, especialmente en el ambiente
+servidor, y con la aparición de interfaces gráficas y utilitarios como el Star Office, ha
+sido adoptado también como cliente. Linux puede instalarse hoy en una PC hogareña, o puede
+ehecutarse en un gran servidor, por una fracción del costo de cualquier otro paquete de
+software. Es ideal tener un menor costo y una mayor estabilidad. Es por eso que Linux
+ha estado ganando momento, y es la razón por la que estamos interesados en dar este curso:
+para que cada vez más gente pueda juzgar y operar este sistema.
+
+Como ya se mencionó, Linux es un sistema operativo de la familia de los Unix. Estos sistemas
+operativos son generalmente operados por profesionales de la informática, pero actualmente, Linux puede
+ser operador por cualquier persona.
+
+Si Ud. ya escuchó hablar de distribuciones, sabrá que hay distintas y diferentes. Hay algunas
+orientadas al novato, y otras orientadas al profesional. Dentro de una misma distribución, hay
+distintas versiones. Pero podemos agruparlas por facilidad de instalación y configuración:
+
+- Fácil: SuSE, Red Hat, Caldera, Mandrake, TurboLinux
+
+- Menos fácil: Slackware, Debian
+
+Hay por supuesto, otras distrubuciones, algunas regionales, como Conectiva o Ututu, y hasta Linux
+para Macs.
+
+Más información en:
+
+.ax
+http://www.suse.de/es/
+SuSE
+en español
+
+.ax
+http://www.turbolinux.com/
+TurboLinux
+
+.ax
+http://www.redhat.es/
+Red Hat
+en español
+
+.ax
+http://latinamerica.caldera.com/
+Caldera Latinoamérica
+en español
+
+.ax
+http://es.conectiva.com/
+Conectiva
+una distribución en español y en portugués
+
+.ax
+http://www.es.debian.org/Conceptos Básicos
+Debian
+en español
+
+.ax
+http://www.linux-mandrake.com/es/
+Mandrake
+en español
+

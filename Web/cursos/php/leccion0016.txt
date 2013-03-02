@@ -1,0 +1,18 @@
+.h
+Valores String
+
+Un valor {{string}} es un texto, una serie de caracteres. En PHP, un caracter es lo mismo que un byte, y
+puede tener uno de 256 valores diferentes. Esto implica que PHP no tiene soporte de Unicode, el alfabeto
+extendido a 2 bytes por caracter.
+
+PHP está preparado desde el principio, para manejar {{strings}} grandes. Esta es una característica heredada
+de sus raíces en Perl.
+
+Hay varias formas de espeficicar un valor {{string}}
+
+- Con comillas simples
+
+- Con comillas dobles
+
+- Con una estructura llamada {{heredoc}} heredada de Perl
+

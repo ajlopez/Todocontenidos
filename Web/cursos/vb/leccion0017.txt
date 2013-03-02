@@ -1,0 +1,70 @@
+.h
+Tipos de Datos
+
+A una variable cuando se declara, podemos asignarle un tipo. En Visual Basic, existe el concepto de tipo
+de dato, como en otros muchos lenguajes de programación. Por ejemplo los valores:
+
+.code
+1
+355
+113
+.
+
+son del tipo {{Integer}} (entero) en Visual Basic. Mientras que:
+
+.code
+"Hola, mundo"
+"Mi nombre es Bond, James punto Bond punto Com"
+.
+
+son del tipo {{String}} (texto). Cuando una variable la declaramos, podemos darle uno de esos tipos:
+
+.code
+Dim edad as Integer
+Dim nombre as String
+.
+
+Pero además de estos tipos, hay otros como:
+
+- {{Boolean}} que recibe valores {{true}} (verdadero) o {{false}} (falso)
+
+- {{Byte}} que maneja octetos, los conocidos bytes de computación. Un {{byte}} puede albergar una letra, por ejemplo.
+
+- {{Long}} es entero largo. Es un entero que admite mayores valores que un simple {{Integer}}, entre 
+ -2.147.483.648 y 2.147.483.647
+
+- {{Single}} es un valor real, de simple precisión.
+
+- {{Double}} es un valor real, de doble precisión. Esto significa que admite más cantidad de dígitos decimales
+en su expresión que {{Single}}.
+
+- {{Currency}} es un tipo real especial, que permite el manejo de valores como importes, sin perder precisión en
+los decimales, contrariamente a {{Single}} o a {{Double}}
+
+- {{Date}} es el tipo fecha, en realidad, fecha y hora.
+
+Por ahora, usaremos datos del tipo {{Integer}} y del tipo {{String}}.
+
+Algo adicional: también es posible declarar una variable sin tipo, así:
+
+.code
+Dim cualquiera
+.
+
+Esto hace que el Visual Basic la tome como variable del tipo {{Variant}}. Se podría haber declarado explícitamente:
+
+.code
+Dim cualquiera as Variant
+.
+
+Este nuevo tipo en realidad indica: la variable {{cualquiera}} puede contener cualquier tipo de dato. En algún momento
+de su vida, {{cualquiera}} puede tener un entero, y luego más adelante, contener un texto:
+
+.code
+cualquiera = 100
+' y más adelante
+cualquiera = "un texto"
+.
+
+En general, sólo se usa {{Variant}} cuando es necesario. Es más eficiente y prolijo, declarar a la variable con
+el tipo que realmente va a usarse en ella.

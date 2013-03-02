@@ -1,0 +1,72 @@
+.h
+Variables
+
+Hasta aquí, sólo hemos producido una aplicación que saluda. No es mucho. Aprendamos el próximo
+concepto fundamental en programación: la variable.
+
+Creamos otro proyecto, tipo .exe, e ingresemos
+el código:
+
+.code
+Private Sub Form_Load()
+	Dim texto as String
+	Dim k as Integer
+
+	k = 1
+	texto = "Hola, de nuevo"
+
+	Show
+	Print texto
+End Sub
+.
+
+Aparece la sentencia nueva:
+
+.code
+Dim texto as String
+.
+
+Esto declara una "variable", un lugar donde podemos poner valores, un lugar con nombre, en este
+caso "texto". El concepto de variable es fundamental en programación. Podemos asimilarla a un
+lugar, donde cuando querramos guardamos un valor. Según los lenguajes, las variables se definen
+o no, y tienen tipo o no. En Visual Basic puede pasar todo eso. La sentencia "Dim" declara la
+variable "texto", y la define "as String" (como "string"). Se denomina "String" a una secuencia de
+caracteres que define un texto cualquiera. Entonces, en la variable "texto" podremos poner
+valores de String, de texto, no números.
+
+Más adelante, eso pasa con:
+
+.code
+texto = "Hola, de nuevo"
+.
+
+Esta es una sentencia de asignación. Damos el valor "Hola, de nuevo", que es un String, a la
+variable de nombre "texto".
+
+Y cuando hacemos:
+
+.code
+Show
+Print texto
+.
+
+el programa mostrará el formulario, emitirá en pantalla el contenido de la variable "texto", que por la lógica que
+hemos puesto, en ese momento será "Hola, de nuevo".
+
+Algo similar pasa con la variable k. Con:
+
+.code
+Dim k as Integer
+.
+
+definimos a la variable como variable entera ("Integer"). Esto significa que sólo puede albergar
+valores numéricos, enteros, sin parte decimal.
+
+En
+
+.code
+k = 1
+.
+
+vemos cómo escribimos un número entero, directamente. De nuevo, es una sentencia de asignación.
+

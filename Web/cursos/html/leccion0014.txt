@@ -1,0 +1,37 @@
+.h
+Archivos de fondos
+
+Para que pueda practicar con distintos archivos de fondos, aquí hay una colección de archivos
+gráficos que pueden usarse como "background" en sus pruebas:
+
+.a
+cursos/html/fondos1.zip
+fondos1.zip
+(314 kb)
+.br
+.a
+cursos/html/fondos2.zip
+fondos2.zip
+(260 kb)
+.br
+.a
+cursos/html/fondos3.zip
+fondos3.zip
+(203 kb)
+.br
+.a
+cursos/html/fondos4.zip
+fondos4.zip
+(215 kb)
+.br
+.a
+cursos/html/fondos5.zip
+fondos5.zip
+(233 kb)
+.br
+.a
+cursos/html/fondos6.zip
+fondos6.zip
+(402 kb)
+.br
+

@@ -1,0 +1,6 @@
+El lenguaje VBScript se basa en el conocido Visual Basic, de Microsoft. Las principales diferencias son:
+
+- VBScript es interpretado
+- VBScript no tiene manejo de formularios, archivos o controles visibles. Se concentra en el uso de variables, sentencias, y llamadas a funciones.
+
+Se puede descargar la última versión del "engine" de VBScript de msdn.microsoft.com/scripting.

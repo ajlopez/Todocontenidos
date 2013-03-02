@@ -1,0 +1,23 @@
+.h
+El poderoso PHP
+
+En un nivel básico, PHP puede hacer lo que otras tecnologías del servidor, como
+CGI, o ASP, como proceso de formularios, generar contenido dinámico, y manejar
+cookies. Pero hay algunas características adicionales que lo destacan entre otras
+tecnologías.
+
+Primero, PHP es multiplataforma, puede ejecutarse en servidor Windows como en Linux,
+o en las diferentes variantes del Unix. Incluso, lo que construyamos en un entorno
+podemos luego ejecutarlo en otro. Podemos desarrollar nuestro sitio en Windows,
+y luego copiarlo a un servidor Linux, tal cual, y ejecutarlo sin cambiar el
+código producido.
+
+Segundo, PHP tiene acceso a múltiples bases de datos, y de una forma bastante
+simple. Entre las bases de datos soportadas se encuentran: MySQL, Microsoft SQL Server,
+Informix, Sybase, mSql, Adabas, InterBase, y toda base accesible desde Windows via ODBC (como Access).
+Esto permite construir sitios dinámicos basados en datos. Por ejemplo, un sitio
+de noticias puede tener al texto de éstas en la base de datos. Este mismo sitio,
+esta armado en PHP, y el catálogo de temas, y el registro de usuarios, se mantienen
+en una base de datos MySQL. Y ha sido desarrollado en Windows, mientras que corre
+sobre un sistema Linux.
+

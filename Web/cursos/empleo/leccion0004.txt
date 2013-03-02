@@ -1,0 +1,50 @@
+.h
+Este curso
+
+Hecha una introducción, pasemos a enumerar algunos de los temas que trataremos en el curso. Ud. ya leyó el temario
+en
+
+.ax
+http://www.todocontenidos.com/CursoMuestra.php?Id=23
+Encontrando Empleo en Internet
+
+pero repasemos los puntos más importantes
+
+.h
+Preparación para la búsqueda de empleo
+
+Nos organizaremos para emprender nuestra búsqueda, para no estar perdidos en el ciberespacio, pasando de un sitio
+a otro, de una página a otra, sin plan. Describiremos trucos de búsqueda, tendencias en esta nueva forma de usar
+la tecnología, y advertiremos sobre la reserva de los datos en Internet.
+
+.h
+Herramientas Electrónicas y Comunicación en Internet
+
+Desde los distintos formatos de currículum vitae electrónico, hasta las entrevistas en línea, y el uso del email.
+Puede que Ud. sea una persona fluida en el trato personal, pero no se encuentre a gusto en la relación por Internet. La
+forma de comunicarse, por email, o en línea, y los distintos puntos de encuentro con otros en la web, le ayudarán
+a conectarse e interactuar con posibles empleadores.
+
+.h
+Bases de Datos Laborales
+
+Qué ofrecen los distintos sitios de empleo, y las consultoras en línea. Dónde encontrar búsquedas publicadas de empleo,
+y cómo usarlas.
+
+.h
+Directorio de Recursos
+
+Iremos armando un directorio de sitios, empresas y páginas que nos ayudarán en nuestra tarea. Consulte periódicamente
+
+.ax
+http://www.todocontenidos.com/empleo/
+Empleo en todocontenidos.com
+
+.h
+Requisitos
+
+Se supone que Ud. ya maneja Internet. O por lo menos, que maneja un explorador (de hecho, ya lo está haciendo!), y
+un programa de correo electrónico.
+
+Ud. debe conocer lo que es una dirección Internet, lo que es la World Wide Web, y cómo conseguir acceso a la red.
+

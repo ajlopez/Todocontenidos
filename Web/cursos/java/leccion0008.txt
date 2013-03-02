@@ -1,0 +1,128 @@
+.h
+Dibujando en el applet
+
+Sigamos analizando el código de nuestro ejemplo:
+
+.code
+import java.awt.*;
+import java.applet.*;
+
+public class HolaApplet extends Applet {
+	public void paint(Graphics g) {
+		g.drawString("Hola, Applet", 50,50);
+	}
+}
+.
+
+Entramos ahora al cuerpo de la clase. No encontramos el "main", un applet no lo necesita. Es el "browser" el encargado
+de traer el applet del servidor, y ejecutarlo en la máquina cliente. Durante la vida del applet, el navegador
+se encarga de manejarla.
+
+.b
+Applet
+ como clase, ya tiene métodos definidos. En nuestra clase, podemos redefinirlos, para que ejecuten algún
+código nuestro. Uno de esos métodos ya definidos, y que comúnmente se redefinen en nuestras applets, es el llamado
+.b
+paint
+. Es un método que el navegador y el entorno operativo llaman, cuando se necesita que el applet aparezca
+en pantalla. El applet debería tener en el método paint, todas las instrucciones para dibujarse en el rectángulo
+que ocupa en la pantalla.
+
+Y ese es el método que redefinimos con:
+
+.code
+	public void paint(Graphics g) {
+.
+
+Notamos que es un método público, que devuelve {{void}}, o sea nada (es una rutina). Y recibe un parámetro, de la
+clase {{Graphics}}. Esta clase se llama {{java.awt.Graphics}}, y se encarga de dibujar sobre la superficie que nos
+pertenece de la pantalla, de forma totalmente independiente de la plataforma.
+
+Dentro de nuestro método {{paint}}, colocamos los comandos que se ejecutarán, para producir un contenido del applet.
+Recordemos, el {{paint}} se llama cuando el sistema necesita dibujar el applet, cuando el applet necesita
+aparecer en pantalla. Lo que hacemos en {{paint}}, determina la apariencia del applet. Si no hacemos nada
+(que es la conducta del paint de la clase {{Applet}}), sólo aparecerá un rectángulo en nuestra página HTML.
+
+Así como en nuestro primer ejemplo, escribíamos en la consola, en este {{HolaApplet.java}}, escribimos en la
+superficie gráfica, con:
+
+.code
+		g.drawString("Hola, Applet", 50,50);
+.
+
+Uno de los métodos de {{Graphics}}, es {{drawString}}. Vemos cómo invocamos el método de un objeto: colocamos el
+nombre del objeto ({{g}} en este caso), y luego el método, separados por punto.
+
+Este método se encarga de dibujar un texto en pantalla. Como primer parámetro, está el texto a "dibujar". El
+segundo parámetro es la posición {{x}} en pixels, donde se dibujará el texto (la distancia del borde izquierdo
+de nuestra applet). Y el tercero es la posición {{y}} en pixels, la distancia desde el borde superior.
+
+Aprendamos otros métodos de {{Graphics}}, en un ejemplo {{Graficos.java}}:
+
+.code
+import java.awt.*;
+import java.applet.*;
+
+public class Graficos extends Applet {
+	public void paint(Graphics g) {
+		g.drawString("Algunos métodos gráficos", 50, 50);
+
+		g.drawLine(50, 60, 200, 70);
+
+		g.drawRect(50, 100, 40, 40);
+
+		g.setColor(Color.red);
+
+		g.drawOval(100, 200, 30, 30);
+
+		g.setColor(Color.blue);
+
+		g.fillRect(100, 250, 20, 20);
+	}
+}
+.
+
+Lo compilamos con
+
+.code
+javac Graficos.java
+.
+
+Lo probamos desde una página {{Graficos.html}} con contenido:
+
+.html
+<applet code="Graficos.class" width=400 height=300>
+</applet>
+.
+
+Lo lanzamos con:
+
+.code
+appletviewer Graficos.html
+.
+
+y obtendrá una salida similar a:
+
+.im
+cursos/java/javagraficos.gif
+
+Apenas hemos usado algunos métodos de {{Graphics}}. Reaparece el {{drawString}}. Pero además tenemos:
+
+- {{drawLine(x1,y1,x2,y2)}}
+que dibuja una línea desde el punto x1,y1 hasta el x2,y2.
+
+- {{drawRect(x,y,w,h)}}
+dibuja un rectángulo, con esquina en x,y, y con ancho w, alto h, que ocupan los dos últimos parámetros.
+
+- {{drawOval(x,y,w,h)}}
+igual que drawRect, pero dibuja un óvalo circunscripto al rectángulo indicado.
+
+- {{fillRect(x,y,w,h)}}
+igual que drawRect(), pero ahora, ademàs de dibujarlo, lo rellena.
+
+- {{setColor(Color c)}}
+Permite colocar el color que {{Graphics}} va a usar para sus operaciones siguientes. Vemos que {{Color}} es una
+clase (del paquete {{java.awt.*}}). Usamos en el ejemplo dos colores ya predefinidos {{Color.red}}, {{Color.blue}}.
+
+
+

@@ -1,0 +1,134 @@
+.h
+Modificando nuestra primera página
+
+Pongamos más cosas en esta primera página en ASP. Podemos aprender cómo colocar comentarios:
+
+.html
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	' Este es un comentario
+	k=1	' y acá se asigna un valor a la variable k
+%>
+<!-- Este es un comentario HTML -->
+<h2>El valor de la variable k es <% = k %></h2>
+</body>
+</html>
+.
+
+Recordemos que en nuestra página tenemos HTML y código de programación, por ahora en lenguaje VBScript. En el ejemplo
+de arriba, el apóstrofe sencillo indica que de ahí al final de una linea es un comentario en VBScript. Pero si
+necesitamos poner un comentario en HTML, debemos recurrir al tag <!-- hasta -->
+
+Los que conocen algún otro lenguaje de programación, habrán notado que la variable k, que usamos en los ejemplos, no 
+ha sido declarada. La usamos directamente, sin anunciar su existencia. Tampoco hemos definido su tipo: no sabemos
+si esa variable soporta valores numéricos o de texto. Esto es así en VBScript: las variables no son con tipo ("tipadas"),
+sino que pueden tener un valor numérico ahora, y luego un valor de texto ("string"). En lenguajes como Visual Basic,
+esto se conoce como variables "variant", que pueden tener más de un tipo de dato asociado a lo largo de su vida.
+
+Pero el que no declaremos la variable, no significa que no podamos. Agreguemos la declaración "option explicit" al
+comienzo:
+
+.html
+<%
+	option explicit
+%>
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	' Este es un comentario
+	k=1	' y acá se asigna un valor a la variable k
+%>
+<!-- Este es un comentario HTML -->
+<h2>El valor de la variable k es <% = k %></h2>
+</body>
+</html>
+.
+
+Si probamos esta página en el navegador, oh sorpresa, nos dará error: "variable k no definida..". Qué pasó? Hemos
+agregado la declaración "option explicit" que le indica al procesador ASP que está en el servidor: "atención, toda
+variable que el programador use, debe estar definida explícitamente". Esta declaración, si aparece, debe estar
+al comienzo de la página. Si apareciera pero no al comienzo, por ejemplo:
+
+.html
+<html>
+<%
+	option explicit
+%>
+.... resto de la página
+.
+
+daría error.
+
+Bien, ahora que hemos pedido que cada variable se declare explícitamente (algo muy recomendable, porque evita el error
+frecuente de escribir mal el nombre de una), cómo declaramos a nuestra variable k? Muy simple:
+
+.html
+<%
+	option explicit
+
+	' Podemos declarar la variable
+	dim k
+%>
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	' Este es un comentario
+	k=1	' y acá se asigna un valor a la variable k
+%>
+<!-- Este es un comentario HTML -->
+<h2>El valor de la variable k es <% = k %></h2>
+</body>
+</html>
+.
+
+La declaración "dim k" le indica al procesador ASP que esa variable k existe, y la vamos a usar en la página. Notablemente,
+ASP acepta que declaremos la variable k aún luego de ser usada:
+
+.html
+<%
+	option explicit
+%>
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	' Este es un comentario
+	k=1	' y acá se asigna un valor a la variable k
+%>
+<!-- Este es un comentario HTML -->
+<h2>El valor de la variable k es <% = k %></h2>
+</body>
+</html>
+<%
+	' Podemos declarar la variable al final !!??
+	dim k
+%>
+.
+
+ASP da para todo... .;-)
+
+Algunos comentarios más: VBScript, como lenguaje, no distingue entre letras mayúsculas o minúsculas. Las sentencias de
+arriba se podrían escribir "Dim K", "DIM K", "dim K" y serían completamente equivalentes. Esto abarca los comandos y
+los nombres de variables y funciones.
+
+Los que conocen Visual Basic, notarán que sólo hemos puesto "dim k". En Visual Basic (no VBScript) podríamos agregar
+un tipo a la declaración. Por ejemplo, "dim k as integer" para especificar que la variable k va a aceptar solamente
+valores numéricos y enteros. No es el caso en VBScript: las variables se pueden declarar (y hasta puede ser obligatorio
+declararlas si está indicada la declaración "option explicit"), pero no se les puede indicar tipo (está prohibido
+en VBScript).

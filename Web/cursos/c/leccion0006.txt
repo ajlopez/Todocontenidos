@@ -1,0 +1,23 @@
+.h
+El compilador GCC
+
+Las siglas GCC significan GNU Compiler Collection (Colección de compiladores GNU). 
+Antes estas siglas de GNU C Compiler (Compilador C GNU). Como su nombre indica es una 
+colección de compiladores y admite diversos lenguajes: C,C++, Objetive C, Chill, Fortran, 
+y Java.
+
+El compilador se distribuye bajo la licencia GPL (General Public License) lo que lo hace 
+de libre distribución: se pueden hacer copias de él y regalarlas o venderlas siempre que se 
+incluya el código fuente (o se indique cómo conseguirlo) y se mantenga la licencia.
+
+Existen versiones para prácticamente todos los sistemas operativos. Viene incluido en la 
+mayoría (si no en todas) las distribuciones de GNU/Linux. La versión DOS de este compilador 
+es el DJGPP.
+
+En el desarrollo de este compilador participan cientos de voluntarios de todo el mundo.
+
+El GCC se puede conseguir en la página oficial del GCC: 
+.ax
+http://gcc.gnu.org/
+gcc.gnu.org
+

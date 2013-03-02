@@ -1,0 +1,12 @@
+.h
+Ejercicios
+
+- Ingrese y pruebe los ejemplos de las lecciones
+
+- Genere una página, con una composición suya, con título y varios párrafos
+
+- Arme su curriculum, como una página web. Use un título principal, y varios secundarios, para
+cada elemento del documento
+
+- Tome uno de los ejercicios anteriores, e incorpore elementos en negrita, cursiva, y hasta
+algún párrafo preformateado (usando <pre>)

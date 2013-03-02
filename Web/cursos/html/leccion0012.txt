@@ -1,0 +1,71 @@
+.h
+Más sobre la marca <body>
+
+Recordemos la estructura general de un documento:
+
+.html
+<html>
+<head>
+.... encabezamiento ....
+</head>
+<body>
+.... cuerpo, contenido ....
+</body>
+</html>
+.
+
+Cada marca, o "tag", puede tener atributos adicionales. Veamos el primer ejemplo con el tag de
+<body>.
+
+Podemos poner:
+
+.html
+<body bgcolor="yellow">
+Un documento HTML
+</body>
+.
+
+y al probarlo en nuestro navegador, aparecerá que el fondo del documento está en un amarillo furioso.
+
+Puede probar:
+
+.html
+<body bgcolor="blue">
+Un documento HTML
+</body>
+.
+
+y aparecerá en azul. Qué es lo que agregamos? El atributo "bgcolor" (de "background color", color de
+fondo en inglés). Este atributo permite poner un color de fondo a todo el documento. La forma
+de especificar el color es por nombre simbólico, pero hay otras formas que aprenderemos en breve
+con el tema colores.
+
+Ahora que sabemos como cambiar el color de fondo, podríamos cambiar el color del texto. Por ejemplo,
+para hacer una página con fondo negro ("black" en inglés) con letras blancas ("white" en inglés),
+podemos codificar:
+
+.html
+<body bgcolor="black" text="white">
+<h1>Un documento blanco sobre negro</h1>
+</body>
+.
+
+El nuevo atributo es "text" e indica el color del texto del documento.
+
+En el los ejemplos anteriores, vemos que el texto que ponemos, guarda o no un espaciado contra
+el borde izquierdo o el superior. Podemos modificar esos bordes, pero con atributos que ya
+son dependientes del programa "browser" que usemos. Esta es una de las dificultades de HTML:
+no todas las versiones de los navegadores, interpretan los mismos "tags" y atributos. Como
+siempre, las mayores diferencias se encuentran entre los productos de Microsoft y de Netscape,
+y aún entre diferentes versiones de los mismos.
+
+Por ejemplo, en Internet Explorer, podemos controlar los márgentes con los atributos: leftmargin,
+rightmargin, topmargin, bottommargin, que controlan el margen izquierdo, derecho, arriba y abajo,
+respectivamente. Ejemplo:
+
+.html
+<body bgcolor="blue" text="white" leftmargin="100">
+<h1>Un documento HTML con margen izquierdo</h1>
+</body>
+.
+

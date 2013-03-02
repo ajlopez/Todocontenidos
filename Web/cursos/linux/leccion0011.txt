@@ -1,0 +1,33 @@
+.h
+Apagando Linux
+
+Bien podríamos ahora patear el enchufe y apagar la maldita máquina. Pero no es aconsejable. Menos
+en un sistema Linux. Recuerde que Linux es un sistema multiusuario, y como tal, podría estar
+ejecutando varias tareas (en realidad, lo está haciendo, aunque Ud. no haga nada). Entonces, para
+que esas tareas no se vean interrumpidas abruptamente, debemos ingresar algún comando de apagado.
+
+Un comando para apagar el sistema es (atención, si lo ejecuta apaga el sistema):
+
+.code
+[root root]$ shutdown -h now
+.
+
+El "shutdown" significa bajar el sistema. El parámetro -h indica "halt", alto, bajar el sistema
+y parar. Y finalmente el parámetro "now" nos dice cuándo hará el corte: "ahora".
+
+Otras opciones son:
+
+.code
+[root root]$ shutdown -h 19:30
+.
+
+Apagar a las 19:30
+
+.code
+[root root]$ shutdown -h +10
+.
+
+Apagar dentro de 10 minutos.
+
+Si en vez de "-h" ponemos "-r", de "reboot" (reiniciar), se apaga el sistema y arranca nuevamente.
+

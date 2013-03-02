@@ -1,0 +1,31 @@
+.h
+Eliminar Directorios
+
+El comando {{rmdir}} es el que nos permite eliminar directorios. Debemos tener los permisos necesarios para eliminarlo,
+lo que no es problema cuando somos nosotros quienes lo creamos. Ya llegaremos al tema permisos, y entenderemos
+mejor cuáles pueden ser las restricciones.
+
+Si quisiéramos elminar el subdirectorio {{ejercicios}} dentro de {{prueba}}, desde nuestro directorio hogar, podemos
+intentar:
+
+.code
+[alumno alumno]$ rmdir prueba/ejercicios
+rmdir: prueba/ejercicios: Directory not empty
+.
+
+Nos dá un error, indicando que el directorio no está vacío. Efectivamente, {{ejercicios}} tiene como subdirectorio
+a {{linux}}. Para eliminar {{ejercicios}} y su contenido, podemos primero eliminar el más interior, y luego proseguir
+hacia arriba:
+
+.code
+[alumno alumno]$ rmdir prueba/ejercicios/linux
+[alumno alumno]$ rmdir prueba/ejercicios
+.
+
+También, podríamos haber usado un parámetro {{-p}} para borrar el directorio, y todos los directorios que queden vacios
+en la ruta:
+
+.code
+[alumno alumno]$ rmdir -p prueba/ejercicios/linux
+.
+

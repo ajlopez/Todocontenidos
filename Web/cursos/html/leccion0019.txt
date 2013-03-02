@@ -1,0 +1,19 @@
+.h
+Ejercicios
+
+- Nuevamente, ingrese y pruebe los ejemplos de las lecciones
+
+- Tome ejercicios anteriores, y cámbieles el fondo, usando los archivos de fondos
+sugeridos en las lecciones
+
+- Arme una página con el texto de una noticia
+
+- Cambie en esa página, los colores de las frases que quiere destacar
+
+- Agregue enlaces a esa noticia, a otras páginas con más información
+
+- Genere varias páginas de noticias (puede cortar y pegar el texto de cualquier fuente)
+y arme una página que las enlace (una especie de índices de noticias).
+
+- Arme una página, con enlaces a sus sitios y páginas favoritos
+

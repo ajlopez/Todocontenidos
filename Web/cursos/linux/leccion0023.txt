@@ -1,0 +1,47 @@
+.h
+Copiando archivos
+
+Los comandos {{cp}}, {{mv}} y {{rm}} nos permiten copiar, mover y borrar archivos, así como directorios. Todos
+se parecen en los parámetros que piden, aunque funcionan distinto. Estudiemos el primero.
+
+Con {{cp}} podemos copiar partes de un directorio, es decir, tanto archivos como subdirectorios. El comando pide
+un origen y un destino. Ejemplo:
+
+.code
+[alumno alumno]$ cp /etc/passwd prueba
+[alumno alumno]$ cp /etc/termcap prueba
+[alumno alumno]$ ls -l prueba
+total 619
+drwxrwxr-x   3 alumno   alumno       1024 Feb  1 11:17 ejercicios
+-rw-r--r--   1 alumno   alumno       2813 Feb  1 11:41 passwd
+-rw-r--r--   1 alumno   alumno     625272 Feb  1 11:42 termcap
+.
+
+nos copia los archivos {{passwd}} y {{termcap}} de {{/etc}} a nuestro subdirectorio {{prueba}}. Con la opción
+{{-v}} se informa por pantalla todas las operaciones del comando:
+
+.code
+[alumno alumno]$ cp -v /etc/t* prueba
+/etc/tcp.smtp -> prueba/tcp.smtp
+/etc/tcp.smtp.cdb -> prueba/tcp.smtp.cdb
+/etc/termcap -> prueba/termca
+.
+
+En este ejemplo, copiamos todos los archivos que comienzan con {{t}} del directorio {{/etc}} a nuestro {{prueba}}.
+
+Podemos usar varias opciones, incluso combinadas, como:
+
+{{-f}} fuerza la sobreescritura de un archivo destino, si éste ya existe
+.br
+{{-i}} pregunta antes de sobreescribir un archivo destino, si éste ya existe
+.br
+{{-u}} sólo copia si el origen es más nuevo que el destino
+.br
+{{-r}} copia recursivamente subdirectorios
+
+Así, podemos hacer una copia de seguridad de un directorio a otro, con:
+
+.code
+[alumno alumno]$ cp -r /misdatos/* /micopia
+.
+

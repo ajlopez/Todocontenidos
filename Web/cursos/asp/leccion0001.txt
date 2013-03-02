@@ -1,0 +1,21 @@
+.h
+Qué son las páginas ASP?
+
+Esta es la primera y más básica pregunta. ASP es la sigla de Active Server Pages, que podemos
+traducir libremente como Páginas Activas en el Servidor. Si Ud. ya conoce HTML (el lenguaje para
+armar páginas web), entonces con ASP encontrará un mundo nuevo y fascinante.
+
+ASP le permitirá hacer más dinámico a su sitio web, en contenido, y hasta en atención a los
+usuarios. Le facilitará la actualización de las páginas. Luego de conocer ASP, no querrá
+volver a las páginas HTML estáticas.
+
+ASP usa comandos de lenguajes de programación interpretados en el servidor, para generar
+parte de la página resultado en el momento. Esos comandos son ejecutados en el servidor, antes
+de llegar a la máquina cliente. Y sólo se ejecutan en el servidor. Desde el punto de vista del
+usuario cliente, a éste sólo le llega el resultado, el HTML de salida.
+
+En este curso veremos que lo que se puede hacer en el servidor abarca todo tipo de temas,
+entre los más interesantes están: el proceso de formularios, el mantenimiento de datos
+de página a página, y sobre todo, el acceso a base de datos, donde se nos abre todo un
+panorama nuevo.
+

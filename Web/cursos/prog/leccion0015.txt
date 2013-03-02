@@ -1,0 +1,87 @@
+.h
+Más controles
+
+Armemos un proyecto nuevo:
+
+.im
+cursos/prog/vbproyectonuevo.gif
+
+y sobre el formulario ahora vamos a agregar un nuevo tipo de control. En nuestra barra de herramientas, elegimos
+el control de texto:
+
+.im
+cursos/prog/vbtexto.gif
+
+Luego, sobre la superficie del formulario, presionamos y arrastramos el botón izquierdo del ratón, produciendo un
+control de texto:
+
+.im
+cursos/prog/vbformulariotexto.gif
+
+Elijamos un nuevo control de nuestras herramientas, el control de etiquetas (textos estáticos):
+
+.im
+cursos/prog/vbetiqueta.gif
+
+De nuevo, dibujamos un control en el formulario:
+
+.im
+cursos/prog/vbformularioetiqueta.gif
+
+Cambiemos la propiedad {{Caption}} de este control etiqueta, que debe haber tomado el nombre {{Label1}}:
+
+.im
+cursos/prog/vbetiquetapropiedad.gif
+
+Agregamos un control de botón, cambiemos su {{Caption}} a {{Procesar}}. Aprovechemos, y cambiemos el
+{{Text}} de {{Text1}} a digamos, {{Juan}}
+
+El formulario va tomando el aspecto:
+
+.im
+cursos/prog/vbformulario2.gif
+
+Ya estamos entrando en calor. Pudimos agregar varios controles a un formulario, y cambiar las propiedades
+de algunos. Podemos seleccionar un control, y arrastralo en el formulario para acomodarlo. Podemos arrastrar
+sus esquinas, y cambiar su tamaño. Y hasta podemos hacer click sobre un control, seleccionarlo, y presionando
+la tecla {{Delete}} o {{Borrar}}, hacerlo desaparecer.
+
+Si ejecutamos el proyecto, con {{F5}}, podemos ingresar un texto en el campo que colocamos en el formulario.
+
+Cerremos el formulario, y programemos algo para el botón. Haciendo doble click sobre el mismo, aparecerá
+la ventana 
+
+.im
+cursos/prog/vbcommandclick.gif
+
+de código, donde podemos ingresar
+
+.code
+Option Explicit
+
+Private Sub Command1_Click()
+    Dim nombre as String   ' declaramos la variable
+
+    nombre = Text1.Text ' tomamos la propiedad Text del control Texto1
+
+    MsgBox "Bienvenido " & nombre  ' ponemos una ventana de mensaje en pantalla
+End Sub
+.
+
+Observe que usamos {{Option Explicit}}. Por primera vez, accedemos via código a una propiedad de un control.
+Cada control que tengamos en nuestro formulario, es para nosotros una variable que podemos usar en todas
+las rutinas del formulario. Como variable, tiene como nombre el nombre del control. El nombre de todo control
+se asigna automáticamente, pero nosotros podemos cambiarlo, cambiando su propiedad {{name}}.
+
+Ahora, como variable, no tiene un único valor, sino que tiene varias propiedades. Para acceder a una propiedad
+determinada del control, ponemos punto {{.}} y el nombre de la propiedad. Así, {{Text1.Text}} es el valor
+de la propiedad {{Text}} del control {{Text1}}.
+
+Una función nueva (que había sido mencionada en un ejercicio anterior) es {{MsgBox}}. Nos muestra una ventana
+de mensaje con el texto que le pongamos como parámetro. Hasta que no cerramos la ventana, no volvemos a nuestro
+formulario:
+
+.im
+cursos/prog/vbmensaje.gif
+
+En los ejercicios que siguen, podremos explorar más propiedades de los controles.

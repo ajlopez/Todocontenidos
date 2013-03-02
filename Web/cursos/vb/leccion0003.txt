@@ -1,0 +1,11 @@
+.h
+Recursos de Visual Basic en todocontenidos.com
+
+Controle periódicamente la página:
+
+.ax
+http://www.todocontenidos.com/vb
+http://www.todocontenidos.com/vb
+
+donde tendremos enlaces a sitios que tratan el tema de programación en Visual Basic, y artículos
+

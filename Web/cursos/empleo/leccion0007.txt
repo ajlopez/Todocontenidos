@@ -1,0 +1,32 @@
+.h
+Quién tiene más probabilidades?
+
+Ud. por supuesto, tiene probabilidades de éxito en la búsqueda de empleo por Internet. Hace unos años,
+solamente los empleos técnicos relacionados con la informática, podían ser los pedidos por Internet. Ahora,
+las personas de distintas ramas son requeridas en la web. Algunos de los pedidos con más frecuencia:
+
+* Trabajos técnicos, como programación, administración de sistemas y relacionados
+
+* Ingeniería
+
+* Servicios financieros
+
+* Ventas y marketing
+
+* Administración
+
+* Telecomunicaciones
+
+* Comunicaciones, como relaciones públicas
+
+* Negocios y servicios profesionales
+
+* Medicina
+
+* Derecho
+
+* Recién graduados
+
+Aún cuando no vea un anuncio en una base de datos de empleo, eso no significa el fin de la búsqueda. Parte
+del proceso implica visitar los sitios web de las compañías.
+

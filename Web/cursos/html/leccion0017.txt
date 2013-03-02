@@ -1,0 +1,53 @@
+.h
+Colores en el texto
+
+Ya sabemos como poner el color de fondo y de texto de todo un documento. Sabemos qué
+formatos se admiten para indicar un color (por nombre, por RGB). Aprendamos cómo podemos
+aplicar un color a un texto cualquiera.
+
+Supongamos que tenemos un párrafo cualquiera:
+
+.html
+<p>
+En este párrafo quisiera destacar este concepto.
+</p>
+.
+
+Ahora, quisiéramos que la frase "este concepto" aparezca en un color distinto. Una
+forma de hacerlo, es encerrando esa frase en un "tag", una marca, de "font" (tipo de letra):
+
+.html
+<p>
+En este párrafo quisiera destacar <font color="red">este concepto</font>.
+</p>
+.
+
+La marca "font" es muy poderosa, y tiene varias variantes. Aquí aplicamos solamente el
+atributo "color", al que le pusimos el valor "red" (rojo). Si vemos el resultado en
+nuestro navegador, la frase marcada aparecerá en rojo. Atención: es importante cerrar
+con "</font>" para indicar de esa forma el fin de la región que nosotros queremos que
+tome ese tipo de letra.
+
+Por supuesto, podemos combinar la marca con otros, como <b> (negrita) <i> (cursiva), como
+en:
+
+.html
+<p>
+En este párrafo quisiera destacar <font color="red"><b><i>este concepto</i></b></font>.
+</p>
+.
+
+Observe como colocamos cada marca adentro de otra, y cerramos de forma inversa a como
+abrimos las marcas.
+
+Este concepto de cambiar de color la letra del texto, se puede aplicar a otros elementos,
+por ejemplo, a un encabezado:
+
+.html
+<h1><font color="#008000">Nuevo Título</font></h1>
+.
+
+Acá aparecer el concepto de color via RGB. El valor "#008000" dará como resultado, un verde
+oscuro (el primer 00 indica falta de rojo, el último 00 indica falta de azul, y el 80 indica
+un valor de verde que es aproximadamente la mitad del máximo FF=255).
+

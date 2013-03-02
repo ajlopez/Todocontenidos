@@ -1,0 +1,49 @@
+.h
+Estructura de la red
+
+Podemos simplificar, y decir que Internet es una red de redes de computadoras.
+
+.im
+cursos/internet/int007.gif
+
+Al fin, Internet se compone de computadoras y computadoras, conectadas mediante
+tecnologías estandarizadas, que permiten que diferentes máquinas, sistemas y plataformas,
+se conecten entre sí, para formar algo más que la suma de las partes.
+
+Al desarrollarse su historia, la cantidad de redes y computadoras conectadas, de distinto
+tipo y envergadura, llega a abarcar la mayor parte del planeta.
+
+Actualmente, cuando su máquina se conecta a Internet, se integra a esta red, como un
+nodo más. Si Ud. se conecta mediante un ISP (Internet Service Provider), por ejemplo,
+por teléfono, lo que sucede es que su computador se conecta con una computadora de
+su ISP, que YA está conectada a Internet, y Ud. pasa a ser parte de la red.
+
+Usando la metáfora, la Internet es una red global, y en muchos aspectos se parece a una pequeña 
+ciudad con servicios similares. Digamos que usted quisiera enviar o recibir correo por la red. 
+La Internet tiene oficinas electrónicas de correo. Hay bibliotecas en línea 
+que puede usar a cualquier hora del día o de la noche, con millones de libros 
+y periódicos para lecturas ilimitadas. Los salones de chat son el equivalente 
+en la Internet a los cafés abiertos las 24 horas, con personas deseosas de 
+charlar en cualquier momento que usted desee, aunque estén dispersos en la geografía
+real. Con el explosivo crecimiento de la Red Mundial es posible ir de compras, 
+pedir una pizza, ver los cortes de una película 
+y escuchar estaciones de radio de todo el mundo. 
+Todas estas son diferentes maneras de usar la Internet. 
+
+En el mundo real usted puede viajar a lugares diferentes en la misma red 
+de carreteras, pero usando diferentes medios de transporte. 
+Puede usar un coche para un propósito y un camión para otro diferente. 
+Desplazarse en la Internet funciona de manera muy similar. 
+
+Para entender la Internet, es bueno tener en cuenta que se dan muchos tipos 
+de comunicaciones al mismo tiempo. Se usan diferentes programas para realizar 
+diferentes tareas: por ejemplo, un navegador Web para acceder a los sitios 
+de compras y un programa de correo electrónico para enviar y recibir mensajes. 
+
+Algunos programas, como el Netscape Communicator, contienen más de un tipo 
+de programa. El Communicator incluye un navegador Web llamado Netscape Navigator, 
+un programa de correo electrónico y un lector de noticias. 
+También se pueden usar software más sofisticados y especializados, 
+como el Eudora, un programa exclusivamente de correo electrónico, 
+o combinar diferentes paquetes de programas en un mismo sistema. 
+

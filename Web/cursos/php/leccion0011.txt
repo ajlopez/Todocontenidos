@@ -1,0 +1,111 @@
+.h
+Sintaxis básica
+
+El procesador PHP reside en el servidor, y el servidor de web le deriva todos los
+pedidos que terminen en .php, como los que hemos escrito hasta ahora. Analiza el
+texto del pedido, y reconoce algunas partes como instrucciones de programación, para
+ser interpretadas.
+
+Repasemos y aprendamos nuevas formas de pasar de HTML a PHP, con ejemplos:
+
+.html
+Ejemplo 1:
+<? echo "Esto es una forma de enviar datos a la salida\n"; ?>
+
+Ejemplo 2:
+<?= "Otro mensaje" ?>Esto reemplaza al echo
+
+Ejemplo 3:
+<?php echo "Formal normal tipo XML" ?>
+
+Ejemplo 4:
+<script language="php">
+	echo "Esto se procesa en el servidor";
+</script>
+
+Ejemplo 5:
+<% echo "Es la forma tipo ASP"; %>
+
+Ejemplo 6:
+<%= "Otro mensaje"; %>
+.
+
+Sólo los ejemplos 3 y 4 están siempre disponibles. Los demás, dependen de la configuración
+y versión de PHP, pero podemos asegurar que la forma corta del ejemplo 1 es actualmente
+aceptada por todas las configuraciones que podamos encontrar en Internet.
+
+El ejemplo 2 muestra una forma de evitar poner el verbo "echo", usando directamente
+el "=" el signo igual.
+
+Los ejemplos 5 y 6 están disponibles cuando se configura PHP a recibir las llamadas
+"ASP tags", las marcas tipo ASP (Active Server Pages, la tecnología de páginas dinámicas
+de Microsoft). En ASP, se abre y cierra con <% y %>. Se puede configurar PHP para
+permitir esa sintaxis. Más adelante en el curso, veremos cómo configurar PHP
+usando un archivo llamado php.ini. En general, no tenemos configurado PHP para
+aceptar esta sintaxis.
+
+El paso de HTML a PHP puede ocurrir varias veces en el proceso de la página, y hasta
+en el medio de un comando PHP, como vimos en ejemplos anteriores del comando for, o
+como en este ejemplo:
+
+.html
+<?
+	if ($k>2) {
+?>
+<h2>$k es mayor que 2</h2>
+<?
+	}
+	else {
+?>
+<h2>$k es menor o igual a 2</h2>
+<?
+	}
+?>
+.
+
+Hemos notado, que los comandos terminan con punto y coma, como en C o en Perl. Podemos
+aclarar que:
+
+.html
+<?
+	echo "Esto es un mensaje";
+?>
+.
+
+y
+
+.html
+<?	echo "Esto es un mensaje" ?>
+.
+
+son equivalentes, porque el ?> que cierra implica el fin de un comando, sin
+necesidad de poner un ; al final.
+
+Ya probamos los comentarios:
+
+.html
+<?
+	/*
+		Este es un comentario
+		multilínea
+	*/
+
+	k=1;	// Este es un comentario de una línea
+
+	# También se acepta este tipo de comentario tipo shell de Unix
+?>
+.
+
+Cabe aclarar que la anidación de comentarios no se interpreta como tal:
+
+.html
+<?
+/*
+	echo "Un mensaje"; /* Este comentario trae problemas */
+*/
+?>
+.
+
+En el ejemplo de arriba, el segundo comentario no está adentro del más externo, sino
+que el primer */ ya termina al primer /* sin considerar anidamientos.
+

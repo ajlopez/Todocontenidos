@@ -1,0 +1,48 @@
+.h
+El entorno de programación
+
+Como se pedía en los requisitos del cursos, para realmente aprovecharlo, debe Ud.
+tener un Visual Basic instalado. Microsoft ha desarrollado una interfaz de programación,
+que se llama comúnmente Visual Basic. Ejecute ese programa (puede usar la versión 6.0, o
+incluso, la versión 5.0, para el desarrollo de los ejemplos).
+
+Al comienzo, aparece una pantalla donde se nos pide con qué tipo de proyecto vamos
+a trabajar. El concepto de proyecto para nosotros será sencillo: cada programa
+que encaremos será un proyecto de Visual Basic.
+
+En esa pantalla inicial, se nos pide elegir un proyecto nuevo o uno existente. Elegiremos
+un proyecto nuevo, del tipo .Exe. Qué significa este tipo de proyecto? En Visual Basic
+tenemos la capacidad de producir distintos tipos de programas, como los llamados
+servidores COM (Component Object Model), pero en el curso usaremos los simples
+proyectos .Exe, programas ejecutables.
+
+.im
+cursos/prog/vbnuevoproyecto.gif
+
+Una vez elegido el proyecto nuevo, aparece la pantalla del entorno.
+
+.im
+cursos/prog/vbentorno.gif
+
+Esta ventana se compone de varias partes. Vemos que aparece una subventana
+con el proyecto.
+
+.im
+cursos/prog/vbproyecto.gif
+
+En esta subventana se describen los distintos componentes que de un proyecto. Al comienzo,
+un proyecto tipo .Exe, se compone de un único formulario, que el sistema ha
+llamado "Form1". Como estamos en un entorno visual como Windows, vamos a trabajar
+con ventanas, formularios, para nuestra entrada y salida. En otros lenguajes, no visuales,
+deberíamos interactuar por una línea de comando, como en el viejo DOS.
+
+Otra ventana importante es la de propiedades:
+
+.im
+cursos/prog/vbpropiedades.gif
+
+Cada componente que diseñemos interactivamente, como un formulario, o un botón, puede tener
+propiedades (como título, color de fondo), que podemos modificar desde esta ventana. De nuevo,
+esto no es lo común en programación, son características de Visual Basic, que tiene mucho de
+desarrollo visual.
+

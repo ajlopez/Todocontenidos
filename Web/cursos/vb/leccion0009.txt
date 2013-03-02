@@ -1,0 +1,28 @@
+.h
+Propiedades
+
+Cada formulario o control, tiene propiedades. Un control es un objeto visual,
+que puede modificar su apariencia y contenido, cambiando las propiedades.
+
+Las propiedades varían de control a control. Podemos ver las propiedades
+de un control en la ventana de propiedades:
+
+.im
+cursos/prog/vbpropiedades.gif
+
+En la parte superior de esa ventana hay una lista desplegable, con todos
+los controles del formulario actual. De ahí elegimos qué control queremos
+para examinar sus propiedades. También podemos señalarlo con el cursor
+del ratón en el formulario.
+
+Prácticamente todos los controles tienen propiedades como {{Name}} (nombre),
+{{Width}}, {{Height}} (ancho, alto), {{Top}}, {{Left}} (posición en la
+pantalla).
+
+Estas propiedades se puede modificar desde la ventana de propiedades. Algunas,
+como la posición y el tamaño, se modifican interactivamente en el diseño
+del formulario. Pero además, durante la ejecución del programa, podemos
+consultar las propiedades y modificarlas, con instrucciones de programación.
+Por ejemplo, podemos consultar el contenido de una caja de texto (lo
+que haya ingresado un usuario), o cambiar el título de un botón.
+

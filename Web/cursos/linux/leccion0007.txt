@@ -1,0 +1,25 @@
+.h
+El superusuario y su cuenta root
+
+Cada usuario puede entonces tener distintas capacidades. Algunos podrán crear archivos, y otros no.
+Alguno podrá ejecutar un comando, y otros no podrán. Todas estas capacidades, pueden ser
+manejadas, asignadas y modificadas, por un usuario administrador, denominado en la jerga
+del Unix/Linux, el superusuario. Su cuenta de "login" (entrada) es "root".
+
+Este usuario tiene el más alto nivel de privilegios en Linux. Si nosotros tenemos Linux
+instalado en nuestro computador, deberíamos conocer la contraseña de root, para poder
+hacer todas las modificaciones necesarias para mantener al sistema funcionando. Incluso,
+al instalar Linux, estamos ya como usuario root.
+
+En el sistema Unix, todos los usuarios deseaban ser usuario root. Con Linux instalado en nuestro
+computador, todos podemos jugar a ser root. Pero esto tiene sus riesgos.
+
+Si bien las lecciones se pueden practicar estando "logueados" como root, es conveniente
+practicarlas desde otro usuario con menores privilegios, para evitar ejecutar un comando
+equivocado que pueda, por ejemplo, borrar archivos necesarios para el funcionamiento
+normal del sistema.
+
+Es decir, que aunque seamos los únicos que estamos operando nuestra máquina, es conveniente
+crearnos una cuenta personal, para los trabajos diarios.
+
+Pero basta de cháchara, y pasemos al ingreso a nuestro sistema, el "login"

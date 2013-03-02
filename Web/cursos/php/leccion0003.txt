@@ -1,0 +1,23 @@
+.h
+Lista de Correo Abierta
+
+Para todos los que quieran aprender e intercambiar experiencias de PHP y MySQL, sean o no alumnos del curso, tengan
+experiencia o no, hemos armado una lista de correo abierta.
+
+Las instrucciones de inscripción se encuentran en:
+
+.ax
+http://www.elistas.net/lista/phpesp
+http://www.elistas.net/lista/phpesp
+
+Nuevamente, es una lista de correo albergada en
+.a
+http://www.elistas.net/
+elistas.net
+un servidor de listas muy completo, en español.
+
+Puede consultar en su correo, o configurar en 
+.a
+http://www.elistas.net/
+elistas.net
+para verla solamente en la web.

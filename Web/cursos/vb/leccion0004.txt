@@ -1,0 +1,47 @@
+.h
+Historia del lenguaje
+
+Visual Basic es un lenguaje de programación de uso general, que nos permite crear
+programas o aplicaciones. Como lenguaje, está formado quepor sentencias y comandos
+que indican paso a paso qué debe realizar la computadora. Como es un lenguaje
+de alto nivel, una instrucción Visual Basic equivale a varias intrucciones
+del procesador.
+
+No es el único lenguaje que existe o se usa. Hay otros como COBOL, lenguaje
+C, Pascal, Delphi, que se usan en distintas plataformas. Visual Basic "desciende"
+de otro de esos lenguajes, el famoso BASIC (Begginners's All-purpose 
+Symbolic Instruction Code), que fue creado, en su versión original, en 1964,
+en el Darthmoth College. Se diseñó como lenguaje para aprender a programar,
+que fue implementado en distintas máquinas y sistemas operativos, hasta
+que en 1978, Microsoft produjo un intérprete Basic, su primer producto.
+
+Por un tiempo, el Basic fue considerado un lenguaje para principiantes.
+Los programadores preferían C o Pascal para hacer aplicaciones reales. Esto
+cambió con la llegada del Windows. Programar en Windows en esos lenguajes
+no es tarea fácil, y no siempre esos lenguajes son la mejor herramienta.
+Están diseñados en un época donde no había interfaces visuales. Microsoft,
+viendo que necesitaba de alguna forma facilitar la programación en Windows,
+para tener disponibles aplicaciones para su nuevo sistema operativo, creó
+el Visual Basic, luego de sus productos GWBasic, y QuickBasic, de DOS.
+
+Recién en su versión 3, Visual Basic llegó a ser una herramienta potable
+de desarrollo. Hoy, combina la facilidad de programación con un entorno
+de desarrollo visual, y la capacidad de diseñar formularios y controles,
+sin mayor problema. Incorpora conceptos de clases y objetos, y gracias
+a la tecnología COM (Component Object Model), es totalmente extensible, y
+hasta puede colaborar creando librerías para otros lenguajes.
+
+Con la versión 4 aparecieron las clases, con la 5 el dominio de los 32 bits.
+La última versión estable es la 6, y forma parte de un paquete de lenguajes
+y herramientas llamada Visual Studio 6, que cuenta también con Visual C++,
+Visual Fox, Visual InterDev y Visual J++.
+
+Visual Basic, como producto de Microsoft, va más allá. No solamente existe en el entorno de
+programación que veremos, sino también en otros productos, como todo el Office. Podemos usar
+Visual Basic (con sus variantes), para programar en Access, en Excel, incluso ha sido licenciado
+para el uso en programas no Microsoft. Incluso hay una tecnología, Active Server Pages (ASP) que
+permite generar páginas dinámicas usando Visual Basic como lenguaje de programación.
+
+Actualmente, está en beta el VB.Net, nuevo lenguaje de Microsoft que será
+bastante diferente del actual.
+

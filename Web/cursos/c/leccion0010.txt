@@ -1,0 +1,20 @@
+.h
+Borland C++ Builder
+
+Borland C++ Builder es un completo entorno de desarrollo para Windows.
+Se pueden crear aplicaciones con acceso a bases de datos, componentes para facilitar
+la programación de internet, componentes COM.
+
+.h2
+Versión Gratuita
+
+Existe una versión gratuita del Borland C++ Builder 5 que puede bajarte de Internet.
+Esta versión sólo incluye el compilador, no tiene ni el IDE (entorno integrado de desarrollo),
+ni los componentes visuales (VCL), ni acceso a bases de datos.
+
+Para descargarse el compilador le piden que se apuntes a su comunidad y completar una encuesta.
+
+.ax
+http://www.borland.com/bcppbuilder/freecompiler/
+www.borland.com/bcppbuilder/freecompiler/
+

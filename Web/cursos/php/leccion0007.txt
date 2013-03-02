@@ -1,0 +1,54 @@
+.h
+Instalando PHP
+
+La última versión se puede conseguir (en formato código fuente, y en binarios para varias plataformas, incluido
+Windows) en:
+
+.ax
+http://www.php.net/
+http://www.php.net/
+
+En general, las últimas distribuciones de Linux, tienen entre sus programas a instalar, el PHP. Por ejemplo, el
+Red Hat 6.2 tiene en su disco original los paquetes de instalación de PHP3. El Red Hat 7.x tiene los paquetes de
+PHP4. Es conveniente instalarlos desde esos paquetes, que automáticamente instalan y comprueban todo.
+
+En caso de ser necesario compilar para Unix, hay instrucciones (algo antiguas) en español:
+
+.ax
+http://www.php.net/manual/es/install-unix.php
+http://www.php.net/manual/es/install-unix.php
+
+La versión más nueva de las instrucciones de instalación en distintos sistemas operativos (en inglés):
+
+.ax
+http://www.php.net/manual/en/installation.php
+http://www.php.net/manual/en/installation.php
+
+Para los que quieran instalar en Linux, les recomendamos elegir en el momento de instalación, los paquetes que
+componen a PHP. Necesita tener un servidor web Apache, disponible en los paquetes de instalación de
+las distribuciones Linux, o en:
+
+.ax
+http://www.apache.org/
+http://www.apache.org/
+
+En caso de Windows, en
+
+.ax
+http://www.php.net/
+http://www.php.net/
+
+puede bajarse un autoinstalable en Windows. En este sistema operativo, es necesario tener un servidor de web
+Personal Web Server, o el Internet Information Server. Mas información sobre cómo instalarlo, en:
+
+.ax
+http://64.224.37.166/cursos/archivos/tallerPHP.zip
+http://64.224.37.166/cursos/archivos/tallerPHP.zip
+
+En caso de problemas de instalación, consultar:
+
+.ax
+http://www.php.net/manual/es/install-problems.php
+http://www.php.net/manual/es/install-problems.php
+
+

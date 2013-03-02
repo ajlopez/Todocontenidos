@@ -1,0 +1,22 @@
+.h
+Ejercicios
+
+Estos son ejercicios sencillos, pero que servirán para fijar los conceptos explicados.
+
+- Ingrese y compruebe los dos ejemplos
+
+- Modifique los ejemplos para incluir más sentencias Print, con otros mensajes
+
+- Pruebe de hacer Print de una variable, antes de haberle asignado un valor. Hágalo
+con una variable String, y con una variable Integer
+
+- Haga Print de una variable no definida. Qué resultado obtiene?
+
+- Pruebe
+
+.code
+	MsgBox "Hola, mundo"
+.
+
+en lugar de Print
+

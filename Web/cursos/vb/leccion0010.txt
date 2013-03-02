@@ -1,0 +1,42 @@
+.h
+Métodos y Eventos
+
+Los métodos son funciones propias de cada objeto. Mientras que las propiedades
+son valores que se consultan y modifican, los métodos son rutinas, funciones,
+que se ejecutan durante la corrida del programa.
+
+Por ejemplo, un formulario cualquiera {{Form1}} tiene un método para mostrarse
+en pantalla:
+
+.code
+Form1.Show
+.
+
+o un método para ocultarlo:
+
+.code
+Form1.Hide
+.
+
+Los métodos los invocamos desde instrucciones nuestras. En cambio, los eventos
+son rutinas de los objetos, pero que son invocados ante algún suceso, como
+el click del ratón sobre un control. Como programadores, podemos escribir
+código que reaccione al evento. Por ejemplo, el click sobre un botón {{Command1}}, se
+trata en una rutina:
+
+.
+Private Sub Command1_Click()
+
+End Sub
+.
+
+Gran parte del aprendizaje de Visual Basic es:
+
+- Conocer los controles disponibles
+.br
+- Conocer y usar sus propiedades
+.br
+- Invocar los métodos necesarios en la ejecución
+.br
+- Codificar los eventos que nos interesan
+

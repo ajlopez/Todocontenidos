@@ -1,0 +1,128 @@
+.h
+Espaciado y separadores
+
+Ahora que ya hemos experimentado con varias páginas HTML, abremos notado algunas particularidades del lenguaje.
+
+Una que destaca es el tratamiento de los espacios y cambios de línea. Si en un documento tenemos el texto:
+
+.html
+Este es     un         texto
+con espacios
+y varias     líneas
+.
+
+probablemente aparezca en la ventana de nuestro navegador como:
+
+.html
+Este es un texto con espacios y varias líneas
+.
+
+Es decir, que los espacios y cambios de línea de nuestro código no se toman en cuenta para el armado del resultado.
+
+Para que un espacio se tome como tal, se puede usar {{&nbsp;}} que significa {{non breaking space}}, un espacio duro,
+que es tomado en cuenta por HTML. Cuando se usa {{&nbsp;}} no se corta la palabra y se toman en cuenta los espacios
+repetidos.
+
+Así:
+
+.code
+&nbsp;&nbsp;&nbsp;Texto de prueba
+.
+
+aparecerá como:
+
+.html
+   Texto de prueba
+.
+
+con espacios adelante.
+
+Recordemos que si queríamos que un texto apareciera tal cual lo habíamos ingresado, podíamos apelar al uso de la
+marca {{pre}} como en:
+
+.html
+<pre>
+Este texto
+está preformateado
+y aparece tal cual en la salida
+</pre>
+.
+
+Desde {{<pre>}} hasta {{</pre>}} tenemos un texto que no se formateará a HTML, sino que aparecerá tal cual.
+
+Ya sabemos que para separar párrafos, usamos la marca {{<p>}}, mientras que para introducir cambios de línea
+forzados en un párrafo, usamos {{<br>}} como en:
+
+.html
+<p>
+Este es un párrafo cualquier
+de HTML
+<br>
+Acá pasamos a otra línea.
+Y ahora termina el párrafo
+</p>
+.
+
+Algo que no estudiamos, es que el párrafo puede estar centrado o contra la derecha. Pruebe:
+
+.html
+<p align="center">
+Este es un párrafo que aparecerá centrado en su página.
+</p>
+<p align="right">
+Este es un párrafo que aparecerá justificado contra el margen derecho
+de su página
+</p>
+.
+
+Para separar secciones de nuestra página, podemos usar la marca {{<hr>}} ({{horizontal rule}}, regla horizontal),
+como en:
+
+.html
+<p>
+Primer párrafo
+</p>
+<hr>
+<p>
+Segundo párrafo
+</p>
+.
+
+Al probarlo, aparecerá una regla como ésta:
+
+.text
+<hr>
+.
+
+separando los dos párrafos del documento.
+
+La marca {{<hr>}} es bastante interesante, porque tiene argumentos que cambian su apariencia. Como:
+
+.html
+<hr align="center" size="10" width="50%">
+.
+
+El atributo {{align}} funciona como en párrafos. El atributo {{size}} indica el ancho de la barra en pixeles, y
+el atributo {{width}} puede especificar su ancho, en pixeles, o como en el ejemplo de arriba, en porcentaje del
+ancho disponible.
+
+La barra de separación del ejemplo se vería:
+
+.text
+<hr align="center" size="10" width="50%">
+.
+
+Pero aún hay más: podemos agregarle un atributo {{color}} como en:
+
+.html
+<hr align="center" size="15" width="80%" color="red">
+.
+
+consiguiendo un efecto como:
+
+.text
+<hr align="center" size="15" width="80%" color="red">
+.
+
+Cuando aprendamos a manejar imágenes, podremos usarlas como separadores en nuestras páginas.
+

@@ -1,0 +1,23 @@
+.h
+Controles
+
+Son los elementos que se colocan dentro de un formulario. En un entorno
+gráfico como Windows, el formulario y sus controles reciben eventos, como
+el click de un botón del ratón, que nosotros como programadores interceptaremos
+y reaccionaremos con algun serie de instrucciones.
+
+Los controles nos permiten usar texto, ingresarlo, colocar botones, imágenes
+y otros elementos dentro del formulario. Tanto los formularios como los controles
+tienen propiedades, métodos y eventos.
+
+Esos controles que podemos usar en un proyecto se encuentran en nuestra caja
+de herramientas
+
+.im
+cursos/prog/vbbarra.gif
+
+Cada control podemos colocarlo dentro del formulario, eligiéndolo de la caja con un click. Luego,
+sobre el formulario, presionamos el botón izquierdo del ratón, y luego lo arrastramos, para dibujar
+la región rectangular donde quedará el control. También podemos hacer doble
+click sobre un elemento de la caja, y automáticamente aparecerá en el formulario.
+

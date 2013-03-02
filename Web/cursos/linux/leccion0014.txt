@@ -1,0 +1,23 @@
+.h
+El shell
+
+Si el proceso de {{login}} donde ingresamos nuestra cuenta y contraseña,
+tuvo éxito, entramos a una sesión, donde el sistema ejecuta un programa
+llamado intérprete de comandos o {{shell}}. Es éste programa el que
+nos ha mostrado el {{promtp}} y el que ha tomado nuestros comandos y
+los ejecutó.
+
+El {{shell}} es un programa normal que lee y escribe en la consola. Analiza
+la entrada, extrae la primera palabra que es el programa a ejecutar, lo
+lanza, y se queda esperando su terminación, que es cuando vuelve a pedir
+otro comando.
+
+El {{shell}} no es Linux. Es sólo un programa más de los disponibles. El
+{{shell}} que se usa comúnmente en una instalación Linux es el llamado
+{{bash}}, que es parte de los utilitarios {{GNU}}. El {{shell}} original
+de UNIX se llamaba {{sh}} y luego con el tiempo, aparecieron nuevos shell,
+como el {{ksh}} (Korn shell) o el {{csh}} (C shell). Una persona, Bourne,
+mejoró una versión del shell, y esa versión se tomó como base para la
+versión {{GNU}}, de ahí que {{bash}} significa "Bourne again shell" ("de nuevo el shell de
+Bourne").
+

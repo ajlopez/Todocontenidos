@@ -1,0 +1,79 @@
+.h
+Primeras páginas
+
+Creemos un directorio en nuestro disco, y con el editor de texto de nuestra preferencia,
+generemos un archivo llamado documento.html con el contenido:
+
+.html
+Soy un documento HTML.
+Mi contenido es simple, y no tengo estructura.
+.
+
+Lo grabamos, y lo pedimos en el navegador (por ejemplo, desde el menú File/Open o
+Archivo/Abrir). Aparecerá la página más simple posible.
+
+En rigor de verdad, no es un verdadero documento HTML. Porque no respeta la sintaxis. Recoredmos:
+HTML es un lenguaje con una sintaxis establecida. Y lo que estuvimos ingresando no corresponde
+a esa sintaxis.
+
+Modifiquemos ahora el contenido, de esta forma:
+
+.html
+<h1>Mi primer documento HTML</h1>
+Soy un documento HTML.
+Mi contenido es simple, y ahora tengo alto de estructura.
+.
+
+Al probarlo en el browser, va tomando otra forma, no? Qué es lo que hemos agregado?
+
+Pues bien, son "tags", elementos de HTML que marcan una parte del documento. El "tag"
+que aparece es <h1>. Esta marca indica que lo que sigue, se mostrará como un título en
+nuestro documento visualizado. La marca </h1> indica el fin de este título. La letra
+h denota "header", encabezamiento, título en inglés. El dígito 1 indica que es un título
+de primer nivel, el principal.
+
+Exploremos nuevas modificaciones:
+
+.html
+<h1>Mi primer documento HTML</h1>
+<h2>Mi primer contenido</h2>
+<p>
+Soy un documento HTML, que va tomando forma. Si bien, no tengo
+mucho contenido todavía, poseo títulos y hasta párrafos.
+</p>
+<p>
+Este es ahora otro párrafo.
+</p>
+.
+
+Al probarlo en nuestro navegador, surgen nuevos resultados.
+
+Primero: nueva marca <h2> cerrada con </h2>. Vemos que el título que se
+encierra entre esas marcas, aparece en letra más pequeña que el encerrado
+en <h1>..</h1>. Descubrimos que el <h2> es un encabezamiento de segundo
+nivel.
+
+Pero también aparece la marca <p>, que corresponde a "paragraph", párrafo.
+Tal vez ya habíamos notado, que nuestro contenido, aunque lo ingresáramos
+en varias líneas, luego en nuestro navegador aparecía de corrido. Ahora,
+con la marca <p> hasta </p> descubrimos que podemos armar párrafos. Notemos
+que podemos tener varios párrafos en nuestra página, y el espaciado que
+queda entre ellos. Sin esa marca, nuestro texto no respeta saltos de líneas, ni
+siquiera múltiples espacios, que aparecen como uno solo.
+
+Así como tenemos <h1> y <h2>, cerrados respectivamente por </h1> y </h2>, también
+tenemos <h3>, <h4>, <h5>, y hasta <h6>.
+
+Todos las marcas de HTML, se pueden escribir en letra minúscula o mayúscula, indistintamente.
+Así, tanto vale <h1> como <H1>. No sucede lo mismo con el contenido.
+
+Si Ud. ya ingresó y probó estos ejemplos, podrá haberse encontrado con alguna
+dificultad. Veamos algunas frecuentes:
+
+- Pudo haber ingresado < h1> (notemos el espacio en blanco entre < y h1). Esto
+no es una marca válida. Cuando una marca no es válida, el explorador no la toma
+como parte del HTML.
+
+- Pudo haberse olvidado alguna marca de cierre como </h1>. Esto provoca que el
+título no termine donde debiera.
+

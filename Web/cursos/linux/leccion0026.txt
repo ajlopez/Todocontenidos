@@ -1,0 +1,117 @@
+.h
+El manual en línea
+
+Ya estudiamos algunos comandos, de directorios y archivos. Uno de los comandos con más opciones, ha sido el {{ls}} del
+que apenas hemos visto algunos parámetros.
+
+Como vamos viendo, el Linux tiene en cada comando, multitud de opciones. Por suerte, viene en nuestra ayuda, el manual
+en línea, que debería estar instalado en su distribución.
+
+El manual se invoca con el comando {{man}} y el nombre del comando sobre el que queremos más información:
+
+.code
+[alumno alumno]$ man cp
+.
+
+Normalmente, aparece una descripción del comando, como:
+
+.code
+CP(1)                          FSF                          CP(1)
+
+NAME
+       cp - copy files and directories
+
+SYNOPSIS
+       cp [OPTION]... SOURCE DEST
+       cp [OPTION]... SOURCE... DIRECTORY
+
+DESCRIPTION
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+       -a, --archive
+              same as -dpR
+
+	....
+.
+
+(en castellano, si su instalación soporta el idioma). Vemos que al comienzo aparece el nombre del comando con
+un número 1 entre paréntesis.
+
+Esto indica que estamos en la sección 1 del manual. El manual en línea tiene varias secciones, y ese dígito indica
+la sección que terminó examinando.
+
+Las secciones son:
+
+.text
+<center>
+<table>
+<tr>
+<th>Sección</th>
+<th>Descripción</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Comandos interactivos</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Llamadas al núcleo del sistema</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Librería de programación</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Dispositivos</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Formatos de archivos</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Juegos</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Misceláneos</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Administración del sistema</td>
+</tr>
+<tr>
+<td>n</td>
+<td>Nuevos elementos</td>
+</tr>
+</table>
+</center>
+.
+
+Entonces, si tenemos dudas de un comando, simplemente invocamos al comando {{man}} seguido del comando en cuestión, y
+veremos una explicación de las opciones y funcionamiento del mismo.
+
+Así presentado, puede dar la impresión que para ser útil, necesitamos saber el nombre del comando. Pero qué pasa
+si no sabemos el comando, aunque conocemos que queremos copiar archivos. En este caso, podemos usar la opción {{-K}}
+que nos busca en la base de datos del manual en línea, referencias a lo que pongamos como frase o palabra luego del
+parámetro. Por ejemplo, para averiguar sobre {{copy files}} podemos invocar:
+
+.code
+[alumno alumno]$ man -K "copy files"
+/usr/man/mann/file.n.gz? [ynq] n
+/usr/man/man1/perlrun.1? [ynq] n
+/usr/man/man1/perlmodlib.1? [ynq] n
+/usr/man/man1/cpio.1.gz? [ynq] n
+/usr/man/man1/install.1? [ynq] n
+/usr/man/man1/cp.1? [ynq]
+.
+
+Esto si la versión de los manuales es la inglesa.
+
+Por supuesto, podemos aprender aún más del comando {{man}} con:
+
+.code
+[alumno alumno]$ man man
+.
+

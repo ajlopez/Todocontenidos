@@ -1,0 +1,61 @@
+.h
+Proceso de búsqueda de empleo
+
+Una búsqueda de empleo involucra tres componentes principales: la empresa que
+ofrece la vacante, el candidato y el cargo disponible. Las empresas de
+selección de personal que trabajan para terceros pueden ser un cuarto
+componente, dependiendo del cargo. Cómo hacen para encontrarse estas empresas
+con los candidatos constituye el proceso de búsqueda de empleo. Esas empresas
+al igual que Ud., llevan a cabo un proceso.
+
+Cuando un empresario se dispone a buscar candidatos para llenar una vacante,
+no mira simplemente un día y exclama: "Parece que necesitamos contratar
+a alguien". En muy raros casos, o en compañías muy pequeñas, usted encontrará
+un escenario así, pero por lo general el proceso es más formal.
+
+Las compañías por lo general pasan por un proceso antes de llamar a una
+empresa externa de selección de personal. He aquí algunos pasos del proceso:
+
+1. Una persona de la compañía anuncia una vacante. Al mismo tiempo, esa
+persona revisa los currículums de los empleados de la compañía para ver
+quién puede llenarla. La requisición se anuncia internamente durante cierto
+tiempo. Eso garantiza que el talento interno se agote antes de que se decida
+contratar a alguien externo.
+
+2. La requisición se hace pública por fuera de la empresa. En las compañías
+grandes la requisición va al departamento de recursos humanos. En las
+compañías más pequeñas es manejado directamente por el gerente a cargo
+de llenar la vacante.
+
+3. El departamento de recursos humanos o el gerente a cargo de llenar la
+vacante hace una búsqueda en la base de datos de currículums de la empresa.
+En la base de datos hay CVs que llegaron vía Internet y por otros medios.
+
+4. Después de buscar en la base de datos interna, la compañía hace anuncios
+en sitios económicos, entre éstos algunos sitios web laborales.
+
+5. Si los anuncios en línea no atraen candidatos, la compañía emprende
+acciones más costosas, como publicar anuncios en prensa y en otros medios
+impresos. La situación de muchas empresas es saltearse el punto 4, pero
+eso es justamente lo que está cambiando. Ante la gran cantidad de usuarios
+de Internet capacitados, y el bajo costo de publicar una búsqueda en Internet
+cada vez más se toma en cuenta este camino.
+
+6. Si nada de lo anterior funciona, o no han querido pasar por el trabajo
+de atender solicitudes directamente, la compañía contrata a una empresa
+externa de selección de personal para encontrar un candidato. Entre tanto
+continúa la publicando pasivamente avisos en línea, y en el sitio web
+de la empresa para atraer candidatos.
+
+7. Luego que la empresa de selección de personal encuentra varios candidatos,
+éstos son contactados telefónicamente o por email y se hace una preselección.
+A los candidatos que pasan la preselección se les invita a una entrevista.
+
+8. Se llevan a cabo las entrevistas y el mejor candidato consigue el empleo.
+
+Algo para reflexionar: si sus aptitudes para cubrir un puesto son muy
+similares a las de otra persona, lo más común es que pierda el puesto
+el candidato que llega por intermedio de una empresa externa de selección
+de personal. Eso es porque la compañía que ofrece la vacante debe pagar
+bastante dinero adicional por los candidatos que consiguen estas empresas.
+

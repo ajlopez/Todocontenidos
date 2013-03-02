@@ -1,0 +1,25 @@
+.h
+Introducción
+
+.im
+cursos/internet/int003.jpg
+
+Bienvenido al Curso de Internet, diseñado para explicarle los conceptos
+y aplicaciones que forman el ciberespacio. Este es el punto de partida
+para aprender más sobre Internet en general, conceptos como dominio,
+servidor, y aplicaciones como el navegador, el email, así como conocer
+los sitios especializados, buscadores, directorios, y recursos que
+ofrece la web.
+
+Es un curso donde las lecciones aparecen en nuestro sitio cada semana. Cuando
+esté completo, se irán igualmente actualizando secciones y agregando nuevos
+temas.
+
+Internet es un mundo fascinante, que todos podemos aprovechar, tanto para
+el trabajo, el entretenimiento, el desarrollo personal o económico. Aprendamos
+entre todos, algo más de este universo paralelo.
+
+Cualquier duda, sugerencia, crítica o pregunta, escribir a:
+.a
+mailto:webmaster@todocontenidos.com
+webmaster@todocontenidos.com

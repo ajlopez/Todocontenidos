@@ -1,0 +1,16 @@
+.h
+Introducción
+
+Bienvenido al curso de Introducción a la Programación. Esperamos que pueda aprovechar
+el curso, en esta nueva modalidad a distancia. A lo largo de curso, iremos aprendiendo
+los conceptos fundamentales de la programación, usando como base el lenguaje Visual
+Basic. Sin embargo, el curso no es un curso de Visual Basic (lenguaje y entorno que
+tiene múltiples capacidades), sino un curso de introducción a la programación.
+
+Los temas a tratar serán entonces enfocados no en un lenguaje, sino en general, aunque
+los ejemplos necesiten que Ud. tenga un entorno Visual Basic instalado para poder
+ejecutarlos.
+
+Aprederemos qué es una variable, qué tipos de variables hay, comandos, estructuras de
+control, funciones, rutinas, y aplicación de la lógica a la programación.
+

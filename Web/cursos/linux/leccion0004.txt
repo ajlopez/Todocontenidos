@@ -1,0 +1,17 @@
+.h
+El núcleo y el sistema operativo
+
+El punto focal de todo sistema operativo, es el llamado "kernel" o núcleo. Esto es lo que en
+definitiva creó Torvalds, en base al Minix de Tanenbaum. Es el núcleo el que se encarga de
+las operaciones básicas, ayudado por programas auxiliares. Por ejemplo, es el encargado de
+administrar la memoria, el acceso y modificaciones de los discos, teclado y monitor. Le
+otorga los recursos necesarios a cada proceso que se esté ejecutando, y es, en definitiva,
+el director de orquesta de todo el sistema.
+
+Por otro lado, el núcleo solo es inútil. Cuando operamos en Linux, veremos que tenemos
+que ejecutar comandos. Estos comando son programas, que vienen en el sistema operativo. Muchos
+de esos comandos nacieron de la iniciativa GNU. De hecho, GNU está desarrollando un núcleo,
+denominado "Hurd", que sirva de base a todos los programas que tiene. Pero a principios
+de los noventa, ese núcleo todavía no estaba disponible, debido a eso, Linus Torvalds emprendió
+el trabajo fabuloso de generar uno.
+

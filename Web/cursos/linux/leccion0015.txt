@@ -1,0 +1,19 @@
+.h
+El prompt
+
+El indicador de la línea de comandos es la señal que indica el {{shell}}
+cuando está preparado para recibir un comando. No es un indicador único,
+se puede configurar a otros aspectos. En general, terminará en un {{#}}
+o en un {{$}} dependiendo, por ejemplo, si estamos en una cuenta de
+superusuario o en una normal. También puede estar precedido del nombre
+del directorio actual y de la cuenta del usuario.
+
+Durante los ejemplos usaremos distintos {{prompt}}, y en su instalación
+puede aparecer de distinta forma. Muchas veces usaremos simplemente:
+
+.code
+bash#
+.
+
+como prompt del ejemplo.
+

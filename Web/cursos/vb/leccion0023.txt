@@ -1,0 +1,16 @@
+.h
+Ejercicios
+
+- Ingrese y pruebe los ejemplos de las lecciones
+
+- En el proyecto donde se ingresaba Nombre, Apellido y Edad, muestre un mensaje de "Puede votar" cuando el
+valor de la edad es mayor o igual a 18
+
+- Si no se cumple esa condición, muestre con {{MsgBox}} "No puede votar"
+
+- Usando {{for}}, arme un proyecto que al presionar el botón de "Procesar", imprima en el formulario los
+números impares de 1 a 11.
+
+- Lo mismo usando las estructuras {{do}}, con {{while}} y con {{until}}, tanto al principio como al final
+de cada ciclo
+

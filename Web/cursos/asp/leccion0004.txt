@@ -1,0 +1,118 @@
+.h
+Nuestra primera página ASP
+
+Primero, crearemos un directorio de trabajo. Nuestra páginas ASP deben residir dentro de nuestro servidor de
+web, y si éste está instalado localmente, su contenido se encuentra en un directorio:
+
+.code
+c:\Inetpub\wwwroot
+.
+
+Ubique ese directorio (puede que se encuentre en otro disco). Ahora creamos un subdirectorio de trabajo, digamos:
+
+.code
+c:\Inetpub\wwwroot\asp
+.
+
+Y en ese directorio, creamos una archivo de texto Hola.asp con el contenido siguiente:
+
+.html
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+</body>
+</html>
+.
+
+Es importante que el nombre del archivo termine en .asp. Esta extensión es la que hará posible que este archivo se
+interprete en el servidor, como página ASP.
+
+Aparentemente, este archivo no tiene más que HTML. Y es verdad. Pero probemos qué sucede al ejecutarlo desde el
+explorador de Internet. Pidamos en el navegador, la dirección:
+
+.ax
+http://localhost/asp/Hola.asp
+
+Observe que todo lo que es 
+.ax
+http://localhost/
+http://localhost/
+en general apunta a nuestro directorio wwwroot. Y dentro de este directorio 
+habíamos creado un subdirectorio asp. Así que a nuestra página en ese directorio, tuvimos que invocarla como un
+subdirectorio de localhost.
+
+Hasta el momento, nuestro ejemplo solamente tiene código HTML, y eso es lo que envía a nuestro cliente navegador. Pero
+agreguemos algo más:
+
+.html
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	k=1
+%>
+</body>
+</html>
+.
+
+Notemos las líneas entre <% y %> . Estos "tags" (marcas) no son de HTML. Son parte de la sintaxis
+de ASP. Encierran código de programación. Y el lenguaje de programación que estamos usando se
+llama VBScript (más adelante, veremos cómo usar otro lenguaje, por ejemplo, JavaScript).
+
+Y acá viene lo primero no trivial: si invocamos de nuevo a la página desde el navegador, la salida
+es la misma que en nuestro primer intento. Pero si pedimos el código que llega a nuestro cliente
+browser (podemos presionar botón derecha del ratón y elegir "Ver código fuente"), notaremos que
+el código entre <% y %> NO APARECE en nuestro navegador.
+
+Por qué? Porque es código que se ejecutó desde el servidor. Ese código sólo pone una variable k en 1, y nada más.
+No produce ninguna salida visible en el cliente.
+
+ATENCION: Recuerde en pedir la página desde el navegador, usando:
+
+.ax
+http://localhost/asp/Hola.asp
+http://localhost/asp/Hola.asp
+
+(usando http) no lo cargue directamente del disco, pues no va a ejecutarse entonces en el servidor.
+
+Agreguemos algo para que el programa en el servidor produzca alguna salida:
+
+.html
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<%
+	k=1
+%>
+<h2>El valor de la variable k es <% = k %></h2>
+</body>
+</html>
+.
+
+Ahora, en el cliente, llegará un contenido como:
+
+.html
+<html>
+<head>
+<title>Hola en ASP</title>
+</head>
+<body>
+<h1>Hola en ASP</h1>
+<h2>El valor de la variable k es 1</h2>
+</body>
+</html>
+.
+
+Lo nuevo es el uso del signo igual dentro del <%= %>. Ese signo indica "la expresión que sigue, evaluarla y su
+resultado mostrarla en pantalla". Pero de nuevo, lo que llega al cliente es el resultado, para nada se ve el código
+del servidor.
+

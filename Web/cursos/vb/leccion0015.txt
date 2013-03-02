@@ -1,0 +1,115 @@
+.h
+Nuestro primer botón
+
+Prosigamos agregando un control visible a un formulario.
+
+Creamos un nuevo proyecto, en blanco:
+
+.im
+cursos/prog/vbproyectoboton.gif
+
+Tenemos nuestra caja de herramientas a la izquierda. Seleccionamos la herramienta que nos permite poner
+un botón en el formulario:
+
+.im
+cursos/prog/vbpaletaboton.gif
+
+Una vez seleccionada, presionamos y arrastramos el ratón sobre nuestro formulario, y se va formando un rectángulo,
+donde quedará nuestro botón. También podemos tomarlo haciendo doble click sobre
+la caja de herramientas, en el ícono del control. Aparecerá automáticamente en
+el centro del formulairo.
+
+Podemos luego marcarlo, arrastrarlo, y modificar su tamaño, hasta que quede del
+aspecto que querramos:
+
+.im
+cursos/prog/vbformularioboton.gif
+
+Hemos agregado un control a nuestro formulario.
+
+Tanto el formulario como el botón, tienen propiedades, que podemos cambiar desde la ventana de propiedades. Esta
+es una característica de Visual Basic, y sus componentes. Los componentes se van creando y dibujando durante
+la etapa de diseño. En ese momento, podemos cambiarle propiedades (también las podemos cambiar mediante instrucciones
+en el programa). Una propiedad importante, es {{name}}. Vemos que nuestro formulario tiene como name a {{Form1}}.
+Nuestro botón se llama {{Command1}}. Cambiemos la propiedad {{Caption}} del botón a {{Procesar}}:
+
+.im
+cursos/prog/vbbotoncaption.gif
+
+y vea como aparece ahora nuestro formulario:
+
+.im
+cursos/prog/vbboton.gif
+
+Ahora, volvamos a programación. Quisiéramos que cuando el usuario presione el botón, algo suceda en nuestro
+programa. Para ello, Visual Basic nos da la posibilidad de escribir código para un evento del botón. En los
+ejemplos anteriores, habíamos codificado el evento {{Form_Load}}. Ahora, hagamos doble click sobre el botón que
+agregamos, aparecerá una ventana con este aspecto:
+
+.im
+cursos/prog/vbcommandclick.gif
+
+Es nuestro lugar para codificar la rutina que reaccionará al click del botón.
+
+Vemos que el código:
+
+.code
+Private Sub Command1_Click()
+
+End Sub
+.
+
+es el de una rutina ({{Sub}} indica subrutina, una serie de comandos que se ejecutan en conjunto). El nombre es
+{{Command1_Click}}. El modificador {{Private}} indica que esta rutina es privada, que no tiene sentido llamarla
+desde otro lado que no sea el formulario. Aunque ahora sólo tenemos un formulario, un programa podría tener otros formularios,
+o módulos o clases, que veremos en su momento.
+
+Dentro de esta rutina, podemos escribir un código de prueba:
+
+.code
+Private Sub Command1_Click()
+
+    ' Definimos una variable
+    Dim k As Integer
+    
+    ' Le damos un valor
+    k = 1
+    
+    Print k  ' la mostramos
+    
+    k = k + 1  ' la incrementamos
+    
+    Print k   ' la mostramos en el formulario
+End Sub
+.
+
+Algo nuevo: con comilla sencilla, podemos escribir un comentario, un texto cualquiera, hasta el fin de la línea, que no
+será tomado como instrucción, sino como una simple anotación nuestra.
+
+Aparece la definición de una variable {{k}}. La definimos como {{integer}}, como variable entera. Le damos el valor
+1. La imprimimos en el formulario. La incrementamos en 1. La imprimimos en el formulario nuevamente.
+
+Si ejecutamos el proyecto con {{F5}}, aparece el formulario y el botón. Al presionar el botón, sale:
+
+.code
+1
+2
+.
+
+en la superficie del formulario. Si presionamos nuevamente, se agrega otra salida más, y así.
+
+Grabamos el proyecto, en un directorio aparte. Lo usaremos como base para nuestras pruebas futuras. Resumiendo lo que
+sabemos hasta ahora:
+
+- Conocemos el concepto de proyecto
+.br
+- Tenemos formulario en un proyecto
+.br
+- El formulario tiene propiedades
+.br
+- Podemos agregarle controles al formulario, por ahora, conocemos botón
+.br
+- El botón tiene una rutina que reacciona al click
+.br
+- Sabemos definir variables y usarlas
+

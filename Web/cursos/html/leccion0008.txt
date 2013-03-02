@@ -1,0 +1,76 @@
+.h
+Estructura de un documento HTML
+
+Siguiendo con el rigor, nuestros anteriores ejemplos no cumplen todavía con la
+sintaxis completa del lenguaje HTML. No, debemos agregar algo más. Para entender lo
+que falta, veamos la estructura de un documento, llamémoslo estructura.html con el
+contenido:
+
+.html
+<html>
+<head>
+<title>Documento HTML</title>
+</head>
+<body>
+<h1>Documento HTML</h1>
+</body>
+</html>
+.
+
+Este ya es documento HTML con la estructura correspondiente. Notemos la aparición de
+nuevos "tags" o marcas.
+
+La marca <html> abarca todo el contenido del documento. Se cierra con su correspondiente
+</html>. Es el "tag" que encierra a todos los demás.
+
+Luego, dentro del <html>, hay dos grandes secciones. La primera, desde <head>
+hasta </head>, es el encabezamiento del documento. Hasta ahora, el único "tag" que
+hemos puesto en esta sección es el de título <title>. Pero <head> puede albergar
+más "tags", que veremos en lecciones posteriores. El "tag" <title> nos proporciona
+un título para nuestra página, que no sale en el contenido del navegador, sino que
+en general, los navegadores lo usan como título de la ventana que están usando. Note
+que lo que pusimos dentro de <title> ahora se ve como un título de la ventana del
+explorador.
+
+La sección <head> en general, no aparece dentro de la ventana del navegador. El contenido
+visible de la página, queda asociada dentro del par <body> ... </body> , el "body" (cuerpo,
+en inglés) del documento. Es ahí donde colocamos nuestro contenido. En los ejemplos
+anteriores no colocamos ni <html> ni <head> ni <body>. Vemos que entonces, al
+carecer de estos elementos, el navegador toma a nuestra página directamente como
+si viniera de un <body> implícito.
+
+En resumen, la estructura básica de nuestro documento será:
+
+.html
+<html>
+<head>
+.... encabezamiento ....
+</head>
+<body>
+.... cuerpo, contenido ....
+</body>
+</html>
+.
+
+Para ser precisos, un documento HTML es un documento SGML (Standard Generalized Markup
+Language), un lenguaje que ya habíamos nombrado en la introducción. Como tal, necesita
+que le indiquemos qué tipo de documento SGML es, y esto se logra con una declaración
+adicional, que podemos verla en:
+
+.html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+ "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML>
+ <HEAD>
+  <TITLE>todocontenidos.com: Internet que sirve</TITLE>
+ </HEAD>
+ <BODY>
+ </BODY>
+</HTML>
+.
+
+Esa declaración DOCTYPE, así como la vemos en el ejemplo de arriba, podemos olvidarla
+inmediatamente. Lo que indica, es el tipo de documento SGML que es, pero es perfectamente
+obviable, no es necesario para nuestros documentos. Sólo se presenta aquí por completitud,
+y porque algunos utilitarios que generan páginas, insertan alguna declaración de este
+tipo.

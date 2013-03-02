@@ -1,0 +1,8 @@
+.h
+Primeros Pasos
+
+Nuestros primeros pasos partirán desde cero, desde HTML plano. Asumiremos que no
+conocemos cómo crear páginas Web, pero que estamos familiarizados con el uso de la
+web. Despues de todo, ahora está viendo esta lección en un navegador. Discutiremos
+qué es HTML, cómo crearlo, los elementos de HTML, y la estructura de un documento.
+

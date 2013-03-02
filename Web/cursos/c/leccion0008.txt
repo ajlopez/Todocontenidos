@@ -1,0 +1,15 @@
+.h
+El compilador Pacific C
+
+Este es un compilador freeware para MS-DOS. Con él se pueden crear programas DOS (no windows)
+que se pueden ejecutar desde DOS o una ventana de DOS. Incluye un editor llamado PPD que
+facilita las tareas de programación.
+
+El compilador viene con un completo manual, pero en inglés.
+
+La dirección donde puede conseguir el Pacific C es:
+
+.ax
+http://www.hitech.com.au/products/pacific.html 
+www.hitech.com.au/products/pacific.html 
+

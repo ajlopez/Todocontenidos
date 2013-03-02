@@ -1,0 +1,13 @@
+.h
+Ejecutando el proyecto
+
+Bueno, tenemos nuestro primer proyecto. Con el menú de Ejecutar / Iniciar, o presionando la tecla F5, lo ejecutamos,
+veamos el resultado:
+
+.im
+cursos/prog/vbformulario.gif
+
+Es un simple formulario, cuando lo cerramos, volvemos al entorno de programación. Bien, nuestro
+primer proyecto es simple, prácticamente sin instrucciones de programación. Esto todavía no
+puede llamarse programación. Veamos que es programar
+

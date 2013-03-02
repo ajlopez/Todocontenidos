@@ -1,0 +1,70 @@
+.h
+La sentencia for
+
+Otra instrucción de control, que está presente en todos los lenguajes de programación, es la sentencia {{for}}.
+
+Es un verbo que nos permite ejecutar una serie de comandos, varias veces. La estructura es:
+
+.code
+for <variable>=<valor inicial> to <valor final>
+	... instrucciones a ejecutar
+next
+.
+
+Por ejemplo:
+
+.code
+Dim total as Integer
+Dim k as Integer
+
+for k=1 to 6
+	total = total + k
+next
+.
+
+La variable {{k}} comienza tomando el valor 1, y se ejecuta el ciclo {{for}} (este verbo significa "para", ejecuta las instrucciones para
+tal valor de la variable) una vez. Al llegar al {{next}} incrementa el valor de la variable, y ahora {{k}} pasa a valer 2.
+
+Se controla el valor de la variable por lo que está luego del {{to}}. Como {{k}} no llegó a pasar de 6, sigue ejecutando
+ciclos. En definitiva, el ciclo del ejemplo se ejecutará 6 veces, tomando {{k}} los valores 1, 2, 3, 4, 5 y 6 inclusive.
+
+Una variante incluye el modificador {{step}} (paso, incremento), que permite especificar por cuánto se incrementa
+la variable al final de cada ciclo:
+
+.code
+Dim total as Integer
+Dim k as Integer
+
+for k=1 to 6 step 2
+	total = total + k
+next
+.
+
+En este caso, sólo se ejecutará el ciclo 3 veces, con {{k}} valiendo 1, 3, 5.
+
+Probemos la sentencia con un ejemplo en concreto.
+
+- Creamos un nuevo proyecto .exe
+
+- Ponemos un botón y le modificamos el {{Caption}} a "Procesar
+
+
+Le agregamos al código del botón:
+
+.code
+Private Sub Command1_Click()
+    Dim k As Integer
+    
+    For k = 1 To 6
+        Print "Mensaje " & k
+    Next
+End Sub
+.
+
+Al ejecutar, debería quedar así:
+
+.im
+cursos/prog/vbformfor.gif
+
+Modifique el ejemplo, probando con {{step}} y con otros valores iniciales y finales de la variable.
+

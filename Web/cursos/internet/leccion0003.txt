@@ -1,0 +1,63 @@
+.h
+Historia de la red
+
+Sí, volverá a leer la historia de la red, en esta lección. Repasemos esto, que
+ha sido una revolución que no se esperaba, y que ha tocado la mayor parte de los
+aspectos de la vida humana. Desde el conocimiento científico, hasta lo comercial,
+desde el entretenimiento hasta las noticias, se han visto afectados por la
+aparición de Internet. Examinemos su historia.
+
+.im
+cursos/internet/int001.gif
+
+Evolucionó de un experimento iniciado en los años sesenta
+por el Ministerio de Defensa de los Estados Unidos.
+El Ministerio quería crear una red de computadoras que se mantuviera funcionando
+en caso de un desastre, como una guerra nuclear.
+Si una parte de la red se dañara o fuera destruida, el resto del sistema 
+todavía debería funcionar. Esta red fue conocida como ARPANET, cuya función era conectar
+a los investigadores científicos y académicos de los Estados Unidos. 
+Esta fue la precursora de lo que hoy es Internet.
+
+En 1985, la Fundación Nacional para la Ciencia (NSF, por sus siglas en inglés)
+creó NSFNET, una serie de redes para investigación y comunicación de la educación.
+Basada en los protocolos de ARPANET, la NSFNET creó un servicio nacional de
+backbone, o espina dorsal de la Internet, que era ofrecida de manera gratuita 
+a cualquier institución educativa o de investigación de los Estados Unidos. 
+Al mismo tiempo, se crearon redes regionales para conectar instituciones 
+particulares al servicio nacional de espina dorsal. 
+
+La NSFNET crecía rápidamente a medida que la gente iba descubriendo su 
+potencial al paso que se creaban nuevas aplicaciones de software para 
+facilitar el acceso. Corporaciones como Sprint y MCI comenzaron a crear 
+sus propias redes, las cuales conectaron a NSFNET. Dado que empresas comerciales 
+y otros proveedores regionales de redes se han encargado de la operación de 
+las principales arterias de la Internet, NSF se ha retirado del negocio 
+de las redes de espina dorsal (el "backbone"). 
+
+NSF coordinó también un servicio llamado InterNIC, que registraba 
+todas las direcciones de Internet para que los datos pudieran ser enrutados 
+al sistema correcto. Hasta hace unos años, Network Solutions, Inc. (en inglés)
+se había encargado de este servicio con la cooperación de NSF. Actualmente
+el servicio está en manos de varias compañías.
+
+Puede visitar el sitio de Network Solutions, para ver cómo opera (en inglés):
+
+.ax
+http://www.networksolutions.com/
+http://www.networksolutions.com/
+
+Puede visitar el sitio de la ICANN (Internet Corporation for Assigned Names
+and Numbers) (en inglés) para obtener las últimas noticias sobre el sistema
+de nombre, dominios, y empresas encargadas:
+
+.ax
+http://www.icann.org/
+http://www.icann.org/
+
+Puede encontrar una cronología de Internet bastante completa, en español, en
+
+.ax
+http://www.ibarrolaza.com.ar/zakon/hit.html
+http://www.ibarrolaza.com.ar/zakon/hit.html
+

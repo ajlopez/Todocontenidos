@@ -1,0 +1,124 @@
+.h
+La sentencia if
+
+Tenemos que aprender en esta lección, algo que es fundamental en programación: todo lenguaje tiene la capacidad
+de, no sólo tener variables y comandos, sino de procesar instrucciones que toman decisiones, que controlan
+el flujo de la programación. El verbo más representativo de este tipo de instrucciones, es la sentencia {{if}} 
+(equivalente a nuestro castellano "si pasa tal cosa...").
+
+La sentencia {{if}} se usa para ejecutar una o más instrucciones, pero dependiendo del resultado de evaluar una
+condición.
+
+Cada condición se evalúa a {{True}} (verdadero) o a {{False}} (falso).
+
+La sintaxis de la instrucción en Visual Basic es:
+
+.code
+if <condicion> then <instrucciones>
+.
+
+o el formato multilínea (nótese el uso de {{end if}} para la terminación):
+
+.code
+if <condicion> then
+	... comandos que se ejecutan si la condición es verdadera
+end if
+.
+
+Su otra variante es:
+
+.code
+if <condicion> then
+	... comandos que se ejecutan si la condición es verdadera
+else
+	... comandos que se ejecutan si la condición es false
+end if
+.
+
+Un ejemplo concreto:
+
+.code
+Dim edad as Integer
+edad = 21
+
+if edad >= 21 then
+	Print "Es mayor de edad"
+else
+	Print "No es mayor de edad"
+end if
+.
+
+Como condición se puede usar una comparación como en este ejemplo. Los operadores de comparación son:
+
+{{=}}	Igualdad
+.br
+{{<}}	Menor que
+.br
+{{>}}	Mayor que
+.br
+{{<>}}	 Distinto
+.br
+{{<=}}	 Menor o igual que
+.br
+{{>=}}	 Mayor o igual que
+
+Se pueden comparar números o textos. Pero no solo las comparaciones producen condiciones. Visual Basic
+considera como condición cualquier valor numérico. Si ese valor es distinto de 0, lo considera verdadero. Si es
+cero, lo toma como falso. Así:
+
+.code
+Dim k as Integer
+
+k = 1
+
+if k then
+	Print "k no es cero"
+else
+	Print "k es cero"
+end if
+.
+
+Podemos probar la sentencia en un ejemplo concreto:
+
+- Creamos un nuevo proyecto .exe en Visual Basic
+
+- Le agregamos al formulario 3 etiquetas, con los {{Caption}} en "Nombre", "Apellido", "Edad"
+
+- Le agregamos al formulario 3 campos de texto, con contenido en blanco (propiedad {{Text}}) y nombres "txtNombre",
+"txtApellido", "txtEdad"
+
+- Añadimos un botón con {{Caption}} "Procesar".
+
+Debe quedar como:
+
+.im
+cursos/prog/vbformif.gif
+
+En el código del botón, podemos controlar si el usuario ingresó el Nombre y el Apellido:
+
+.code
+Private Sub Command1_Click()
+    If txtApellido.Text = "" Then
+        MsgBox "Debe ingresar Apellido"
+    End If
+    
+    If txtNombre.Text = "" Then
+        MsgBox "Debe ingresar Nombre"
+    End If
+    
+    If Not IsNumeric(txtEdad.Text) Then
+        MsgBox "Edad no es correcta"
+    End If
+End if
+.
+
+Aplicamos acá el uso de la propiedad del control de texto, la propiedad {{.Text}}, que nos dá lo que el usuario
+ingresó en el control.
+
+Nuevamente, usamos la rutina del sistema {{MsgBox}} para poner un mensaje en pantalla.
+
+Aparece una función nueva {{IsNumeric}} que devuelve verdadero o falso, dependiendo de si el parámetro que le pasamos
+es o no un valor convertible a número.
+
+Ejecutamos el programa, y probamos las distintas alternativas, ingresando o no Apellido, Nombre y Edad cada vez.
+

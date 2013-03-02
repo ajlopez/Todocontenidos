@@ -1,0 +1,91 @@
+.h
+Probando nuestra aplicación
+
+El código fuente de Java siempre reside en archivos con extensión .java. Ahora,
+para ejecutarlos, debemos transformarlos en archivos con extensión .class. Esa
+es la función del compilador. Desde la línea de comandos, en nuestro directorio
+de trabajo, ejecutamos:
+
+.code
+javac HolaMundo.java
+.
+
+Esto invoca al compilador javac, que forma parte del JDK. Si todo funciona
+bien, en nuestro directorio aparece un nuevo archivo HolaMundo.class. Este contiene
+el código compilado listo para ser ejecutado por la máquina virtual Java. Observemos
+que no es un típico programa ejectable Linux o Windows.
+
+Para ejecutarlo, apelamos al intérprete de Java del JDK, con:
+
+.code
+java HolaMundo
+.
+
+y debe aparecer nuestro saludo en la consola.
+
+El comando "java" es el intérprete de Java, que instaló el JDK. Puede haber
+más programas intérpretes en nuestra máquina. Si estamos en Windows, probablemente
+tengamos instalado el intérprete que Microsoft incorpora en el Internet Explorer.
+Podemos probarlo con:
+
+.code
+jview HolaMundo
+.
+
+y debe producir el mismo resultado.
+
+.h2
+Problemas en la compilación y ejecución
+
+Si el compilador javac encuentra algún problema, lo avisa en la consola. Pero
+también es frecuente que el javac no pueda encontrarse, dando el sistema
+operativo algún mensaje como:
+
+.code
+javac: Command not found
+.
+
+Esto ocurre cuando no tenemos el directorio de los binarios del JDK incluído
+en nuestro PATH (la lista de directorios donde el intérprete de comandos que
+usemos esté buscando a los ejecutables).
+
+Para solucionar el problema, debemos incluir el directorio de los binarios, por
+ejemplo, en Windows, es c:\jdk1.3\bin, si el JDK quedó instalado en el directorio
+c:\jdk1.3
+
+Otro problema común en la compilación, son los errores sintácticos. El compilador
+Java es estricto: no permite que nos olvidemos una llave o un punto coma. En caso
+de encontrar un problema de este tipo, avisa en la pantalla el tipo de problema
+y la línea donde lo encontró.
+
+Por ejemplo, si hemos escrito:
+
+.code
+	System.out.printl("Hola, mundo");
+.
+
+está mal, porque debería haber sido "println". El método "printl" no existe,
+y el compilador nos avisará con un mensaje del tipo:
+
+.code
+HolaMundo.java:3> Method printl(java.lang.String) not found in class
+java.io.PrintStream.
+	System.out.printl("Hola, mundo");
+                   ^
+.
+
+Otro error común es escribir mal el nombre de la clase. Si el código es:
+
+.code
+public class Holamundo {
+.
+
+con "mundo" en minúscula, el compilador genera un archivo Holamundo.class, y
+al pedir:
+
+.code
+java HolaMundo
+.
+
+el intérprete java no encuentra la clase, y da un error de "Class not found".
+

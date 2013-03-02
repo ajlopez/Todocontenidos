@@ -1,0 +1,98 @@
+.h
+Tipos de Letras
+
+Ya conocimos la marca {{<font>}} cuando estudiamos el cambio de color en el texto de nuestro documento:
+
+.html
+<p>
+Usando la marca font podemos destacar <font color="blue">cambiar el color de un texto</font>.
+</p>
+.
+
+La marca {{<font>}} tiene otros atributos, que nos permiten controlar el tipo de letra a usar en un bloque. Uno
+de esos atributos es el {{size}} (tamaño), que influye en el tamaño de la salida:
+
+.html
+<p>
+<font size=1>Ejemplo de tamaño 1</font>
+<br>
+<font size=2>Ejemplo de tamaño 2</font>
+<br>
+<font size=3>Ejemplo de tamaño 3</font>
+<br>
+<font size=4>Ejemplo de tamaño 4</font>
+<br>
+<font size=5>Ejemplo de tamaño 5</font>
+<br>
+<font size=6>Ejemplo de tamaño 6</font>
+<br>
+<font size=7>Ejemplo de tamaño 7</font>
+</p>
+.
+
+siendo el resultado:
+
+.text
+<p>
+<font size=1>Ejemplo de tamaño 1</font>
+<br>
+<font size=2>Ejemplo de tamaño 2</font>
+<br>
+<font size=3>Ejemplo de tamaño 3</font>
+<br>
+<font size=4>Ejemplo de tamaño 4</font>
+<br>
+<font size=5>Ejemplo de tamaño 5</font>
+<br>
+<font size=6>Ejemplo de tamaño 6</font>
+<br>
+<font size=7>Ejemplo de tamaño 7</font>
+</p>
+.
+
+
+El atributo de {{size}} puede variar de 1 a 7. El valor asumido es 3.
+
+Aunque pongamos un tamaño de texto, en el explorador del cliente puede aparecer en otro tamaño físico, debido a que
+los "browsers" permiten cambiar los tamaños. Por ejemplo, prueba el anterior ejemplo, y cambie en el Internet Explorer,
+el tamaño usando el menú de Ver/Tamaño de texto.
+
+El tamaño asumido se puede cambiar con una marca un poco olvidada, el {{basefont}}:
+
+.html
+<basefont size=5>
+.
+
+En vez de especificar un tamaño absoluto de letra, podemos indicar uno relativo, escribiendo {{+1}} o {{-2}} en el
+atributo {{size}}. Esto incrementa o decrementa el tamaño actual, en el número que especificamos. Así, si estamos
+en el tamaño normal 3, el ejemplo:
+
+.html
+<font size=+2>Letra más grande</font>
+.
+
+hará que el texto aparezce en tamaño 3+2=5:
+
+
+.text
+<font size=+2>Letra más grande</font>
+.
+
+El atributo {{face}} nos permite indicar el tipo de letra. Este es el nombre del tipo, aunque pueden especificar varios,
+separados por coma:
+
+.html
+<font face="Verdana, Arial, Helvetica" size=4>Prueba de tipo de letra</font>
+.
+
+resultando:
+
+.text
+<font face="Verdana, Arial, Helvetica" size=4>Prueba de tipo de letra</font>
+.
+
+Cuando se especifica un tipo de letra, puede que no esté instalada en la máquina del cliente. Por ejemplo, en lo de arriba,
+el tipo {{Verdana}} es un tipo instalado solamente en Windows, alguien que lo vea desde una Mac, no encontrará ese
+tipo de letra. El navegador trata de pasar al próximo tipo de letra que se especificó. Si no encuentra ninguno de los
+tipos, muestra el texto con el tipo asumido en ese momento para el texto normal.
+

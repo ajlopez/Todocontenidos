@@ -1,0 +1,160 @@
+.h
+Otro ejemplo con variables
+
+Ingresemos en nuevo archivo prueba.c el contenido:
+
+.code
+#include <stdio.h>
+
+/*
+	Este es un comentario
+ */
+
+int main()
+{
+	int k;	/* declaración de variable entera */
+
+	k=1;	/* asignación de valor */
+
+	k=k+1;
+
+	return 0;
+}
+.
+
+Aparecen conceptos nuevos. Primero, el comentario. Todo lo que pongamos entre
+/* y */ se considera un comentario, un texto ignorado por el compilador (en realidad
+lo trata como si fuera un espacio en blanco).
+
+El comentario puede ser multilínea: el compilador considera comentario todo lo
+que se encuentre entre /* y */, aunque sean varias líneas.
+
+Luego, en nuestra función main, declaramos nuestra primer variable:
+
+.code
+	int k;
+.
+
+Aparece el tipo "int" (el tipo entero), y el nombre de la variable ("k"), terminado
+en punto y coma. Esta es una declaración típica de variable. En breve, estudiaremos
+los tipos de valores que soporta C, pero ya vamos viendo que "int" (entero) es uno
+de los tipos más usados.
+
+Las declaraciones de variables, si existen, van al comienzo de una función, en este
+caso, en el cuerpo del "main". Podemos declarar varias variables, por ejemplo:
+
+.code
+int main()
+{
+	int k;
+	int j;
+
+	... resto del programa  ...
+
+}
+.
+
+o alternativamente:
+
+.code
+int main()
+{
+	int k, j;	/* varias variables en la misma declaración */
+
+	... resto del programa  ...
+
+}
+.
+
+En nuestro ejemplo, luego de declarar las variables, pudimos seguir con comandos, como
+el nuevo:
+
+.code
+	k=1;
+.
+
+un clásico comando de asignación. Esto asigna el valor entero 1 a la variable k, que
+por supuesto, es del tipo entero. El lenguaje C usa el = (igual) como operador de
+asignación. A la izquierda va una variable, y a la derecha una expresión. El comando
+como todos, termina en punto y coma.
+
+Alternativamente, podríamos haber combinado la declaración y el asignar un valor
+inicial a la variable, así:
+
+.code
+	int k=1;
+.
+
+Lo que sería inválido, es declarar una variable luego de haber comenzado a poner
+comandos en la función:
+
+.code
+int main()
+{
+	int k;
+
+	k=1;
+
+	int j;
+
+	j=2;
+}
+.
+
+Curiosamente, este código, inválido en lenguaje C, es perfectamente potable en
+lenguaje C++ (donde reconocieron la ventaja de esta capacidad).
+
+En nuestro ejemplo, la variable k nace y vive mientras se está ejecutando la
+rutina "main". Se dice que k es una variable local, que está adentro de la función,
+contrariamente a una variable global, que se declara fuera de una función, y
+vive durante la vida del programa. Por ejemplo:
+
+.code
+#include <stdio.h>
+
+/*
+	Este es un comentario
+ */
+
+int contador;	/* Variable global */
+
+int main()
+{
+	int k;	/* declaración de variable entera */
+
+	k=1;	/* asignación de valor */
+
+	k=k+1;
+
+	return 0;
+}
+.
+
+La variable "contador" declarada arriba, se declaró fuera de toda función, entonces
+es una variable que nace con el programa, y vive durante la ejecución de todo el
+programa. Podemos usar la variable desde cualquier función de nuestro programa:
+
+.code
+/*
+	Este es un comentario
+ */
+
+int contador;	/* Variable global */
+
+int main()
+{
+	int k;	/* declaración de variable entera */
+
+	k=1;	/* asignación de valor */
+
+	k=k+1;
+
+	contador = k+1;		/* ahora usamos la variable contador */
+
+	return 0;
+}
+.
+
+Estos son apenas nuestros primeros pasos con variables. Antes de seguir profundizando,
+analicemos los distintos tipos de valores y variables que permite el lenguaje C.
+

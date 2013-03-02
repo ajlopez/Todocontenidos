@@ -1,0 +1,38 @@
+.h
+La cuenta del usuario
+
+Para trabajar con el sistema, es imprescindible tener una cuenta de usuario.
+Hasta ahora, lo que tenemos es un código y una contraseña para entrar.
+Pero una cuenta de usuario es más. Una cuenta de usuario tiene un
+directorio personal. Ud. puede averiguar cuál es su directorio, al entrar
+en su cuenta, e ingresar:
+
+.code
+[alumno alumno]$ pwd
+/home/alumno
+.
+
+Ya llegaremos a explicar el sistema de archivos de Linux, pero nos basta
+por ahora saber, que hay un directorio, un lugar donde podemos poner
+archivos, que es nuestro personal, y tenemos todos los derechos sobre él.
+
+Dependiendo de nuestra cuenta y los atributos que nos haya dado el administrador,
+tendremos acceso a otras partes del sistema de archivos.
+
+Los demás usuarios, en general, no podrán entrar a los directorios personales
+de los demás, a no ser que el administrador o el propio usuario dueño
+les otorgue permiso.
+
+Como el directorio personal es un lugar para poner archivos, el usuario
+puede crear, copiar archivos en ese directorio, crear nuevos subdirectorios,
+y ocupar espacio en disco. Esto puede causar problemas: un usuario
+diligente puede agotar el espacio disponible. En esos casos, se maneja
+el concepto de {{cuota}}: cada cuenta tiene una capacidad máxima de uso
+de disco. La cuota también se puede establecer para el uso de la impresora
+(cuota de papel) e incluso para el tiempo que el usuario puede usar
+el sistema (cuota de pantalla).
+
+El superusuario puede escribir o borrar en cualquier directorio ya que
+tiene todos los privilegios (por eso, usar la cuenta del superusuario
+es peligroso).
+

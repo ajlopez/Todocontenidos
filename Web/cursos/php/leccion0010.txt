@@ -1,0 +1,21 @@
+.h
+Manual de PHP en español
+
+Tanto para las lecciones anteriores, como para las que siguen, es interesante
+contar con la ayuda en línea en español, en:
+
+.ax
+http://www.php.net/manual/es
+http://www.php.net/manual/es
+
+Si se desea consultar fuera de línea, se puede descargar en varios formatos e idiomas
+desde:
+
+.ax
+http://www.php.net/download-docs.php
+http://www.php.net/download-docs.php
+
+Está muy bien escrito, y explica cada función disponible en PHP. La sección dedicada
+a las funciones, tiene más de 50 subsecciones, con rutinas agrupadas por tema, como
+HTTP, FTP, funciones de fecha y hora, texto, acceso a bases de datos, y más.
+

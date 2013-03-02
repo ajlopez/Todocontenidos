@@ -1,0 +1,28 @@
+.h
+Qué son las páginas PHP?
+
+PHP es la sigla de "PHP: Hypertext Preprocessor" (una sigla autorreferente). Pero qué significa?
+
+Un ejemplo podría explicar esto:
+
+.html
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<?php echo "Hola, soy un script PHP!"; ?>
+</body>
+</html>
+.
+
+Si Ud. conoce CGI o Perl, notará que es distinto de estas tecnologías: PHP es HTML
+con "tags" especiales (como "<?php"), que indican el comienzo de un código
+de programación en el lenguaje PHP.
+
+Si Ud. conoce Javascript, en el cliente, veremos que PHP es como un "script",
+un código que se interpreta y produce algo en la salida, pero al contrario de
+otras tecnologías, ésta se ejecuta en el servidor. Esto significa que el programa
+cliente, el "browser", no va a recibir nada del código, sino sólo el resultado
+de su ejecución en el servidor.
+

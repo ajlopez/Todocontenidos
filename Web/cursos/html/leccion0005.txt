@@ -1,0 +1,30 @@
+.h
+Qué es HTML?
+
+Para escribir buenas páginas HTML, primero estudiemos qué es esto de HTML. Lo primero que podemos saber
+deviene de su sigla en inglés: HTML significa "HyperText Markup Language", un lenguaje de para armar documentos
+con "hipertextos", documentos con enlaces a otros documentos. Surgió de la necesidad de compartir documentos
+de una forma estandard, en el seno del CERN, el instituto de investigaciones nucleares de la Comunidad Europea, allá
+por los principios de los 90. Tim Berners-Lee debe ser reconocido como el inventor de este lenguaje, que se
+basa en otro anterior, pero más complejo y general, el SGML (Standard Generalized Markup Language), de IBM.
+
+HTML es un lenguaje, pero del tipo hablado. Es un lenguaje de computación, y como tal, tiene
+reglas específicas, que deben ser seguidas. Tiene una sintaxis, un modo estricto de ser escrito,
+para luego ser interpretado por los "browsers", los navegadores y exploradores de Internet.
+
+HTML es un lenguaje de "markup", que podemos traducir como "marcado". Esto significa que toma partes
+del documento y las marca, dándoles significado especial. Por ejemplo, al tope de esta
+página encontrará un título. Al pie de la misma, encontrá enlaces a otras páginas. Ambos textos
+se muestran de distinta manera (uno en letra más grande, otro con subrayados), debido a que son
+partes marcadas de forma distinta en el código HTML. Ud. mismo puede ya
+ver el código HTML de esta página, desde su navegador. Seguramente si presiona el botón derecho
+de su ratón, le aparecerá un menú con alguna opción como "Ver código fuente" o "Source code". Al
+elegirla, verá el código HTML de la página actual. No se asuste! Todo ese texto deberá entenderse
+a lo largo del curso.
+
+HTML arma "hipertextos". Como hacíamos notar arriba, al pie de esta página (y a la izquierda, y al
+tope también), tendrá enlaces a otras páginas. Esto cambia fundamentalmente la forma de navegar
+por estos documentos. Abandonado la exploración lineal, ahora los documentos de un sitio
+pueden estar interconectados de formas nuevas. Y no solamente eso, sino que los enlaces pueden
+apuntar a otros documentos de otros sitios, formando la conocida Red de Redes, la World Wide Web 
+(la "telaraña" de alcance mundial).

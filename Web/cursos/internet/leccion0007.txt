@@ -1,0 +1,36 @@
+.h
+El correo electrónico
+
+El e-mail, permite que usuarios locales o lejanos, intercambien mensajes. Cada
+usuario tiene una dirección de correo, y conociendo esa dirección, podemos enviarle
+un mensaje.
+
+El mensaje puede consistir en texto, o en formatos más sofisticados, como HTML, y aún
+audio o video. Como al mensaje se le pueden adosar archivos cualesquiera, de texto,
+o binarios, se convierte en una poderosa herramienta. Un profesional puede enviarle
+una presentación en Excel a un colega que esté en la otra parte del mundo, con la
+misma facilidad con la que puede enviar una foto a un familiar cercano.
+
+Una de las consecuencias no deseadas de tener una dirección de correo, es la
+llegada de "spam" o correo no solicitado.
+
+En el curso comentaremos el uso del email, de algún programa de correo, el concepto de 
+"spam", y los mensajes falsos, conocidos como "hoax".
+
+Las listas de correo, han derivado del uso del email. Uno puede apuntarse a unas
+de estas listas, y compartir conocimientos y experiencias con otras personas. Cada
+lista se dedica a un tema, que puede ser amplio o más estrecho. Para conocer y
+buscar listas de correo, en español o en inglés, le recomendamos visitar:
+
+.ax
+http://www.elistas.net/
+http://www.elistas.net/
+
+.ax
+http://www.topica.com/
+http://www.topica.com/
+
+.ax
+http://www.yahoogroups.com/
+http://www.yahoogroups.com/
+

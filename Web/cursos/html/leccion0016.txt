@@ -1,0 +1,45 @@
+.h
+Colores RGB
+
+La otra forma de indicar un color, está basado en la notación de colores que utiliza la
+mezcla de rojo, verde y azul ("red", "green", "blue" en inglés) llamada entonces RGB. Cada
+color se compone de niveles de rojo, verde, y azul. Cada uno de esos niveles, puede valer
+entre 0 y 255. Un nivel rojo=0, indica ausencia de rojo. El color con rojo=0, verde=0, azul=0
+es entonces el negro. El color con rojo=255, verde=255, azul=255 es el blanco. El rojo pleno
+tiene como niveles rojo=255, verde=0, azul=0.
+
+Pero en HTML esos niveles no se escriben así, sino en una notación hexadecimal (usando dígitos
+de un sistema numérico, no de base 10 como el que estamos acostumbrados, sino de base 16). Los
+dígitos serán 0 a 9, o A, B, C, D, E, F (completando así los 16 dígitos).
+
+El nivel 00 es 0. El nivel 01 es 1. El nivel 0F será quince. El nivel 10 será dieciseis. El
+mayor nivel será FF (255 en decimal).
+
+Entonces, cuando queremos especificar un color en HTML, en formato RGB, se colocan 6 dígitos
+hexadecimales: 2 para el nivel rojo, 2 para el verde, y 2 para el azul, precedidos de un
+símbolo # (numeral). Por ejemplo:
+
+.html
+<html>
+<head>
+<title>Documento con Fondo Gris</title>
+</head>
+<body bgcolor="#808080">
+<h1>Documento con Fondo Gris</h1>
+</body>
+</html>
+.
+
+Ahora, con estas combinaciones podemos conseguir prácticamente cualquier color que pueda
+distinguir el ojo humano. Podemos apelar a un programa como el Paint de Windows, para que
+dado un color, nos muestra la combinación de RGB que lo forma.
+
+Puede visitar:
+
+.ax
+http://the-light.com/colclick.html
+http://the-light.com/colclick.html
+
+para elegir interactivamente un color, y conocer su valor RGB. Esta página está en inglés, pero
+puede obtener el valor del casillero "Hex Value".
+

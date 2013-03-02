@@ -1,0 +1,131 @@
+.h
+Dentro de un directorio
+
+El comando {{ls}} lista los archivos que hay dentro de un directorio. Ya
+lo experimentamos en los ejercicios. Es un comando clásico, y como tal,
+es un ejemplo de lo simple o complejo que puede ser un comando de Linux.
+
+Luego del {{ls}} podemos colocar el directorio o archivos que queremos
+listar:
+
+.code
+[alumno alumno]$ ls /
+bin   etc   lost+found  opt   sbin     usr
+boot  home  mnt         proc  service  var
+dev   lib   nsr         root  tmp      
+.
+
+En este caso, el directorio es el {{/}} que es el llamado directorio
+principal del sistema de archivos.
+
+Si ejecutamos el comando sin parámetros:
+
+.code
+[alumno alumno]$ ls
+.
+
+puede que aparezca poco o nada al principio, porque nuestro directorio
+personal está vacío.
+
+Probemos:
+
+[alumno alumno]$ ls -a
+.       ..      .XDefaults
+.bashrc
+.
+
+El parámetro {{-a}} le pide al {{ls}} listar todos los archivos ("all"), 
+y aparecen nuevos archivos que comienzan con {{.}} punto. Como siempre
+puede variar su salida en su sistema. Pero descubrimos que hay algunos
+archivos que en general no se muestran.
+
+Pruebe los comandos:
+
+.code
+bash$ ls -Fa
+bash$ ls --color
+.
+
+En el primer caso, le aparecerán todos los archivos del directorio actual,
+pero algunos nombres estarán destacados, indicando el tipo de archivo. En
+el segundo, los archivos (directorios, programas ejecutables...) se distinguirán
+por colores. Se pone más interesante cuando se prueba contra algún
+directorio con contenido, como:
+
+.code
+bash$ ls -Fa /etc
+bash$ ls --color /bin
+.
+
+Pero estos comandos no nos dicen mucho más sobre el archivo, probemos:
+
+.code
+bash$ ls -l /
+total 545
+drwxr-xr-x   2 root     root         2048 Sep 17 16:14 bin
+drwxr-xr-x   2 root     root         1024 Sep 17 16:10 boot
+drwxr-xr-x   5 root     root        34816 Dec 14 05:06 dev
+drwxr-xr-x  36 root     root         3072 Jan  4 04:57 etc
+drwxr-xr-x  17 root     root         1024 Nov 20 04:17 home
+drwxr-xr-x   4 root     root         3072 Sep 17 16:11 lib
+drwxr-xr-x   2 root     root        12288 Sep 17 16:05 lost+found
+drwxr-xr-x   5 root     root         1024 Sep 16 21:06 mnt
+dr-xr-xr-x  98 root     root            0 Dec 14 03:57 proc
+drwxr-x---   6 root     root         1024 Sep 26 03:59 root
+drwxr-xr-x   3 root     root         2048 Sep 17 16:14 sbin
+drwxrwxrwt   3 root     root        14336 Jan 20 07:48 tmp
+drwxr-xr-x  26 root     root         1024 Sep 17 09:20 usr
+drwxr-xr-x  18 root     root         1024 Sep 23 04:25 var
+drwxr-xr-x   2 root     root         1024 Sep 16 21:06 vol
+.
+
+El parámetro {{-l}} indica el listado largo, con más detalle que el común.
+
+La primera línea indica que los archivos que aparecen ocupan tantos
+bloques en el disco duro (el bloque es la unidad mínima que se almacena
+en el disco duro, su tamaño suele ser 1024 bytes). El resto de las líneas
+tiene el mismo formato. Comienzan con 10 caracteres que indican los
+permisos y tipos de archivo. El primer caracter indica el tipo (por ejemplo,
+{{d}} indica directorio). Los siguientes nueve caracteres indican los
+permisos que se le han asignado al archivo. La segunda columna indica
+la cantidad de enlaces que tiene ese archivo. Estudiaremos permisos y
+enlaces en cuanto tratemos más en detalle el concepto de sistema de
+archivos. La tercer y cuarta columna indican la cuenta propietaria
+del archivo, y el grupo al que pertenece el archivo. El concepto de cuenta
+ya lo conocemos, no hemos examinado todavía qué es un grupo. Podemos
+adelantar que un grupo es un conjunto de cuentas. La quinta columna
+nos da el tamaño en bytes del archivo. Luego sigue la fecha y hora
+de última modificación y finalmente el nombre del archivo.
+
+El comando {{ls}} puede listar directorios, probemos:
+
+.code
+ls /usr
+ls /usr/bin
+ls /etc
+ls /home
+.
+
+Puede listar más de un directorio o archivos:
+
+.code
+ls /usr /etc /home
+.
+
+Se puede indicar un patrón para los nombre a mostrar, por ejemplo:
+
+.code
+ls /usr/bin/ch*
+.
+
+que listará todos los archivos del directorio {{/usr/bin}} que comienzen
+con {{ch}}. El comodín {{*}} es el que causa ese efecto.
+
+Puede suceder que sobre un directorio no tengamos permisos de acceso, por
+ejemplo:
+
+.code
+bash$ ls /home/otroalumno
+ls: /home/otroalumno permission denied
+.
+

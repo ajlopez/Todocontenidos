@@ -1,0 +1,43 @@
+.h
+Borrado de archivos
+
+Para borrar tanto archivos como subdirectorios podemos usar el comando {{rm}} de "remover". En este
+comando ya no hace falta más que especificar los archivos o directorios que queremos borrar.
+
+Así:
+
+.code
+[alumno alumno]$ rm prueba/mitexto.txt
+.
+
+eliminaría la entrada {{mitexto.txt}} del subdirectorio {{prueba}}. Hay que aclarar algo que no es evidente,
+pero es particular del sistema Linux, y de todos los sistemas UNIX. El remover un archivo, sólo implica
+que se remueve su nombre de un directorio. Cuando aprendamos enlaces de archivos, veremos que un mismo dato
+en el disco, puede ser conocido por dos nombres distintos. Así, {{/bin/sh}} y {{/bin/bash}} por poner un ejemplo,
+podrían estar apuntando al mismo archivo físico del disco. Al remover uno de esos nombres (no intentar, son
+archivos importantes), no se elimina el archivo del disco, sólo el nombre.
+
+El archivo de datos se remueve realmente, cuando el nombre que eliminamos es la última referencia a ese archivo.
+
+Si se especifica la opción {{-f}} se fuerza la remoción del nombre, sin preguntar al operador.
+
+En caso de especificar la opción {{-i}}, el sistema pregunta antes de borrar cada archivo:
+
+.code
+[alumno alumno]$ rm -i pruebacopia/p*
+rm: remove `pruebacopia/passwd'? y
+rm: remove `pruebacopia/pine.conf'? y
+rm: remove `pruebacopia/printcap'? y
+rm: remove `pruebacopia/profile'? y
+rm: remove `pruebacopia/protocols'? y
+.
+
+Con la opción {{-v}} muestra cada archivo borrado:
+
+.code
+[alumno alumno]$ rm -v pruebacopia/t*
+removing pruebacopia/tcp.smtp
+removing pruebacopia/tcp.smtp.cdb
+removing pruebacopia/termcap
+.
+

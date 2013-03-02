@@ -1,0 +1,214 @@
+.h
+Colores
+
+El concepto de color ya apareció en la lección de atributos del <body>, tanto en el color
+de fondo como en el color de texto.
+
+En HTML, el color se puede especificar en distintos lugares, y para distintos elementos de
+la página. Pero cuando se indica un color, puede darse el nombre del mismo, o una combinación
+de números que forman sus componentes rojo, verde, y azul.
+
+Aclaremos las dos formas de indicar un color. Como nombre, puede tomar los siguientes,
+desde la versión HTML 4.0:
+
+.text
+<center>
+<table width=400 cellpadding=10>
+<tr>
+<td bgcolor="black" style="color=white;" align="center"><b>black</b></b></td>
+<td bgcolor="silver" align="center"><b>silver</b></td>
+</tr>
+<tr>
+<td bgcolor="gray" style="color=white;" align="center"><b>gray</b></td>
+<td bgcolor="white" align="center"><b>white</b></td>
+</tr>
+<tr>
+<td bgcolor="maroon" style="color=white;" align="center"><b>maroon</b></td>
+<td bgcolor="red" align="center"><b>red</b></td>
+</tr>
+<tr>
+<td bgcolor="purple" style="color=white;" align="center"><b>purple</b></td>
+<td bgcolor="fuchsia" align="center"><b>fuchsia</b></td>
+</tr>
+<tr>
+<td bgcolor="green" style="color=white;" align="center"><b>green</b></td>
+<td bgcolor="lime" align="center"><b>lime</b></td>
+</tr>
+<tr>
+<td bgcolor="olive" style="color=white;" align="center"><b>olive</b></td>
+<td bgcolor="yellow" align="center"><b>yellow</b></td>
+</tr>
+<tr>
+<td bgcolor="navy" style="color=white;" align="center"><b>navy</b></td>
+<td bgcolor="teal" style="color=white;" align="center"><b>teal</b></td>
+</tr>
+</table>
+</center>
+<p>
+.text
+
+Además de estos colores, las versiones de Microsoft y Netscape, desde hace unos años, aceptan
+otros colores con nombre. Algunos nombres que son aceptados son (coloque el ratón sobre el color
+para ver el nombre):
+
+.text
+<p>
+
+<CENTER>
+<h2>
+140 colores de Netscape</h2>
+<p>
+Coloque el ratón sobre el color, y verá el nombre y el color.</p>
+<P>
+<A TITLE="#F0F8FF-aliceblue" STYLE="{text-decoration : none;background : #f0f8ff}" HREF="#null" onMouseOver="top.status='#F0F8FF-aliceblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FAEBD7-antiquewhite" STYLE="{text-decoration : none;background : #faebd7}" HREF="#null" onMouseOver="top.status='#FAEBD7-antiquewhite'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00FFFF-aqua" STYLE="{text-decoration : none;background : #00ffff}" HREF="#null" onMouseOver="top.status='#00FFFF-aqua'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#7FFFD4-aquamarine" STYLE="{text-decoration : none;background : #7fffd4}" HREF="#null" onMouseOver="top.status='#7FFFD4-aquamarine'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F0FFFF-azure" STYLE="{text-decoration : none;background : #f0ffff}" HREF="#null" onMouseOver="top.status='#F0FFFF-azure'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F5F5DC-beige" STYLE="{text-decoration : none;background : #f5f5dc}" HREF="#null" onMouseOver="top.status='#F5F5DC-beige'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFE4C4-bisque" STYLE="{text-decoration : none;background : #ffe4c4}" HREF="#null" onMouseOver="top.status='#FFE4C4-bisque'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#000000-black" STYLE="{text-decoration : none;background : #000000}" HREF="#null" onMouseOver="top.status='#000000-black'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFEBCD-blanchedalmond" STYLE="{text-decoration : none;background : #ffebcd}" HREF="#null" onMouseOver="top.status='#FFEBCD-blanchedalmond'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#0000FF-blue" STYLE="{text-decoration : none;background : #0000ff}" HREF="#null" onMouseOver="top.status='#0000FF-blue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#8A2BE2-blueviolet" STYLE="{text-decoration : none;background : #8a2be2}" HREF="#null" onMouseOver="top.status='#8A2BE2-blueviolet'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#A52A2A-brown" STYLE="{text-decoration : none;background : #a52a2a}" HREF="#null" onMouseOver="top.status='#A52A2A-brown'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DEB887-burlywood" STYLE="{text-decoration : none;background : #deb887}" HREF="#null" onMouseOver="top.status='#DEB887-burlywood'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#5F9EA0-cadetblue" STYLE="{text-decoration : none;background : #5f9ea0}" HREF="#null" onMouseOver="top.status='#5F9EA0-cadetblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#7FFF00-chartreuse" STYLE="{text-decoration : none;background : #7FFF00}" HREF="#null" onMouseOver="top.status='#7FFF00-chartreuse'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#D2691E-chocolate" STYLE="{text-decoration : none;background : #D2691E}" HREF="#null" onMouseOver="top.status='#D2691E-chocolate'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF7F50-coral" STYLE="{text-decoration : none;background : #FF7F50}" HREF="#null" onMouseOver="top.status='#FF7F50-coral'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#6495ED-cornflowerblue" STYLE="{text-decoration : none;background : #6495ED}" HREF="#null" onMouseOver="top.status='#6495ED-cornflowerblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFF8DC-cornsilk" STYLE="{text-decoration : none;background : #FFF8DC}" HREF="#null" onMouseOver="top.status='#FFF8DC-cornsilk'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DC143C-crimson" STYLE="{text-decoration : none;background : #DC143C}" HREF="#null" onMouseOver="top.status='#DC143C-crimson'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00FFFF-cyan" STYLE="{text-decoration : none;background : #00FFFF}" HREF="#null" onMouseOver="top.status='#00FFFF-cyan'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00008B-darkblue" STYLE="{text-decoration : none;background : #00008B}" HREF="#null" onMouseOver="top.status='#00008B-darkblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#008B8B-darkcyan" STYLE="{text-decoration : none;background : #008B8B}" HREF="#null" onMouseOver="top.status='#008B8B-darkcyan'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#B8860B-darkgoldenrod" STYLE="{text-decoration : none;background : #B8860B}" HREF="#null" onMouseOver="top.status='#B8860B-darkgoldenrod'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#A9A9A9-darkgray" STYLE="{text-decoration : none;background : #A9A9A9}" HREF="#null" onMouseOver="top.status='#A9A9A9-darkgray'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#006400-darkgreen" STYLE="{text-decoration : none;background : #006400}" HREF="#null" onMouseOver="top.status='#006400-darkgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#BDB76B-darkkhaki" STYLE="{text-decoration : none;background : #BDB76B}" HREF="#null" onMouseOver="top.status='#BDB76B-darkkhaki'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#8B008B-darkmagenta" STYLE="{text-decoration : none;background : #8B008B}" HREF="#null" onMouseOver="top.status='#8B008B-darkmagenta'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#556B2F-darkolivegreen" STYLE="{text-decoration : none;background : #556B2F}" HREF="#null" onMouseOver="top.status='#556B2F-darkolivegreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF8C00-darkorange" STYLE="{text-decoration : none;background : #FF8C00}" HREF="#null" onMouseOver="top.status='#FF8C00-darkorange'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#9932CC-darkorchid" STYLE="{text-decoration : none;background : #9932CC}" HREF="#null" onMouseOver="top.status='#9932CC-darkorchid'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#8B0000-darkred" STYLE="{text-decoration : none;background : #8B0000}" HREF="#null" onMouseOver="top.status='#8B0000-darkred'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#E9967A-darksalmon" STYLE="{text-decoration : none;background : #E9967A}" HREF="#null" onMouseOver="top.status='#E9967A-darksalmon'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#8FBC8F-darkseagreen" STYLE="{text-decoration : none;background : #8FBC8F}" HREF="#null" onMouseOver="top.status='#8FBC8F-darkseagreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#483D8B-darkslateblue" STYLE="{text-decoration : none;background : #483D8B}" HREF="#null" onMouseOver="top.status='#483D8B-darkslateblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#2F4F4F-darkslategray" STYLE="{text-decoration : none;background : #2F4F4F}" HREF="#null" onMouseOver="top.status='#2F4F4F-darkslategray'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00CED1-darkturquoise" STYLE="{text-decoration : none;background : #00CED1}" HREF="#null" onMouseOver="top.status='#00CED1-darkturquoise'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#9400D3-darkviolet" STYLE="{text-decoration : none;background : #9400D3}" HREF="#null" onMouseOver="top.status='#9400D3-darkviolet'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF1493-deeppink" STYLE="{text-decoration : none;background : #FF1493}" HREF="#null" onMouseOver="top.status='#FF1493-deeppink'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00BFBF-deepskyblue" STYLE="{text-decoration : none;background : #00BFBF}" HREF="#null" onMouseOver="top.status='#00BFBF-deepskyblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#696969-dimgray" STYLE="{text-decoration : none;background : #696969}" HREF="#null" onMouseOver="top.status='#696969-dimgray'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#1E90FF-dodgerblue" STYLE="{text-decoration : none;background : #1E90FF}" HREF="#null" onMouseOver="top.status='#1E90FF-dodgerblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#B22222-firebrick" STYLE="{text-decoration : none;background : #B22222}" HREF="#null" onMouseOver="top.status='#B22222-firebrick'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFAF0-floralwhite" STYLE="{text-decoration : none;background : #FFFAF0}" HREF="#null" onMouseOver="top.status='#FFFAF0-floralwhite'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#228B22-forestgreen" STYLE="{text-decoration : none;background : #228B22}" HREF="#null" onMouseOver="top.status='#228B22-forestgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF00FF-fuchsia" STYLE="{text-decoration : none;background : #FF00FF}" HREF="#null" onMouseOver="top.status='#FF00FF-fuchsia'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DCDCDC-gainsboro" STYLE="{text-decoration : none;background : #DCDCDC}" HREF="#null" onMouseOver="top.status='#DCDCDC-gainsboro'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F8F8FF-ghostwhite" STYLE="{text-decoration : none;background : #F8F8FF}" HREF="#null" onMouseOver="top.status='#F8F8FF-ghostwhite'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFD700-gold" STYLE="{text-decoration : none;background : #FFD700}" HREF="#null" onMouseOver="top.status='#FFD700-gold'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DAA520-goldenrod" STYLE="{text-decoration : none;background : #DAA520}" HREF="#null" onMouseOver="top.status='#DAA520-goldenrod'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#808080-gray" STYLE="{text-decoration : none;background : #808080}" HREF="#null" onMouseOver="top.status='#808080-gray'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#008000-green" STYLE="{text-decoration : none;background : #008000}" HREF="#null" onMouseOver="top.status='#008000-green'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#ADFF2F-greenyellow" STYLE="{text-decoration : none;background : #ADFF2F}" HREF="#null" onMouseOver="top.status='#ADFF2F-greenyellow'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F0FFF0-honeydew" STYLE="{text-decoration : none;background : #F0FFF0}" HREF="#null" onMouseOver="top.status='#F0FFF0-honeydew'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF69B4-hotpink" STYLE="{text-decoration : none;background : #FF69B4}" HREF="#null" onMouseOver="top.status='#FF69B4-hotpink'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#CD5C5C-indianred" STYLE="{text-decoration : none;background : #CD5C5C}" HREF="#null" onMouseOver="top.status='#CD5C5C-indianred'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#4B0082-indigo" STYLE="{text-decoration : none;background : #4B0082}" HREF="#null" onMouseOver="top.status='#4B0082-indigo'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFFF0-ivory" STYLE="{text-decoration : none;background : #FFFFF0}" HREF="#null" onMouseOver="top.status='#FFFFF0-ivory'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F0E68C-khaki" STYLE="{text-decoration : none;background : #F0E68C}" HREF="#null" onMouseOver="top.status='#F0E68C-khaki'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#E6E6FA-lavender" STYLE="{text-decoration : none;background : #E6E6FA}" HREF="#null" onMouseOver="top.status='#E6E6FA-lavender'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFF0F5-lavenderblush" STYLE="{text-decoration : none;background : #FFF0F5}" HREF="#null" onMouseOver="top.status='#FFF0F5-lavenderblush'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#7CFC00-lawngreen" STYLE="{text-decoration : none;background : #7CFC00}" HREF="#null" onMouseOver="top.status='#7CFC00-lawngreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFACD-lemonchiffon" STYLE="{text-decoration : none;background : #FFFACD}" HREF="#null" onMouseOver="top.status='#FFFACD-lemonchiffon'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#ADD8E6-lightblue" STYLE="{text-decoration : none;background : #ADD8E6}" HREF="#null" onMouseOver="top.status='#ADD8E6-lightblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F08080-lightcoral" STYLE="{text-decoration : none;background : #F08080}" HREF="#null" onMouseOver="top.status='#F08080-lightcoral'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#E0FFFF-lightcyan" STYLE="{text-decoration : none;background : #E0FFFF}" HREF="#null" onMouseOver="top.status='#E0FFFF-lightcyan'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FAFAD2-lightgoldenrodyellow" STYLE="{text-decoration : none;background : #FAFAD2}" HREF="#null" onMouseOver="top.status='#FAFAD2-lightgoldenrodyellow'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#90EE90-lightgreen" STYLE="{text-decoration : none;background : #90EE90}" HREF="#null" onMouseOver="top.status='#90EE90-lightgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#D3D3D3-lightgrey" STYLE="{text-decoration : none;background : #D3D3D3}" HREF="#null" onMouseOver="top.status='#D3D3D3-lightgrey'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFB6C1-lightpink" STYLE="{text-decoration : none;background : #FFB6C1}" HREF="#null" onMouseOver="top.status='#FFB6C1-lightpink'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#FFA07A-lightsalmon" STYLE="{text-decoration : none;background : #FFA07A}" HREF="#null" onMouseOver="top.status='#FFA07A-lightsalmon'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#20B2AA-lightseagreen" STYLE="{text-decoration : none;background : #20B2AA}" HREF="#null" onMouseOver="top.status='#20B2AA-lightseagreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#87CEFA-lightskyblue" STYLE="{text-decoration : none;background : #87CEFA}" HREF="#null" onMouseOver="top.status='#87CEFA-lightskyblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#778899-lightslategrey" STYLE="{text-decoration : none;background : #778899}" HREF="#null" onMouseOver="top.status='#778899-lightslategrey'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#B0C4DE-lightsteelblue" STYLE="{text-decoration : none;background : #B0C4DE}" HREF="#null" onMouseOver="top.status='#B0C4DE-lightsteelblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFFE0-lightyellow" STYLE="{text-decoration : none;background : #FFFFE0}" HREF="#null" onMouseOver="top.status='#FFFFE0-lightyellow'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00FF00-lime" STYLE="{text-decoration : none;background : #00FF00}" HREF="#null" onMouseOver="top.status='#00FF00-lime'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#32CD32-limegreen" STYLE="{text-decoration : none;background : #32CD32}" HREF="#null" onMouseOver="top.status='#32CD32-limegreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FAF0E6-linen" STYLE="{text-decoration : none;background : #FAF0E6}" HREF="#null" onMouseOver="top.status='#FAF0E6-linen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF00FF-magenta" STYLE="{text-decoration : none;background : #FF00FF}" HREF="#null" onMouseOver="top.status='#FF00FF-magenta'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#800000-maroon" STYLE="{text-decoration : none;background : #800000}" HREF="#null" onMouseOver="top.status='#800000-maroon'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#66CDAA-mediumaquamarine" STYLE="{text-decoration : none;background : #66CDAA}" HREF="#null" onMouseOver="top.status='#66CDAA-mediumaquamarine'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#0000CD-mediumblue" STYLE="{text-decoration : none;background : #0000CD}" HREF="#null" onMouseOver="top.status='#0000CD-mediumblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#BA55D3-mediumorchid" STYLE="{text-decoration : none;background : #BA55D3}" HREF="#null" onMouseOver="top.status='#BA55D3-mediumorchid'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#9370DB-mediumpurple" STYLE="{text-decoration : none;background : #9370DB}" HREF="#null" onMouseOver="top.status='#9370DB-mediumpurple'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#3CB371-mediumseagreen" STYLE="{text-decoration : none;background : #3CB371}" HREF="#null" onMouseOver="top.status='#3CB371-mediumseagreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#7B68EE-mediumslateblue" STYLE="{text-decoration : none;background : #7B68EE}" HREF="#null" onMouseOver="top.status='#7B68EE-mediumslateblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00FA9A-mediumspringgree" STYLE="{text-decoration : none;background : #00FA9A}" HREF="#null" onMouseOver="top.status='#00FA9A-mediumspringgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#48D1CC-mediumturquoise" STYLE="{text-decoration : none;background : #48D1CC}" HREF="#null" onMouseOver="top.status='#48D1CC-mediumturquoise'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#C71585-mediumvioletred" STYLE="{text-decoration : none;background : #C71585}" HREF="#null" onMouseOver="top.status='#C71585-mediumvioletred'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#191970-midnightblue" STYLE="{text-decoration : none;background : #191970}" HREF="#null" onMouseOver="top.status='#191970-midnightblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F5FFFA-mintcream" STYLE="{text-decoration : none;background : #F5FFFA}" HREF="#null" onMouseOver="top.status='#F5FFFA-mintcream'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFE4E1-mistyrose" STYLE="{text-decoration : none;background : #FFE4E1}" HREF="#null" onMouseOver="top.status='#FFE4E1-mistyrose'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFE4B5-moccasin" STYLE="{text-decoration : none;background : #FFE4B5}" HREF="#null" onMouseOver="top.status='#FFE4B5-moccasin'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFDEAD-navajowhite" STYLE="{text-decoration : none;background : #FFDEAD}" HREF="#null" onMouseOver="top.status='#FFDEAD-navajowhite'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#000080-navy" STYLE="{text-decoration : none;background : #000080}" HREF="#null" onMouseOver="top.status='#000080-navy'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FDF5E6-oldlace" STYLE="{text-decoration : none;background : #FDF5E6}" HREF="#null" onMouseOver="top.status='#FDF5E6-oldlace'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#808000-olive" STYLE="{text-decoration : none;background : #808000}" HREF="#null" onMouseOver="top.status='#808000-olive'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#6B8E23-olivedrab" STYLE="{text-decoration : none;background : #6B8E23}" HREF="#null" onMouseOver="top.status='#6B8E23-olivedrab'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFA500-orange" STYLE="{text-decoration : none;background : #FFA500}" HREF="#null" onMouseOver="top.status='#FFA500-orange'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF4500-orangered" STYLE="{text-decoration : none;background : #FF4500}" HREF="#null" onMouseOver="top.status='#FF4500-orangered'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DA70D6-orchid" STYLE="{text-decoration : none;background : #DA70D6}" HREF="#null" onMouseOver="top.status='#DA70D6-orchid'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#EEE8AA-palegoldenrod" STYLE="{text-decoration : none;background : #EEE8AA}" HREF="#null" onMouseOver="top.status='#EEE8AA-palegoldenrod'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#98FB98-palegreen" STYLE="{text-decoration : none;background : #98FB98}" HREF="#null" onMouseOver="top.status='#98FB98-palegreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#AFEEEE-paleturquoise" STYLE="{text-decoration : none;background : #AFEEEE}" HREF="#null" onMouseOver="top.status='#AFEEEE-paleturquoise'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DB7093-palevioletred" STYLE="{text-decoration : none;background : #DB7093}" HREF="#null" onMouseOver="top.status='#DB7093-palevioletred'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFEFD5-papayawhip" STYLE="{text-decoration : none;background : #FFEFD5}" HREF="#null" onMouseOver="top.status='#FFEFD5-papayawhip'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFDAB9-peachpuff" STYLE="{text-decoration : none;background : #FFDAB9}" HREF="#null" onMouseOver="top.status='#FFDAB9-peachpuff'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#CD853F-peru" STYLE="{text-decoration : none;background : #CD853F}" HREF="#null" onMouseOver="top.status='#CD853F-peru'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFC0CB-pink" STYLE="{text-decoration : none;background : #FFC0CB}" HREF="#null" onMouseOver="top.status='#FFC0CB-pink'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#DDA0DD-plum" STYLE="{text-decoration : none;background : #DDA0DD}" HREF="#null" onMouseOver="top.status='#DDA0DD-plum'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#B0E0E6-powderblue" STYLE="{text-decoration : none;background : #B0E0E6}" HREF="#null" onMouseOver="top.status='#B0E0E6-powderblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#800080-purple" STYLE="{text-decoration : none;background : #800080}" HREF="#null" onMouseOver="top.status='#800080-purple'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF0000-red" STYLE="{text-decoration : none;background : #FF0000}" HREF="#null" onMouseOver="top.status='#FF0000-red'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#BC8F8F-rosybrown" STYLE="{text-decoration : none;background : #BC8F8F}" HREF="#null" onMouseOver="top.status='#BC8F8F-rosybrown'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#4169E1-royalblue" STYLE="{text-decoration : none;background : #4169E1}" HREF="#null" onMouseOver="top.status='#4169E1-royalblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#8B4513-saddlebrown" STYLE="{text-decoration : none;background : #8B4513}" HREF="#null" onMouseOver="top.status='#8B4513-saddlebrown'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FA8072-salmon" STYLE="{text-decoration : none;background : #FA8072}" HREF="#null" onMouseOver="top.status='#FA8072-salmon'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F4A460-sandybrown" STYLE="{text-decoration : none;background : #F4A460}" HREF="#null" onMouseOver="top.status='#F4A460-sandybrown'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#2E8B57-seagreen" STYLE="{text-decoration : none;background : #2E8B57}" HREF="#null" onMouseOver="top.status='#2E8B57-seagreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFF5EE-seashell" STYLE="{text-decoration : none;background : #FFF5EE}" HREF="#null" onMouseOver="top.status='#FFF5EE-seashell'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#A0522D-sienna" STYLE="{text-decoration : none;background : #A0522D}" HREF="#null" onMouseOver="top.status='#A0522D-sienna'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#C0C0C0-silver" STYLE="{text-decoration : none;background : #C0C0C0}" HREF="#null" onMouseOver="top.status='#C0C0C0-silver'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#87CEEB-skyblue" STYLE="{text-decoration : none;background : #87CEEB}" HREF="#null" onMouseOver="top.status='#87CEEB-skyblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#6A5ACD-slateblue" STYLE="{text-decoration : none;background : #6A5ACD}" HREF="#null" onMouseOver="top.status='#6A5ACD-slateblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#708090-slategray" STYLE="{text-decoration : none;background : #708090}" HREF="#null" onMouseOver="top.status='#708090-slategray'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<BR>
+<A TITLE="#FFFAFA-snow" STYLE="{text-decoration : none;background : #FFFAFA}" HREF="#null" onMouseOver="top.status='#FFFAFA-snow'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#00FF7F-springgreen" STYLE="{text-decoration : none;background : #00FF7F}" HREF="#null" onMouseOver="top.status='#00FF7F-springgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#4682B4-steelblue" STYLE="{text-decoration : none;background : #4682B4}" HREF="#null" onMouseOver="top.status='#4682B4-steelblue'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#D2B48C-tan" STYLE="{text-decoration : none;background : #D2B48C}" HREF="#null" onMouseOver="top.status='#D2B48C-tan'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#008080-teal" STYLE="{text-decoration : none;background : #008080}" HREF="#null" onMouseOver="top.status='#008080-teal'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#D8BFD8-thistle" STYLE="{text-decoration : none;background : #D8BFD8}" HREF="#null" onMouseOver="top.status='#D8BFD8-thistle'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FF6347-tomato" STYLE="{text-decoration : none;background : #FF6347}" HREF="#null" onMouseOver="top.status='#FF6347-tomato'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#40E0D0-turquoise" STYLE="{text-decoration : none;background : #40E0D0}" HREF="#null" onMouseOver="top.status='#40E0D0-turquoise'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#EE82EE-violet" STYLE="{text-decoration : none;background : #EE82EE}" HREF="#null" onMouseOver="top.status='#EE82EE-violet'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F5DEB3-wheat" STYLE="{text-decoration : none;background : #F5DEB3}" HREF="#null" onMouseOver="top.status='#F5DEB3-wheat'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFFFF-white" STYLE="{text-decoration : none;background : #FFFFFF}" HREF="#null" onMouseOver="top.status='#FFFFFF-white'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#F5F5F5-whitesmoke" STYLE="{text-decoration : none;background : #F5F5F5}" HREF="#null" onMouseOver="top.status='#F5F5F5-whitesmoke'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#FFFF00-yellow" STYLE="{text-decoration : none;background : #FFFF00}" HREF="#null" onMouseOver="top.status='#FFFF00-yellow'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+<A TITLE="#9ACD32-yellowgreen" STYLE="{text-decoration : none;background : #9ACD32}" HREF="#null" onMouseOver="top.status='#9ACD32-yellowgreen'" OnClick="javascript:return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>
+</CENTER>
+.
+

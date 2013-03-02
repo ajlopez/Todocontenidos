@@ -1,0 +1,29 @@
+.h
+Un poco de historia
+
+No hace mal conocer un poco del origen del lenguaje C. En los primeros tiempos de la computación
+moderna, aparecieron los lenguajes de programación, para evitar codificar en binario cada programa
+que se cargara en las computadoras de entonces.
+
+Aparecieron así lenguajes como FORTRAN y COBOL, ambos asociados a las computadoras IBM, pero que
+luego aparecieron en otras máquinas. Eran lenguajes con un cierto sesgo. Fortran se dedica al
+cómputo científico, mientras que COBOL está orientado a negocios.
+
+En el desarrollo de sistemas de base, como sistemas operativos, se necesitaba otro tipo de herramientas.
+Pensando en un lenguaje de uso general, no orientado a un área o una máquina, los científicos de
+la computación comenzaron a diseñar un lenguaje llamado CPL (Computer Programming Language, lenguaje
+de programación de computadoras). El proyecto era algo ambicioso, y no llegó a cuajar. Alguien
+tomó el diseñó, y lo simplicó para crear un BCPL (Basic CPL), bastante más sencillo de implementar.
+
+De ahí nacieron los primeros compiladores BCPL, escritos en BCPL, y que se podían portar sin
+gran esfuerzo, a otras plataformas.
+
+Cuando Ken Thompson de Bell Laboratories, comienza con su proyecto personal, que luego derivó
+en el Sistema Operativo UNIX, emplaba lenguaje de máquina. Como se dió cuenta que este
+camino era tortuoso y lento, adaptó el BCPL a un lenguaje nuevo, que denominó caseramente,
+lenguaje B. Dennis Ritchie, compañero de trabajo, se ofreció a colaborar con él para mejorarlo,
+y lógicamente, a ese nuevo lenguaje, lo llamaron lenguaje C.
+
+El proyecto UNIX fue entonces reescrito en ese lenguaje, y de esa forma permanece aún hoy,
+por ejemplo, en Linux, y en las herramientas GNU.
+

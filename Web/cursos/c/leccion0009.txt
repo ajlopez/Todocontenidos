@@ -1,0 +1,14 @@
+.h
+El Visual C++
+
+Es el compilador de C/C++ comercial de Microsoft, incluido en el producto Visual Studio.
+
+Posee una interfaz gráfica de programación, donde se puede manejar proyectos, que incluyen
+distintos componentes. Sirve tanto para programar aplicaciones de consola, como aplicaciones
+Windows.
+
+Las lecciones del curso se puede compilar con Visual C++, pero si quiere hacerlo desde la
+línea de comando, es necesario ejecutar el vcvars32.bat del directorio bin donde está instalado
+el compilador. Este archivo de comandos de lote, pone los valores de las variables de entorno,
+para que podamos ejecutar el compilador.
+

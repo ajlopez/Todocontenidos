@@ -1,0 +1,44 @@
+.h
+Cambiar de directorio
+
+El comando {{cd}} nos permite cambiar de directorio. Podemos especificar el nombre del nuevo directorio de forma
+relativa al directorio actual, o no. El comando
+
+.code
+[alumno alumno]$ cd prueba
+.
+
+nos cambia al directorio {{prueba}}, hijo del actual. En cambio:
+
+.code
+[alumno alumno]$ cd /prueba
+.
+
+nos cambia al directorio {{prueba}} pero esta vez, hijo del directorio raíz {{/}}.
+
+Podemos usar los directorios {{..}} en nuestra recorrida:
+
+.code
+[alumno alumno]$ pwd
+/home/alumno
+[alumno alumno]$ cd ..
+[alumno home]$ pwd
+/home
+[alumno alumno]$ cd ..
+[alumno /]$ pwd
+/
+.
+
+Cuando aplicamos el comando {{cd}} sin especificar directorio:
+
+.code
+[alumno /]$ cd
+[alumno alumno]$ pwd
+/home/alumno
+.
+
+volvemos a nuestro directorio hogar, generalmente situado dentro de {{/home}}.
+
+Hay algunos directorios ya existentes que se encuentran en prácticamente todas las instalaciones de Linux, como
+{{/home}}, {{/root}}, {{/usr}}, {{/var}}.... Tendremos que estudiar más adelante cuál es su contenido.
+

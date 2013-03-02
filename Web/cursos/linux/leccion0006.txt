@@ -1,0 +1,43 @@
+.h
+Primer Contacto
+
+El primer contacto con un sistema operativo como es Linux, puede resultarte desconcertante o
+intimidante. Veremos cómo operar básicamente Linux, y si Ud. ya tiene conocimientos de operación
+de otros sistemas, algunos conceptos le resultaran familiares y otros no. Como este curso
+se centra en la operación básica desde la consola, lo primero que notará es la necesidad
+de manejarse con comandos, escritos en una interfaz de texto. Una vez que pueda manejarse
+con comodidad con estos conceptos, podrá embarcarse en otras tareas, como el manejo de un
+entorno gráfico.
+
+El principal problema que hay que superar al comenzar con Linux, es aprender una larga lista
+de conceptos, términos como multiusuario, superusuario, login, y varios comandos básicos con
+multitud de opciones.
+
+Esperamos guiarlo en este curso. Nuestras primeras lecciones nos llevarán por la operación
+básica, y los conceptos de usuario, archivo y comandos.
+
+Linux es un sistema operativo multiusuario. Esto quiere decir que puede ejecutar varios
+proceso a la vez, y además, que esos procesos pueden pertener a varios usuarios, que simultánemente
+estén usando el sistema. Aunque en general usaremos Linux sobre un computador personal, aún
+así podremos tener varias sesiones de usuario ejecutándose. En los sistemas Unix comerciales,
+y en Linux también, podemos tener varias terminales (monitor y teclado) conectadas a un
+solo sistema. Linux reparte el tiempo del procesador entre los distintos procesos que
+ejecuta, sin que un usuario note que no tienen el uso exclusivo del computador.
+
+El tiempo que usuario está dentro del sistema se denomina sesión. Comienza cuando el usuario
+ingresa al sistema, y termina cuando ejecuta una orden de salida.
+
+Un usuario es entonces, una persona que usa el sistema, y necesita una cuenta de usuario, para entrar.
+Una cuenta es el lugar del sistema reservado para cada usuario, donde tiene configurado
+qué puede o no puede hacer, qué lugar en el disco le corresponde, y otras características
+del usuario. Lo normal es que cada usuario tenga una cuenta. Luego veremos que varios
+usuarios pueden pertener a lo que se llama grupo. Por ejemplo, todos los usuarios programadores
+pueden pertener a un grupo llamado "desarrollo".
+
+Cada cuenta de usuario es personal, y para ingresar, debe especificar su código de usuario y
+su contraseña (la llamada "password"). Se recomienda que cada usuario mantenga en secreto
+su contraseña. Igualmente, en cualquier momento puede cambiarla.
+
+Hay un usuario que tiene las máximas capacidades, y puede crear nuevos usuarios. Es el llamado
+superusuario del sistema, y su cuenta es "root".
+

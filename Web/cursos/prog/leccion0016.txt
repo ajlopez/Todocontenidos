@@ -1,0 +1,15 @@
+.h
+Ejercicios
+
+- Ingrese los ejemplos de las clases y pruébelos
+
+- Cree un proyecto, defina una variable de cada tipo a nivel de formulario
+
+- Sobre ese proyecto, agregue un botón, y defina una variable de cada tipo en la rutina del Click del botón
+
+- Retome el proyecto con el ingreso del texto nombre. Agregue etiquetas y textos, para ingresar apellido,
+domicilio, localidad, y código postal
+
+- Cree un proyecto, agregue un control botón, una etiqueta y una caja de texto. Modifique las propiedades
+de esos controles, como {{Caption}} o {{Text}}, el {{BackColor}}, {{ForeColor}}, y {{Font}}
+

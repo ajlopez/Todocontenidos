@@ -1,0 +1,12 @@
+.h
+Introducción
+
+Bienvenido al curso de C/C++. Estudiaremos los dos lenguajes, el lenguaje C, y luego,
+el lenguaje C++. Son dos lenguajes poderosísimos, usados desde hace décadas, para el
+desarrollo de las más importantes y difundidas aplicaciones (léase Unix, Linux, Windows,
+Internet...).
+
+Para el curso, se pide como requisitos tener nociones de programación. Luego, para aprovechar el curso,
+es necesario disponer de un compilador C/C++. Tanto en Windows, como en DOS, o Linux/Unix
+disponemos de compiladores, muchos gratuitos. Más información en las próximas lecciones.
+

@@ -1,0 +1,34 @@
+.h
+Ejercicios
+
+- Ingrese como usuario root, y agregue un usuario de prueba
+
+- Cambie la contraseña del usuario de prueba
+
+- Pruebe el comando
+
+.code
+ls /home
+.
+
+Algún archivo conocido?
+
+- Salga de root, e ingrese como otro usuario
+
+- Pruebe el comando
+
+.code
+whoami
+.
+
+Qué le devuelve?
+
+- Pruebe el comando
+
+.code
+ls -l /
+.
+
+Qué diferencia nota con "ls /"
+
+

@@ -1,0 +1,97 @@
+.h
+Tipos de datos
+
+Hemos visto la utilización de una variable, simplemente nombrándola, como $k. Aprendamos
+ahora que las variables pueden tener, durante su vida, distintos tipos de datos. PHP,
+como lenguaje de programación, soporta los tipos de datos más comunes como:
+
+- boolean (valor booleano, de verdad o falsedad)
+
+- integer (valor numérico entero, sin decimales)
+
+- float (valor numérico real, con decimales)
+
+- string (texto)
+
+Además soporta los tipos:
+
+- array (arreglo, vector de valores)
+
+- object (objeto)
+
+En PHP4 se introdujeron los valores:
+
+- resource (recurso externo)
+
+- NULL (valor nulo)
+
+Probemos algunas cosas con tipos. Ingresemos el código de una página tipos.php:
+
+.html
+<?
+	$once = "11";
+	$doce = "12";
+	$monos = "12 monos";
+	$pi = 3.1415;
+
+	echo 'El tipo de $once es ' . gettype($once) . '<br>';
+	echo 'El tipo de $doce es ' . gettype($doce) . '<br>';
+	echo 'El tipo de $monos es ' . gettype($monos) . '<br>';
+	echo 'El tipo de $pi es ' . gettype($pi) . '<br>';
+?>
+.
+
+Conceptos nuevos que encontramos:
+
+- El uso de ' comilla sencilla para encerrar un texto. En PHP se puede especificar
+un texto con comillas dobles o con comillas sencillas. No queda claro aún la diferencia,
+lo aprenderemos cuando llegemos a los valores "string".
+
+- Un operador . (punto) permite concatenar texto. La expresión:
+
+.code
+'Hola ' . 'mundo'
+.
+
+produce un texto:
+
+.code
+'Hola mundo'
+.
+
+resultado de "pegar" las dos partes del operador . (punto). Este operador también
+concatena números con texto:
+
+.code
+12 . ' monos'
+.
+
+resulta en
+
+.code
+'12 monos'
+.
+
+- Finalmente, aparece una función nueva, gettype(), que nos devuelve qué tipo de
+dato es la expresión que le pasamos como parámetro. Devuelve un texto, con el
+tipo. En los casos del ejemplo, devolverá el texto "string" en los tres primeros
+y "double" (por flotante doble precisión) para el caso del valor de $pi.
+
+Los programadores de otros lenguajes, notarán que PHP no distingue entre enteros
+largos o cortos (como los tipos short o long de C, o Visual Basic). Todos los
+enteros son del mismo tipo. Igual pasa con los reales: no hay diferencia entre
+"float" o "double", como en otros lenguajes.
+
+Notamos que la expresión
+
+.code
+12
+.
+
+es totalmente distinta a
+
+.code
+"12"
+.
+
+La primera es un número entero, y la segunda un típico "string".

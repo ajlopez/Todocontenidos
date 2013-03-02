@@ -1,0 +1,105 @@
+.h
+Enlaces
+
+Como sabemos, la primera letra de la sigla HTML, significa HiperTexto. Eso es lo que ha
+destacado a HTML y a la web en general: la posibilidad de mostrar documentos, que a su
+vez apunten a otros documentos. Eso fue diseñado desde el principio en HTML, y ha sido
+uno de los pilares de su éxito.
+
+Para que nuestra página pueda apuntar a otra página, debemos usar un "tag", una marca. Para
+nuestro primer ejemplo, construyamos una simple página, enlaces.html:
+
+.html
+<html>
+<head>
+<title>Mis Enlaces</title>
+</head>
+<body>
+<h1>Mis Enlaces</h1>
+</body>
+</html>
+.
+
+Ahora, generamos otra página, con un contenido también sencillo personal.html:
+
+.html
+<html>
+<head>
+<title>Mis Datos Personales</title>
+</head>
+<body>
+<h1>Mis Datos Personales</h1>
+.... ponga el contenido que prefiera....
+</body>
+</html>
+.
+
+Suponemos que ambas páginas están en el mismo directorio. Ahora queremos que la primera
+tenga un enlace a la segunda. El gran "tag" que consigue esto es la marca <a>:
+
+.html
+<html>
+<head>
+<title>Mis Enlaces</title>
+</head>
+<body>
+<h1>Mis Enlaces</h1>
+<p>
+<a href="personal.html">Mis Datos Personales</a>
+</p>
+</body>
+</html>
+.
+
+La marca "a" tiene un gran atributo: "href", que es una referencia a otra página o recurso. Desde
+<a ....> hasta </a>, aparece el texto de nuestro enlace (lo que aparecerá en nuestra página). Es
+importante entonces distinguir entre el texto que mostramos (que puede ser cualquier aclaración
+o frase), y el nombre del recurso (que debe ser exacto).
+
+Con lo aprendido, podemos agregar un enlace de vuelta en nuestra segunda página, para llegar
+a la primera:
+
+.html
+<head>
+<title>Mis Datos Personales</title>
+</head>
+<body>
+<h1>Mis Datos Personales</h1>
+.... ponga el contenido que prefiera....
+<p>
+<a href="principal.html">Volver a Principal</a>
+</p>
+</body>
+</html>
+.
+
+Notablemente, podemos armar un enlace, a una página Web, colocando su nombre completo (la
+llamada URL, dirección de Internet que analizaremos en detalle más adelante en el curso). Por
+ejemplo:
+
+.html
+<html>
+<head>
+<title>Mis Enlaces</title>
+</head>
+<body>
+<h1>Mis Enlaces</h1>
+<p>
+<a href="personal.html">Mis Datos Personales</a>
+<br>
+<a href="http://www.clarin.com/">Diario Clarín</a>
+<br>
+<a href="http://www.elpais.es/">Diario El Pais</a>
+<br>
+<a href="http://www.yahoo.com/">Yahoo</a>
+<br>
+<a href="http://www.google.com/">Google</a>
+</p>
+</body>
+</html>
+.
+
+Ese es el principio del HTML: enlazar distintos documentos. Ya vemos que los documentos pueden
+ser locales o externos. Aprenderemos a entender qué es una URL exactamente. Pero por ahora,
+ya podemos ir armando páginas en nuestro disco, que se vayan enlanzando entre sí.
+

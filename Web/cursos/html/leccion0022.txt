@@ -1,0 +1,31 @@
+.h
+Enlaces internos
+
+Usando la marca {{<a>}} podemos hacer referencia a alguna parte de nuestro propio documento, o de otro. Cada parte
+se identifica con un atributo {{name}}, y se hace referencia a él con el caracter {{#}}. Quedará más claro
+con un ejemplo en concreto:
+
+.html
+<h1>Preguntas Frecuentes</h1>
+<a href="#pregunta1">Pregunta 1</a>
+<br>
+<a href="#pregunta2">Pregunta 2</a>
+<br>
+<a href="#pregunta3">Pregunta 3</a>
+<br>
+<p>
+Luego, acá van las respuestas
+</p>
+<a name="pregunta1">
+<p>Esta es la respuesta a la pregunta 1</p>
+<a name="pregunta2">
+<p>Esta es la respuesta a la pregunta 2</p>
+<a name="pregunta3">
+<p>Esta es la respuesta a la pregunta 3</p>
+.
+
+Vemos el uso de {{<a name=}}. Esta marca le da un nombre a una sección de nuestro documento. Podemos ir directamente
+a esa sección, si usamos un enlace del tipo {{<a href="#}} donde colocamos el {{#}} para indicar que es una referencia
+a una parte del documento.
+
+El ejemplo de arriba se apreciará más si las respuestas a cada pregunta son extensas, y ocupan más de una página.

@@ -1,0 +1,28 @@
+.h
+Formularios
+
+Un formulario no es más ni menos, que una ventana. Una aplicación Windows puede componerse de una
+o más ventanas. En un proyecto, podemos tener uno o más formularios. En un formulario, podremos
+agregar controles (etiquetas de texto, cajas de ingreso de texto, botones, listas...).
+
+Al comienzo de un proyecto nos aparece un formulario en blanco:
+
+.im
+cursos/vb/vbformulario.gif
+
+Sobre este formulario podemos empezar a trabajar. Una aplicación Visual Basic
+puede tener varios formularios, y los podemos agregar desde el menú de {{Proyecto}}.
+
+Los formularios son contenedores de otros elementos, los controles. Como objeto
+gráfico, un formulario tiene elementos conocidos como:
+
+- Barra de título
+.br
+- Cuadro de control (esquina superior izquierda)
+.br
+- Botones de Mimizar, Maximizar/Restaurar y Cerrar
+
+Cuando uno guarda un proyecto, cada uno de sus elementos se guarda en un
+archivo aparte. Los formularios se guardan en archivos con nombre terminado
+en {{.frm}} que almacenará sus propiedades y el código generado.
+
