@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once($PaginaPrefijo.'Configuracion.inc.php');
 
 	$Conectado = 0;

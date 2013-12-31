@@ -1,4 +1,4 @@
-<?
+<?php
 	include('default.php');
 ?>
 

@@ -1,4 +1,4 @@
-<?
+<?php
 $Amazon1 = false;
 $Amazon2 = false;
 
@@ -25,7 +25,7 @@ amazon_color_link="DC1D25";
 amazon_ad_logo="hide"; 
 amazon_ad_title="TodoContenidos Store"; //--></script>
 <script type="text/javascript" src="http://www.assoc-amazon.com/s/asw.js"></script>
-<?
+<?php
 }
 
 function ShowAmazonKindle() {
@@ -39,6 +39,6 @@ function ShowAmazonKindle() {
 	$Amazon2 = true;
 ?>
 <iframe src="http://rcm.amazon.com/e/cm?t=todocontenido-20&o=1&p=48&l=ur1&category=kindle&banner=0Y98S4SYN0MXZ8260582&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-<?
+<?php
 }
 ?>

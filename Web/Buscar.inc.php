@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once('Conexion.inc.php');
 
 function NormalizaDescripcion($Descripcion) {

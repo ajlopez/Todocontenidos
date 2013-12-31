@@ -1,10 +1,10 @@
-<?
+<?php
 if (__Lecciones_inc == 1)
 	return;
 define ('__Lecciones_inc', 1);
 
-	include('Usuarios.inc.php');
-	include('Conexion.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Conexion.inc.php');
 
 function LeccionVisita($Id) {
 	Conectar();

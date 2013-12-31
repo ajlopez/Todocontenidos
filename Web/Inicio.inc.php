@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once($PaginaPrefijo.'Usuarios.inc.php');
 	include_once($PaginaPrefijo.'Paginas.inc.php');
 	include_once($PaginaPrefijo.'Cache.inc.php');
@@ -8,7 +8,7 @@
 <html>
 <head>
 
-<title><? echo $PaginaTitulo; ?></title>
+<title><?php echo $PaginaTitulo; ?></title>
 
 <META name="title" content="todocontenidos">
 <META name="description" content="contenidos en internet">
@@ -21,7 +21,7 @@
 <META name="robot" content="index, follow">
 <meta name="verify-v1" content="+QxaBG2H5WRJhkcP41CxvhQMoXO4x9JgnbJwGKq2KUY=" />
 
-<link rel="stylesheet" href="<? echo $PaginaPrefijo; ?>css/Estilo.css">
+<link rel="stylesheet" href="<?php echo $PaginaPrefijo; ?>css/Estilo.css">
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -33,7 +33,7 @@ pageTracker._initData();
 pageTracker._trackPageview();
 </script>
 
-<?
+<?php
 	if ($ArchivoJs)
 		echo "<script language='javascript' src='js/$ArchivoJs'></script>\n";
 ?>
@@ -45,8 +45,8 @@ pageTracker._trackPageview();
 <tr height=60>
 <td class="TituloSitio">
 <!-- &nbsp;todocontenidos.com -->
-<a href="<? echo PaginaPrincipal(); ?>" target="_top">
-<img src="<? echo $PaginaPrefijo; ?>images/todocontenidos2.gif" border=0>
+<a href="<?php echo PaginaPrincipal(); ?>" target="_top">
+<img src="<?php echo $PaginaPrefijo; ?>images/todocontenidos2.gif" border=0>
 </a>
 </td>
 </tr>
@@ -70,7 +70,7 @@ pageTracker._trackPageview();
 
 <tr>
 
-<?
+<?php
 function GeneraOpcionTope($texto,$enlace)
 {
 	global $PaginaPrefijo;
@@ -85,7 +85,7 @@ function GeneraOpcionTope($texto,$enlace)
 <TD width=1 bgColor=#454543 rowSpan=3><IMG height=1 src="images/1x1.gif" width=1></TD>
 </TR>
 <TR>
-<TD align=middle width=117 bgColor=#dedede height=18><A class=linkonHdr href="<? echo $PaginaPrefijo.$enlace; ?>"><? echo $texto; ?></A></TD>
+<TD align=middle width=117 bgColor=#dedede height=18><A class=linkonHdr href="<?php echo $PaginaPrefijo.$enlace; ?>"><?php echo $texto; ?></A></TD>
 </TR>
 <TR bgColor=#454543>
 <TD><IMG height=1 src="images/1x1.gif" width=1></TD>
@@ -94,11 +94,11 @@ function GeneraOpcionTope($texto,$enlace)
 </TABLE>
 </TD>
 
-<?
+<?php
 }
 ?>
 
-<?
+<?php
 	GeneraOpcionTope("Principal",PaginaPrincipal());
 //	GeneraOpcionTope("Cursos","CursosMuestra.php");
 	GeneraOpcionTope("Temas","Temas.php");
@@ -129,7 +129,7 @@ function GeneraOpcionTope($texto,$enlace)
 
 <center>
 
-<?
+<?php
 function MenuInicio($titulo)
 {
 ?>
@@ -137,12 +137,12 @@ function MenuInicio($titulo)
 <table class="menu" cellspacing=1 cellpadding=2 width="95%">
 <tr>
 <td align=center class="menutitulo">
-<? echo $titulo; ?>
+<?php echo $titulo; ?>
 </td>
 </tr>
 </tr>
 <td valign="top" class="menuopcion">
-<?
+<?php
 }
 
 function MenuOpcion($texto,$enlace)
@@ -166,11 +166,11 @@ function MenuFinal()
 
 </p>
 
-<?
+<?php
 }
 ?>
 
-<?
+<?php
 	if (UsuarioIdentificado()) {
 		MenuInicio('Usuario');
 		echo "<div align='center'>";
@@ -246,7 +246,7 @@ function MenuFinal()
 */
 ?>
 
-<?
+<?php
 	ShowGoogleV();
 ?>
 
@@ -262,11 +262,11 @@ function MenuFinal()
 
 <p>
 
-<?
+<?php
 	if (!$PaginaTituloInvisible) {
 ?>
-<h1 align="center"><? echo $PaginaTitulo ?></h1>
-<?
+<h1 align="center"><?php echo $PaginaTitulo ?></h1>
+<?php
 	}
 ?>
 

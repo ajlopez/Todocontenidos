@@ -1,9 +1,9 @@
-<?
+<?php
 if (__Emails_inc == 1)
 	return;
 define ('__Emails_inc', 1);
 
-	include('Usuarios.inc.php');
+	include_once('Usuarios.inc.php');
 
 function EmailEnvia($FROM,$TO,$SUBJECT,$MESSAGE,$REPLYTO='',$TYPE='')
 {

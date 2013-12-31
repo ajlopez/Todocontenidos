@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once('Usuarios.inc.php');
 	include_once('Conexion.inc.php');
 
@@ -71,31 +71,31 @@ function ArticuloMuestraDestacado($Id,$Descripcion,$Detalle,$Url,$Orden,$Visitas
 <tr>
 <td valign="top" width="50%">
 <p align='left'>
-<a target='_blank' class=<?= $clase ?> href="<? echo $PaginaPrefijo; ?><?= $pagina ?>.php?Id=<? echo $Id; ?>&IdCategoria=<? echo $IdCategoriaActual ?>">
-<? echo $Descripcion; ?>
+<a target='_blank' class=<?= $clase ?> href="<?php echo $PaginaPrefijo; ?><?= $pagina ?>.php?Id=<?php echo $Id; ?>&IdCategoria=<?php echo $IdCategoriaActual ?>">
+<?php echo $Descripcion; ?>
 </a>
 <!--
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>ArticuloAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
+<a href="<?php echo $PaginaPrefijo; ?>ArticuloAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
 -->
-<?
+<?php
 	if (EsAdministrador()) {
 ?>
 <br>
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>Articulo.php?Id=<?= $Id ?>">Administra</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>Articulo.php?Id=<?= $Id ?>">Administra</a>
+<?php
 	}
 ?>
 <br>
 <br>
 <p>
-<? echo NormalizaHtml($Detalle); ?>
+<?php echo NormalizaHtml($Detalle); ?>
 <br>
 <br>
 </p>
 </td>
-<?
+<?php
 	if ($Imagen) {
 		if (substr($Imagen,0,8)=='youtube:') {
 			$youtube = substr($Imagen,8);
@@ -109,16 +109,16 @@ function ArticuloMuestraDestacado($Id,$Descripcion,$Detalle,$Url,$Orden,$Visitas
 		}		
 ?>
 <td valign="top" width="50%">
-<a target="_blank" class=<?= $clase ?> href="<? echo $PaginaPrefijo; ?><?= $pagina ?>.php?Id=<? echo $Id; ?>&IdCategoria=<? echo $IdCategoriaActual ?>">
+<a target="_blank" class=<?= $clase ?> href="<?php echo $PaginaPrefijo; ?><?= $pagina ?>.php?Id=<?php echo $Id; ?>&IdCategoria=<?php echo $IdCategoriaActual ?>">
 <img src="<?= $Imagen ?>" style="margin:0px 20px 20px 0px;" border="0">
 </a>
 </td>
-<?
+<?php
 	}
 ?>
 </tr>
 </table>
-<?
+<?php
 }
 
 

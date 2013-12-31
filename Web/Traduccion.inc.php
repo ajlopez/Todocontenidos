@@ -1,9 +1,9 @@
-<?
+<?php
 if (__Traduccion_inc == 1)
 	return;
 define ('__Traduccion_inc', 1);
 
-include('Conexion.inc.php');
+include_once('Conexion.inc.php');
 
 function TraduccionCarga($tabla,$campo='Descripcion')
 {

@@ -1,4 +1,4 @@
-<?
+<?php
 function FechaValida($anio,$mes,$dia) {
 	if (!$anio || !$mes || !$dia)
 		return false;

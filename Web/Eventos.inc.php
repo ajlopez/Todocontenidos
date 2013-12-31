@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once($PaginaPrefijo.'Conexion.inc.php');
 	include_once($PaginaPrefijo.'Usuarios.inc.php');
 	include_once($PaginaPrefijo.'Paginas.inc.php');

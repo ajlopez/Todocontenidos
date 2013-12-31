@@ -1,4 +1,5 @@
-<?
+<?php
+    include_once('Settings.inc.php');
 	include_once('Usuarios.inc.php');
 	include_once('Paginas.inc.php');
 	include_once('Eventos.inc.php');
@@ -37,15 +38,15 @@
 <center>
 
 <p>
-Bienvenido a <a href="<? echo PaginaPrincipal(); ?>">todocontenidos</a>, donde encontrar&aacute; sitios, p&aacute;ginas, y art&iacute;culos
+Bienvenido a <a href="<?php echo PaginaPrincipal(); ?>">todocontenidos</a>, donde encontrar&aacute; sitios, p&aacute;ginas, y art&iacute;culos
 sobre los temas que le interesan.
 </p>
 
-<?
+<?php
 	ShowGoogle();
 ?>
 <br>
-<?
+<?php
 	ShowAmazonStore();
 ?>
 
@@ -70,7 +71,7 @@ sugerir <a href="ArticuloSugiere.php">un art&iacute;culo</a> o un <a href="TemaS
 
 <table cellspacing=1 cellpadding=3 width=600 border=0 bgcolor=black>
 
-<?
+<?php
 function MuestraCategoria($Id,$Descripcion,$Resumen,$x,$y)
 {
 	$pos = $x + $y;
@@ -133,7 +134,7 @@ function MuestraVacio($x,$y)
 
 <p>Art&iacute;culos destacados, más visitados, recomendados e interesantes, de <a href="http://www.todocontenidos.com">todocontenidos</a></p>
 
-<?
+<?php
 	$rs = mysql_query("select a.*, ca.IdCategoria from articulos a, categoriasarticulos ca where a.orden=0 and a.imagen>'' and ca.IdArticulo = a.Id and ca.Estado = 0 order by a.visitas desc");
 
 	$nreg = 0;
@@ -155,11 +156,11 @@ function MuestraVacio($x,$y)
 	mysql_free_result($rs);
 ?>
 <center>
-<?
+<?php
 	ShowGoogle();
 ?>
 </center>
-<?
+<?php
 	Desconectar();
 	include('Final.inc.php');
 ?>

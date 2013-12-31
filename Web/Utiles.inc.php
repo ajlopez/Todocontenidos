@@ -1,4 +1,4 @@
-<?
+<?php
 function NormalizaImagen($imagen) {
 	if (!$imagen)
 		return $imagen;

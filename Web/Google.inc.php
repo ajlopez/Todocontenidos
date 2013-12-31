@@ -1,4 +1,4 @@
-<?
+<?php
 $Google1 = false;
 $Google2 = false;
 
@@ -26,7 +26,7 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </p>
-<?
+<?php
 }
 
 function ShowGoogle2() {
@@ -48,7 +48,7 @@ google_cpa_choice = ""; // on file
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-<?
+<?php
 }
 
 function ShowGoogleV() {
@@ -63,7 +63,7 @@ google_ad_height = 600;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-<?
+<?php
 }
 
 ?>

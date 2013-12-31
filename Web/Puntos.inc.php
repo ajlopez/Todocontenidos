@@ -1,4 +1,4 @@
-<?
+<?php
 	define ('PUNTOS_TIPO_INSCRIPCION',1);	// Inscripcion de Usuario
 	define ('PUNTOS_TIPO_SITIO',2);		// Aceptacion de Sitio
 	define ('PUNTOS_TIPO_ARTICULO',3);	// Aceptacion de Articulo

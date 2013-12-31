@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once($PaginaPrefijo . 'Amazon.inc.php');
 ?>
 
@@ -13,7 +13,7 @@
 
 <center>
 
-<?
+<?php
 	ShowAmazonStore();
 ?>
 
@@ -22,8 +22,8 @@
 
 <br>
 
-<?
-	require($PaginaPrefijo.'Pie.inc.php');
+<?php
+	include($PaginaPrefijo.'Pie.inc.php');
 ?>
 
 </td>
@@ -35,7 +35,7 @@
 <hr size="1" width="100%">
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><TD align="center" valign="bottom" width="100%">
-<font size="-2" face="arial">Copyright © 2001-2008 todocontenidos.com. Todos los derechos reservados.
+<font size="-2" face="arial">Copyright © 2001-2014 todocontenidos.com. Todos los derechos reservados.
  </TD></tr>
 </table>
 </center>

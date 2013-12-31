@@ -1,4 +1,4 @@
-<?
+<?php
 include_once($PaginaPrefijo.'Azar.inc.php');
 
 function PaginaActual() {

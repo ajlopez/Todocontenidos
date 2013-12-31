@@ -1,4 +1,4 @@
-<?
+<?php
 	define('ITEMS_ESTADO_NORMAL',0);
 	define('ITEMS_ESTADO_PENDIENTE',1);
 
@@ -75,24 +75,24 @@ function ItemMuestraDestacado($Id,$Descripcion,$Detalle,$Url,$Orden,$Visitas,$Fa
 	$clase = 'itemdestacado';
 ?>
 <p align='left'>
-<a class=<?= $clase ?> target='_blank' href="<? echo $PaginaPrefijo; ?>ItemVe.php?Id=<? echo $Id; ?>&IdCategoria=<? echo $IdCategoriaActual ?>">
-<? echo $Descripcion; ?>
+<a class=<?= $clase ?> target='_blank' href="<?php echo $PaginaPrefijo; ?>ItemVe.php?Id=<?php echo $Id; ?>&IdCategoria=<?php echo $IdCategoriaActual ?>">
+<?php echo $Descripcion; ?>
 </a>
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>ItemAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>ItemAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
+<?php
 	if (EsAdministrador()) {
 ?>
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>Item.php?Id=<?= $Id ?>">Administra</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>Item.php?Id=<?= $Id ?>">Administra</a>
+<?php
 	}
 ?>
 <br>
 <br>
 <table border="0" widht="95%">
 <tr>
-<?
+<?php
 	$imagen = $PaginaPrefijo."images/items/$Id.png";
 
 	if (file_exists($imagen)) {
@@ -100,19 +100,19 @@ function ItemMuestraDestacado($Id,$Descripcion,$Detalle,$Url,$Orden,$Visitas,$Fa
 <td valign="top">
 <img src="<?= $imagen ?>" style="margin:0px 20px 20px 0px;">
 </td>
-<?
+<?php
 	}
 ?>
 <td valign="top">
 <p>
-<? echo NormalizaHtml($Detalle); ?>
+<?php echo NormalizaHtml($Detalle); ?>
 <br>
 <br>
 </p>
 </td>
 </tr>
 </table>
-<?
+<?php
 }
 
 

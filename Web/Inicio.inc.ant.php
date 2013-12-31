@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once("Usuarios.inc.php");
 	include_once("Paginas.inc.php");
 	include_once('Cache.inc.php');
@@ -7,7 +7,7 @@
 <html>
 <head>
 
-<title><? echo $PaginaTitulo; ?></title>
+<title><?php echo $PaginaTitulo; ?></title>
 <link rel="stylesheet" href="css/Estilo.css">
 </head>
 
@@ -20,15 +20,15 @@
 <img src="images/todocontenidos2.gif">
 </td>
 <td class="Tope" align=right>
-<?
+<?php
 	if (UsuarioIdentificado()) {
 ?>
 <font size=1>
-Usuario: <? echo UsuarioCodigo(); ?>
+Usuario: <?php echo UsuarioCodigo(); ?>
 <br>
-Nombre: <? echo UsuarioNombre(); ?> <? echo UsuarioApellido(); ?>
+Nombre: <?php echo UsuarioNombre(); ?> <?php echo UsuarioApellido(); ?>
 </font>
-<?
+<?php
 	}
 ?>
 </td>
@@ -51,15 +51,15 @@ Internet que sirve
 
 <table border=0 cellspacing=2 cellpadding=2 width=95%>
 
-<?
+<?php
 function GeneraOpcion($texto,$enlace) {
 ?>
 <tr>
 <td class="opcion" align="center">
-<a class="opcion" href="<? echo $enlace; ?>"><? echo $texto; ?></a>
+<a class="opcion" href="<?php echo $enlace; ?>"><?php echo $texto; ?></a>
 </td>
 </tr>
-<?
+<?php
 }
 
 	GeneraOpcion("Principal", PaginaPrincipal());
@@ -92,11 +92,11 @@ function GeneraOpcion($texto,$enlace) {
 
 <p>
 
-<?
+<?php
 	if (!$PaginaTituloInvisible) {
 ?>
-<h1 align="center"><? echo $PaginaTitulo ?></h1>
-<?
+<h1 align="center"><?php echo $PaginaTitulo ?></h1>
+<?php
 	}
 ?>
 

@@ -1,4 +1,4 @@
-<?
+<?php
 	include_once($PaginaPrefijo.'Paginas.inc.php');
 	include_once($PaginaPrefijo.'Usuarios.inc.php');
 ?>
@@ -6,13 +6,13 @@
 
 
 <p align="center" class="Pie">
-<?
+<?php
 function GeneraOpcionPie($texto,$enlace) {
 	global $PaginaPrefijo;
 ?>
-<a href="<? echo $PaginaPrefijo.$enlace; ?>"><? echo $texto; ?></a>
+<a href="<?php echo $PaginaPrefijo.$enlace; ?>"><?php echo $texto; ?></a>
 &nbsp;&nbsp;
-<?
+<?php
 }
 
 	GeneraOpcionPie("Principal", PaginaPrincipal());

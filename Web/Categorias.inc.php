@@ -1,4 +1,4 @@
-<?
+<?php
 	define('CATEGORIAS_ESTADO_NORMAL',0);
 	define('CATEGORIAS_ESTADO_DESHABILITADA',1);
 
