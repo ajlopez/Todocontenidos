@@ -1,14 +1,16 @@
-<?
-	include('Campos.inc.php');
-	include('Conexion.inc.php');
-	include('Errores.inc.php');
-	include('Paginas.inc.php');
-	include('Sesion.inc.php');
-	include('Utiles.inc.php');
-	include('Categorias.inc.php');
-	include('Usuarios.inc.php');
-	include('Puntos.inc.php');
-	include('Articulos.inc.php');
+<?php
+    include_once('Settings.inc.php');
+    
+	include_once('Campos.inc.php');
+	include_once('Conexion.inc.php');
+	include_once('Errores.inc.php');
+	include_once('Paginas.inc.php');
+	include_once('Sesion.inc.php');
+	include_once('Utiles.inc.php');
+	include_once('Categorias.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Puntos.inc.php');
+	include_once('Articulos.inc.php');
 
 	Conectar();
 	
@@ -60,6 +62,6 @@
 </noframes>
 </HTML>
 
-<?
+<?php
 
 ?>

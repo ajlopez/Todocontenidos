@@ -1,15 +1,17 @@
-<?
-	include('Campos.inc.php');
-	include('Conexion.inc.php');
-	include('Errores.inc.php');
-	include('Paginas.inc.php');
-	include('Sesion.inc.php');
-	include('Utiles.inc.php');
-	include('Categorias.inc.php');
-	include('Traduccion.inc.php');
-	include('Usuarios.inc.php');
-	include('Articulos.inc.php');
-	include('Google.inc.php');
+<?php
+    include_once('Settings.inc.php');
+    
+	include_once('Campos.inc.php');
+	include_once('Conexion.inc.php');
+	include_once('Errores.inc.php');
+	include_once('Paginas.inc.php');
+	include_once('Sesion.inc.php');
+	include_once('Utiles.inc.php');
+	include_once('Categorias.inc.php');
+	include_once('Traduccion.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Articulos.inc.php');
+	include_once('Google.inc.php');
 
 	Conectar();
 	
@@ -53,10 +55,10 @@
 ?>
 
 <center>
-<? ShowGoogle(); ?>
+<?php ShowGoogle(); ?>
 </center>
 
-<?
+<?php
 	if (EsAdministrador()) {
 		echo "<center><p><a href='Articulo.php?Id=$Id'>Administra</a></p></center>";
 	}
@@ -72,7 +74,7 @@
 <tr>
 <td valign="top">
 
-<?
+<?php
 	if ($Imagen) {
 		if (substr($Imagen,0,8)=='youtube:') {
 			$youtube = substr($Imagen,8);
@@ -81,7 +83,7 @@
 <object width="425" height="355" align="left"><param name="movie" value="http://www.youtube.com/v/<?= $youtube ?>"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/<?= $youtube ?>&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
 </td>
 <td valign="top">
-<?
+<?php
 		}
 		else if (substr($Imagen,0,8)=='soapbox:') {
 			$soapbox = substr($Imagen,8);
@@ -99,7 +101,7 @@
 <br /><a href="http://video.msn.com/video.aspx?vid=<?= $soapbox ?>" target="_new" title="<?= $Titulo ?>">Video: <?= $Titulo ?></a>
 </td>
 <td valign="top">
-<?
+<?php
 		}
 		else {
 			echo "<img src='$Imagen' align='left'>\n";
@@ -127,7 +129,7 @@
 
 </p>
 
-<?
+<?php
 	Desconectar();
 	require('Final.inc.php');
 ?>

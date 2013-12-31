@@ -1,5 +1,7 @@
-<?
-	include('Usuarios.inc.php');
+<?php
+    include_once('Settings.inc.php');
+    
+	include_once('Usuarios.inc.php');
 
 	AdministradorControla();
 
