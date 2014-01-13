@@ -1,10 +1,12 @@
-<?
-	include('Campos.inc.php');
-	include('Conexion.inc.php');
-	include('Paginas.inc.php');
-	include('Sesion.inc.php');
-	include('Usuarios.inc.php');
-	include('Puntos.inc.php');
+<?php
+    include_once('Settings.inc.php');
+
+	include_once('Campos.inc.php');
+	include_once('Conexion.inc.php');
+	include_once('Paginas.inc.php');
+	include_once('Sesion.inc.php');
+	include_once('Usuarios.inc.php');
+	include_once('Puntos.inc.php');
 
 	$PaginaTitulo = "Detalle de Mis Puntos";
 
@@ -26,7 +28,7 @@
 
 <p>
 
-<?		
+<?php		
 function MuestraRegistro($reg) {
    FilaInicio();
    DatoGenera($reg["FechaHora"]);
@@ -46,7 +48,7 @@ function MuestraRegistro($reg) {
 
 </center>
 
-<?
+<?php
 	Desconectar();
 	include('Final.inc.php');
 ?>

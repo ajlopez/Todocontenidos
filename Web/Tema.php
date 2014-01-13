@@ -1,4 +1,6 @@
-<?
+<?php
+    include_once('Settings.inc.php');
+
 	include_once($PaginaPrefijo.'Usuarios.inc.php');
 	include_once($PaginaPrefijo.'Paginas.inc.php');
 	include_once($PaginaPrefijo.'Categorias.inc.php');
@@ -48,21 +50,21 @@
 
 <center>
 
-<?
+<?php
 	ShowGoogle();
 ?>
 
 <p>
-<a href="<? echo $PaginaPrefijo; ?>ItemSugiere.php?IdCategoria=<? echo $Id; ?>">Agregar Enlace</a>
+<a href="<?php echo $PaginaPrefijo; ?>ItemSugiere.php?IdCategoria=<?php echo $Id; ?>">Agregar Enlace</a>
 &nbsp;
 &nbsp;
 <!-- Remove
-<a href="<? echo $PaginaPrefijo; ?>ArticuloSugiere.php?IdCategoria=<? echo $Id; ?>">Agregar Art&iacute;culo</a>
+<a href="<?php echo $PaginaPrefijo; ?>ArticuloSugiere.php?IdCategoria=<?php echo $Id; ?>">Agregar Art&iacute;culo</a>
 &nbsp;
 &nbsp;
 -->
-<a href="<? echo $PaginaPrefijo; ?>TemaSugiere.php?IdCategoria=<? echo $Id; ?>">Agregar Tema</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>TemaSugiere.php?IdCategoria=<?php echo $Id; ?>">Agregar Tema</a>
+<?php
 	if (EsAdministrador()) {
 		echo "&nbsp;&nbsp;";
 		echo "<a href='" . $PaginaPrefijo . "Categoria.php?Id=$Id'>Administra</a>";
@@ -70,8 +72,8 @@
 ?>
 </p>
 <p>
-<a href="<? echo $PaginaPrefijo; ?>Temas.php">Temas</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>Temas.php">Temas</a>
+<?php
 	if ($IdPadre) {
 		echo "&nbsp;->&nbsp;";
 		echo CategoriasEnlaces($IdPadre,$PaginaPrefijo.'Tema.php');
@@ -79,7 +81,7 @@
 ?>
 </p>
 
-<?
+<?php
 function MuestraCategoria($Id,$Descripcion,$Resumen,$x,$y)
 {
 	global $PaginaPrefijo;
@@ -111,7 +113,7 @@ if (count($Categorias)) {
 <table cellspacing=1 cellpadding=3 width=600 border=0 bgcolor=black>
 
 
-<?
+<?php
 	reset($Categorias);
 
 	$x=0; $y=0;
@@ -146,7 +148,7 @@ if (count($Categorias)) {
 </table>
 <br>
 <br>
-<?
+<?php
 }
 
 	$sql = "Select i.* from categoriasitems ci left join items i on ci.IdItem = i.Id where ci.IdCategoria = $Id and ci.Estado=0 and i.Estado=0 and i.Orden = 0 order by i.orden, i.visitas desc, i.id desc";
@@ -189,28 +191,28 @@ function ItemMuestra($Id,$Descripcion,$Detalle,$Url,$Orden,$Visitas,$Favoritos)
 ?>
 <tr>
 <td class=<?= $clase ?> valign=top>
-<a class=<?= $clase ?> target='_blank' href="<? echo $PaginaPrefijo; ?>ItemVe.php?Id=<? echo $Id; ?>&IdCategoria=<? echo $IdCategoriaActual ?>">
-<? echo $Descripcion; ?>
+<a class=<?= $clase ?> target='_blank' href="<?php echo $PaginaPrefijo; ?>ItemVe.php?Id=<?php echo $Id; ?>&IdCategoria=<?php echo $IdCategoriaActual ?>">
+<?php echo $Descripcion; ?>
 </a>
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>ItemAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>ItemAFavoritos.php?Id=<?= $Id ?>&IdCategoria=<?= $IdCategoriaActual ?>">Agrega a Mis Favoritos</a>
+<?php
 	if (EsAdministrador()) {
 ?>
 &nbsp;&nbsp;
-<a href="<? echo $PaginaPrefijo; ?>Item.php?Id=<?= $Id ?>">Administra</a>
-<?
+<a href="<?php echo $PaginaPrefijo; ?>Item.php?Id=<?= $Id ?>">Administra</a>
+<?php
 	}
 ?>
 <br>
-<? echo NormalizaHtml($Detalle); ?>
-<?
+<?php echo NormalizaHtml($Detalle); ?>
+<?php
 	if ($clase=='item2')
 		echo "<br><br>";
 ?>
 </td>
 </tr>
-<?
+<?php
 }
 
 function GoogleMuestra() {
@@ -218,16 +220,16 @@ function GoogleMuestra() {
 <tr>
 <td>
 <center>
-<? ShowGoogle(); ?>
+<?php ShowGoogle(); ?>
 </center>
 </td>
 </tr>
-<?
+<?php
 }
 
 ?>
 
-<?
+<?php
 function ItemMuestra2($Descripcion,$Detalle,$Url)
 {
 	global $PaginaPrefijo;
@@ -237,18 +239,18 @@ function ItemMuestra2($Descripcion,$Detalle,$Url)
 ?>
 <tr>
 <td class=item valign=top>
-<a class=item target='_blank' href="<? echo $Url ?>">
-<? echo $Descripcion; ?>
+<a class=item target='_blank' href="<?php echo $Url ?>">
+<?php echo $Descripcion; ?>
 </a>
 <br>
-<? echo NormalizaHtml($Detalle); ?>
+<?php echo NormalizaHtml($Detalle); ?>
 </td>
 </tr>
-<?
+<?php
 }
 ?>
 
-<?
+<?php
 	$sql = "Select i.* from categoriasitems ci left join items i on ci.IdItem = i.Id where ci.IdCategoria = $Id and ci.Estado=0 and i.Estado=0 and i.Orden<>0 order by i.orden, i.visitas desc, i.id desc";
 	$rsItems = mysql_query($sql);
 
@@ -257,9 +259,9 @@ function ItemMuestra2($Descripcion,$Detalle,$Url)
 
 	if ($rsItems && mysql_num_rows($rsItems)) {
 ?>
-<h2><? echo $Descripcion; ?> en Internet</h2>
+<h2><?php echo $Descripcion; ?> en Internet</h2>
 <table width="100%" cellspacing=0 cellpadding=3>
-<?
+<?php
 		$nitem=1;
 		while ($reg=mysql_fetch_object($rsItems)) {
 			ItemMuestra($reg->Id, $reg->Descripcion, $reg->Detalle, $reg->Url, $reg->Orden, $reg->Visitas, $reg->Favoritos);
@@ -272,7 +274,7 @@ function ItemMuestra2($Descripcion,$Detalle,$Url)
 		}
 ?>
 </table>
-<?		
+<?php	
 	}
 
 function ArticuloMuestra($Id,$Titulo,$Resumen,$Contenido,$Url) {
@@ -282,27 +284,27 @@ function ArticuloMuestra($Id,$Titulo,$Resumen,$Contenido,$Url) {
 ?>
 <tr>
 <td class=item valign=top>
-<a class=item target='_blank' href="<? echo $PaginaPrefijo; ?>ArticuloVe.php?Id=<? echo $Id; ?>">
-<? echo $Titulo; ?>
+<a class=item target='_blank' href="<?php echo $PaginaPrefijo; ?>ArticuloVe.php?Id=<?php echo $Id; ?>">
+<?php echo $Titulo; ?>
 </a>
 <br>
-<? echo NormalizaHtml($Resumen); ?>
+<?php echo NormalizaHtml($Resumen); ?>
 </td>
 </tr>
-<?
+<?php
 	}
 	else {
 ?>
 <tr>
 <td class=item valign=top>
-<a class=item href="<? echo $PaginaPrefijo; ?>ArticuloMuestra.php?Id=<? echo $Id; ?>">
-<? echo $Titulo; ?>
+<a class=item href="<?php echo $PaginaPrefijo; ?>ArticuloMuestra.php?Id=<?php echo $Id; ?>">
+<?php echo $Titulo; ?>
 </a>
 <br>
-<? echo NormalizaHtml($Resumen); ?>
+<?php echo NormalizaHtml($Resumen); ?>
 </td>
 </tr>
-<?
+<?php
 	}
 }
 	$rsArticulos=mysql_query("select a.Id, a.Titulo, a.Resumen, a.Contenido, a.Enlace from categoriasarticulos ca, articulos a where ca.IdArticulo = a.Id and ca.IdCategoria=$Id and ca.Estado=0 and a.IdEstado=0 order by a.Orden desc, a.Visitas desc");
@@ -312,13 +314,13 @@ function ArticuloMuestra($Id,$Titulo,$Resumen,$Contenido,$Url) {
 <p>
 <h2>Art&iacute;culos</h2>
 <table width="100%" cellspacing=0 cellpadding=3>
-<?
+<?php
 		while ($reg=mysql_fetch_object($rsArticulos))
 			ArticuloMuestra($reg->Id, $reg->Titulo, $reg->Resumen, $reg->Contenido, $reg->Enlace);
 ?>
 </table>
 
-<?		
+<?php	
 	}	
 
 	mysql_free_result($rsArticulos);
@@ -327,7 +329,7 @@ function ArticuloMuestra($Id,$Titulo,$Resumen,$Contenido,$Url) {
 
 </center>
 
-<?
+<?php
 	Desconectar();
 
 	include($PaginaPrefijo.'Final.inc.php');

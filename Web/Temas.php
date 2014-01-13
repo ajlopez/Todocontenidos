@@ -1,4 +1,6 @@
-<?
+<?php
+    include_once('Settings.inc.php');
+
 	include_once($PaginaPrefijo.'Usuarios.inc.php');
 	include_once($PaginaPrefijo.'Paginas.inc.php');
 	include_once($PaginaPrefijo.'Eventos.inc.php');
@@ -33,7 +35,7 @@ sugerir <a href="ArticuloSugiere.php">un art&iacute;culo</a> o un <a href="TemaS
 
 <table cellspacing=1 cellpadding=3 width=600 bgcolor=black>
 
-<?
+<?php
 function MuestraCategoria($Id,$Descripcion,$Resumen,$x,$y)
 {
 	$pos = $x + $y;
@@ -92,7 +94,7 @@ function MuestraVacio($x,$y)
 </table>
 </center>
 
-<?
+<?php
 	Desconectar();
 	include_once($PaginaPrefijo.'Final.inc.php');
 ?>

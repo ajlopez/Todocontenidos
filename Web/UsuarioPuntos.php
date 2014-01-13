@@ -1,11 +1,13 @@
-<?
-	include('Campos.inc.php');
-	include('Conexion.inc.php');
-	include('Errores.inc.php');
-	include('Paginas.inc.php');
-	include('Sesion.inc.php');
-	include('Utiles.inc.php');
-	include('Usuarios.inc.php');
+<?php
+    include_once('Settings.inc.php');
+
+	include_once('Campos.inc.php');
+	include_once('Conexion.inc.php');
+	include_once('Errores.inc.php');
+	include_once('Paginas.inc.php');
+	include_once('Sesion.inc.php');
+	include_once('Utiles.inc.php');
+	include_once('Usuarios.inc.php');
 
 	Conectar();
 	
@@ -40,30 +42,30 @@
 		list($PaisDescripcion) = mysql_fetch_row($rsPais);
 	mysql_free_result($rsPais);
 
-	require('Inicio.inc.php');
+	include('Inicio.inc.php');
 ?>
 
-<?
+<?php
 	if ($Id==UsuarioId()) {
 ?>
 <p>
 Gracias a nuestro <b>Sistema de Puntos</b>, Ud. puede ganarlos con diversas actividades, y
 aplicarlos como parte de pago en la inscripci&oacute;n a nuestros <a href="CursosMuestra.php">Cursos</a>.
 </p>
-<?
+<?php
 	}
 ?>
 <p>
 Actualmente posee <b>
-<?
+<?php
 		$UsuarioPuntos = UsuarioPuntos(UsuarioId(),$PuntosAnteriores);
 		SesionPone('UsuarioPuntos',$UsuarioPuntos);
 		echo $UsuarioPuntos;
 ?>
  puntos</b>. Pueder ver <a href="UsuarioPuntosDetalle.php">el detalle</a> de los mismos.
 
-<?
+<?php
 	Desconectar();
-	require('Final.inc.php');
+	include('Final.inc.php');
 ?>
 
